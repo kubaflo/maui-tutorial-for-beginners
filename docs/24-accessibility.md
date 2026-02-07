@@ -336,4 +336,4 @@ Take this inaccessible form and add proper accessibility properties:
 
 ---
 
-[← Chapter 23: Maps & Location]({% link docs/23-maps-location.md %})
+[← Chapter 23: Maps & Location]({% link docs/23-maps-location.md %}) · [Chapter 25: Notifications →]({% link docs/25-notifications-background.md %})

@@ -119,7 +119,7 @@
       if (chapterMap[ch].correct === chapterMap[ch].total && chapterMap[ch].total > 0) completed++;
     });
 
-    if (completedEl) completedEl.textContent = completed + '/24';
+    if (completedEl) completedEl.textContent = completed + '/25';
 
     // Update path card progress circles
     updatePathProgress(chapterMap);
@@ -131,7 +131,7 @@
       fundamentals: ['ch01', 'ch02', 'ch03', 'ch04', 'ch05', 'ch06'],
       intermediate: ['ch07', 'ch08', 'ch09', 'ch10', 'ch11', 'ch12'],
       advanced: ['ch13', 'ch14', 'ch15', 'ch16', 'ch17', 'ch18', 'ch19'],
-      expert: ['ch20', 'ch21', 'ch22', 'ch23', 'ch24']
+      expert: ['ch20', 'ch21', 'ch22', 'ch23', 'ch24', 'ch25']
     };
 
     Object.keys(paths).forEach(function (pathName) {

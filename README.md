@@ -43,6 +43,7 @@ A comprehensive, step-by-step guide to building cross-platform mobile and deskto
 | 22 | [Real-World Project](docs/22-real-world-project.md) | Build a complete task manager app |
 | 23 | [Maps & Location](docs/23-maps-location.md) | GPS, geocoding, map pins, navigation |
 | 24 | [Accessibility](docs/24-accessibility.md) | Screen readers, semantic properties, WCAG |
+| 25 | [Notifications & Background](docs/25-notifications-background.md) | Local notifications, background tasks, connectivity |
 
 ## 🛠️ What Is .NET MAUI?
 

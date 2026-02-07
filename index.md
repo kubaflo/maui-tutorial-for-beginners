@@ -19,7 +19,7 @@ permalink: /
 <div class="hero-section">
   <span class="hero-logo">🚀</span>
   <h1 class="hero-title">.NET MAUI Tutorial</h1>
-  <p class="hero-subtitle">Master cross-platform app development with 24 interactive lessons, hands-on exercises, and real-world projects — powered by .NET 10 LTS</p>
+  <p class="hero-subtitle">Master cross-platform app development with 25 interactive lessons, hands-on exercises, and real-world projects — powered by .NET 10 LTS</p>
   <div class="hero-buttons">
     <a href="{% link docs/01-getting-started.md %}" class="btn-primary">▶ Start Learning</a>
     <a href="{% link docs/quickstart.md %}" class="btn-secondary">⚡ Quick Start</a>
@@ -45,7 +45,7 @@ permalink: /
   </div>
   <div class="stat-item">
     <span class="stat-icon">✅</span>
-    <span class="stat-value" id="statCompleted">0/24</span>
+    <span class="stat-value" id="statCompleted">0/25</span>
     <span class="stat-label">Completed</span>
   </div>
 </div>
@@ -128,7 +128,7 @@ permalink: /
     <p class="path-card-desc">HybridWebView, Native AOT, maps, accessibility, real-world project</p>
     <div class="path-card-meta">
       <span class="path-card-tag advanced">Expert</span>
-      <span class="path-card-tag">5 Lessons</span>
+      <span class="path-card-tag">6 Lessons</span>
     </div>
   </a>
 </div>
@@ -305,6 +305,13 @@ permalink: /
     <div class="lesson-info">
       <div class="lesson-title">Accessibility</div>
       <div class="lesson-meta">Screen readers, semantic properties, WCAG · 2 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/25-notifications-background.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">25</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Notifications & Background Tasks</div>
+      <div class="lesson-meta">Local notifications, background services, connectivity · 2 quizzes</div>
     </div>
   </a>
 </div>
