@@ -291,6 +291,22 @@ if (Enum.TryParse<AppTheme>(savedTheme, out var theme))
   </details>
 </div>
 
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li><strong>Styles</strong> centralize property values — define once, reuse everywhere</li>
+    <li><strong>Dynamic Resources</strong> enable runtime theme switching (light/dark mode)</li>
+    <li>Use <code>AppThemeBinding</code> for automatic light/dark mode adaptation</li>
+    <li><strong>Resource dictionaries</strong> in App.xaml apply globally; page-level dictionaries scope locally</li>
+    <li><strong>Implicit styles</strong> (no x:Key) apply to all controls of that type</li>
+  </ul>
+</div>
+
+<div class="callout callout-tip">
+  <div class="callout-title">💡 Tip</div>
+  Use <code>StaticResource</code> for values that never change at runtime, and <code>DynamicResource</code> for values that might change (like themes). StaticResource is faster because it resolves once at load time.
+</div>
+
 ---
 
 **Previous:** [← 06 — Navigation](/docs/06-navigation/) · **Next:** [08 — Platform-Specific Code →](/docs/08-platform-specific-code/)

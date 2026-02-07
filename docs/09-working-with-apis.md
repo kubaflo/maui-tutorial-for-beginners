@@ -367,6 +367,30 @@ public partial class WeatherViewModel : ObservableObject
   </details>
 </div>
 
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li>Use <code>HttpClient</code> via DI — never create new instances manually</li>
+    <li><code>System.Text.Json</code> is the default JSON serializer in .NET MAUI</li>
+    <li>Always handle <strong>network errors</strong> with try-catch and show user-friendly messages</li>
+    <li>Use <code>IConnectivity</code> to check network status before making API calls</li>
+    <li>Consider <strong>caching</strong> with Preferences or SQLite for offline support</li>
+  </ul>
+</div>
+
+<div class="callout callout-warning">
+  <div class="callout-title">⚠️ Warning</div>
+  Never hardcode API keys or secrets in your app. Use <code>appsettings.json</code> or environment variables, and consider a backend proxy for sensitive API calls.
+</div>
+
+<div class="related-chapters">
+  <h4>📖 Related Chapters</h4>
+  <ul>
+    <li><a href="/maui-tutorial-for-beginners/docs/10-local-storage/">Ch 10 — Local Storage (offline caching)</a></li>
+    <li><a href="/maui-tutorial-for-beginners/docs/15-dependency-injection/">Ch 15 — Dependency Injection (HttpClient registration)</a></li>
+  </ul>
+</div>
+
 ---
 
 **Previous:** [← 08 — Platform-Specific Code](/docs/08-platform-specific-code/) · **Next:** [10 — Local Storage →](/docs/10-local-storage/)

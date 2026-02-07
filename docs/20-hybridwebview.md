@@ -390,6 +390,17 @@ async function calculate() {
   </details>
 </div>
 
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li><strong>HybridWebView</strong> embeds web content (HTML/JS/CSS) inside your MAUI app</li>
+    <li>Two-way communication: call C# from JavaScript and JavaScript from C#</li>
+    <li>Host existing web apps (React, Vue, Angular) inside a native shell</li>
+    <li>In .NET MAUI 10, use <code>WebResourceRequested</code> to intercept and customize web requests</li>
+    <li>Best for: dashboards, rich editors, or migrating web apps to native</li>
+  </ul>
+</div>
+
 ---
 
 **Previous:** [← 19 — Media & Camera](/docs/19-media-and-camera/) · **Next:** [21 — Native AOT & Performance →](/docs/21-native-aot-performance/)

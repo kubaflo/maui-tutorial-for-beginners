@@ -335,6 +335,17 @@ public class BookmarkService
   </details>
 </div>
 
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li><strong>Preferences</strong> — simple key-value pairs for settings (strings, ints, bools)</li>
+    <li><strong>Secure Storage</strong> — encrypted storage for tokens and secrets (uses Keychain on iOS, KeyStore on Android)</li>
+    <li><strong>SQLite</strong> — full relational database for structured data (via sqlite-net-pcl)</li>
+    <li><strong>File System</strong> — use <code>FileSystem.AppDataDirectory</code> for app-specific files</li>
+    <li>Choose the right storage based on data type: Preferences for settings, SQLite for collections, Secure Storage for credentials</li>
+  </ul>
+</div>
+
 ---
 
 **Previous:** [← 09 — Working with APIs](/docs/09-working-with-apis/) · **Next:** [11 — Publishing & Deployment →](/docs/11-publishing-deployment/)

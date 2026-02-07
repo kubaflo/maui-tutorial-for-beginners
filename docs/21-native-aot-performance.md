@@ -406,6 +406,22 @@ You now know how to optimize your MAUI app for production with Native AOT, XAML 
   </details>
 </div>
 
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li><strong>Native AOT</strong> compiles C# directly to native code — no JIT, faster startup</li>
+    <li>Enable with <code>&lt;PublishAot&gt;true&lt;/PublishAot&gt;</code> in your .csproj</li>
+    <li>Avoid <strong>reflection</strong> and <strong>dynamic code</strong> — they're incompatible with AOT</li>
+    <li>Use <strong>compiled bindings</strong> (<code>x:DataType</code>) and <strong>XAML source generation</strong> for best performance</li>
+    <li>Trimming removes unused code — use <code>[DynamicDependency]</code> to preserve types used via reflection</li>
+  </ul>
+</div>
+
+<div class="callout callout-warning">
+  <div class="callout-title">⚠️ Warning</div>
+  Native AOT support varies by platform. It works best on iOS and macOS. Android has partial support. Always test your full app flow after enabling AOT — some third-party libraries may not be compatible.
+</div>
+
 ---
 
 **Previous:** [← 20 — HybridWebView](/docs/20-hybridwebview/) · **Next:** [22 — Real-World Project →](/docs/22-real-world-project/)

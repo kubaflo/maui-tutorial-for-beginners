@@ -374,6 +374,22 @@ public partial class TaskViewModel : ObservableObject
 
 ---
 
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li><strong>MVVM Toolkit</strong> eliminates boilerplate with source generators</li>
+    <li><code>[ObservableProperty]</code> auto-generates properties with change notification</li>
+    <li><code>[RelayCommand]</code> auto-generates ICommand implementations from methods</li>
+    <li><strong>Behaviors</strong> add functionality to controls without subclassing</li>
+    <li><strong>Converters</strong> transform data between binding source and target</li>
+  </ul>
+</div>
+
+<div class="callout callout-tip">
+  <div class="callout-title">💡 Tip</div>
+  The MVVM Community Toolkit's source generators require <code>partial class</code> declarations. If your generated properties aren't appearing, check that both the class and the containing type are marked <code>partial</code>.
+</div>
+
 ---
 
 **Previous:** [← 13 — Advanced Shell](/docs/13-shell-advanced/) · **Next:** [15 — Dependency Injection →](/docs/15-dependency-injection/)

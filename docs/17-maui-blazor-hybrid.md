@@ -318,6 +318,22 @@ builder.Services.AddSingleton<IDataService, DataService>();
   </details>
 </div>
 
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li><strong>Blazor Hybrid</strong> lets you use Razor components inside native MAUI apps</li>
+    <li><code>BlazorWebView</code> hosts a full Blazor app inside a native container</li>
+    <li>Share UI components between MAUI (native) and Blazor Server/WASM (web)</li>
+    <li>Access native device APIs from Razor components via DI</li>
+    <li>Use a <strong>Razor Class Library</strong> to share components across platforms</li>
+  </ul>
+</div>
+
+<div class="callout callout-info">
+  <div class="callout-title">ℹ️ Info</div>
+  MAUI Blazor Hybrid apps run Blazor code natively — there's no WebAssembly involved. This means full .NET performance and access to all platform APIs.
+</div>
+
 ---
 
 **Previous:** [← 16 — Unit Testing](/docs/16-unit-testing/) · **Next:** [18 — Gestures & Touch →](/docs/18-gestures-and-touch/)
