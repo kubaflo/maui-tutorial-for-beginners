@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="100%" style="stop-color:#0f0c29"/>
+    </linearGradient>
+  </defs>
+  <rect width="220" height="400" rx="24" fill="url(#bg)" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+  <rect x="80" y="10" width="60" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+  <text x="15" y="35" fill="rgba(255,255,255,0.5)" font-family="Inter" font-size="11" font-weight="500">9:41</text>
+  <!-- Header -->
+  <rect x="0" y="44" width="220" height="50" fill="rgba(34,211,238,0.12)"/>
+  <text x="110" y="75" fill="#22d3ee" font-family="Inter" font-size="16" font-weight="700" text-anchor="middle">Weather</text>
+  <!-- Current weather -->
+  <text x="110" y="135" fill="#f0f0f5" font-family="Inter" font-size="48" font-weight="200" text-anchor="middle">23°</text>
+  <text x="110" y="158" fill="rgba(255,255,255,0.5)" font-family="Inter" font-size="13" text-anchor="middle">Partly Cloudy</text>
+  <text x="110" y="178" fill="rgba(255,255,255,0.3)" font-family="Inter" font-size="11" text-anchor="middle">H: 28° · L: 16°</text>
+  <!-- Forecast cards -->
+  <rect x="15" y="200" width="190" height="80" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="40" y="223" fill="rgba(255,255,255,0.5)" font-family="Inter" font-size="10" text-anchor="middle">Mon</text>
+  <text x="40" y="245" fill="#fb923c" font-family="Inter" font-size="18" text-anchor="middle">☀️</text>
+  <text x="40" y="268" fill="#f0f0f5" font-family="Inter" font-size="12" text-anchor="middle">26°</text>
+  <text x="80" y="223" fill="rgba(255,255,255,0.5)" font-family="Inter" font-size="10" text-anchor="middle">Tue</text>
+  <text x="80" y="245" fill="#6366f1" font-family="Inter" font-size="18" text-anchor="middle">🌧</text>
+  <text x="80" y="268" fill="#f0f0f5" font-family="Inter" font-size="12" text-anchor="middle">19°</text>
+  <text x="120" y="223" fill="rgba(255,255,255,0.5)" font-family="Inter" font-size="10" text-anchor="middle">Wed</text>
+  <text x="120" y="245" fill="#22d3ee" font-family="Inter" font-size="18" text-anchor="middle">⛅</text>
+  <text x="120" y="268" fill="#f0f0f5" font-family="Inter" font-size="12" text-anchor="middle">22°</text>
+  <text x="160" y="223" fill="rgba(255,255,255,0.5)" font-family="Inter" font-size="10" text-anchor="middle">Thu</text>
+  <text x="160" y="245" fill="#fb923c" font-family="Inter" font-size="18" text-anchor="middle">☀️</text>
+  <text x="160" y="268" fill="#f0f0f5" font-family="Inter" font-size="12" text-anchor="middle">27°</text>
+  <!-- Details -->
+  <rect x="15" y="295" width="90" height="45" rx="8" fill="rgba(255,255,255,0.04)"/>
+  <text x="60" y="315" fill="rgba(255,255,255,0.4)" font-family="Inter" font-size="10" text-anchor="middle">Humidity</text>
+  <text x="60" y="333" fill="#22d3ee" font-family="Inter" font-size="14" font-weight="600" text-anchor="middle">65%</text>
+  <rect x="115" y="295" width="90" height="45" rx="8" fill="rgba(255,255,255,0.04)"/>
+  <text x="160" y="315" fill="rgba(255,255,255,0.4)" font-family="Inter" font-size="10" text-anchor="middle">Wind</text>
+  <text x="160" y="333" fill="#34d399" font-family="Inter" font-size="14" font-weight="600" text-anchor="middle">12 km/h</text>
+  <!-- Bottom nav -->
+  <rect x="0" y="360" width="220" height="40" fill="rgba(255,255,255,0.03)"/>
+  <text x="55" y="385" fill="#22d3ee" font-family="Inter" font-size="10" text-anchor="middle">Today</text>
+  <text x="110" y="385" fill="rgba(255,255,255,0.3)" font-family="Inter" font-size="10" text-anchor="middle">Forecast</text>
+  <text x="165" y="385" fill="rgba(255,255,255,0.3)" font-family="Inter" font-size="10" text-anchor="middle">Settings</text>
+</svg>

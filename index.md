@@ -134,6 +134,38 @@ permalink: /
 </div>
 
 <div class="section-header">
+  <img src="{{ '/assets/images/icons/challenges.svg' | relative_url }}" alt="" style="width:32px;height:32px;">
+  <h2>What You'll Build</h2>
+</div>
+
+<div class="showcase-grid">
+  <div class="showcase-card fade-in-up">
+    <img src="{{ '/assets/images/showcase-taskapp.svg' | relative_url }}" alt="Task Manager App" class="showcase-img">
+    <div class="showcase-info">
+      <h3 class="showcase-title">Task Manager</h3>
+      <p class="showcase-desc">Full CRUD app with SQLite, MVVM, and animations</p>
+      <span class="path-card-tag advanced">Chapter 22</span>
+    </div>
+  </div>
+  <div class="showcase-card fade-in-up">
+    <img src="{{ '/assets/images/showcase-weather.svg' | relative_url }}" alt="Weather App" class="showcase-img">
+    <div class="showcase-info">
+      <h3 class="showcase-title">Weather App</h3>
+      <p class="showcase-desc">REST APIs, location services, and responsive UI</p>
+      <span class="path-card-tag beginner">Chapters 9 & 23</span>
+    </div>
+  </div>
+  <div class="showcase-card fade-in-up">
+    <img src="{{ '/assets/images/showcase-notes.svg' | relative_url }}" alt="Notes App" class="showcase-img">
+    <div class="showcase-info">
+      <h3 class="showcase-title">Note Keeper</h3>
+      <p class="showcase-desc">Local storage, search, collections, and theming</p>
+      <span class="path-card-tag">Chapters 4–10</span>
+    </div>
+  </div>
+</div>
+
+<div class="section-header">
   <img src="{{ '/assets/images/icons/cheatsheet.svg' | relative_url }}" alt="" style="width:32px;height:32px;">
   <h2>All Lessons</h2>
 </div>

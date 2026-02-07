@@ -551,6 +551,66 @@ body {
 }
 
 /* --- Resource Grid --- */
+
+/* --- Showcase Grid --- */
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.showcase-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  text-align: center;
+}
+
+.showcase-card:hover {
+  border-color: var(--accent-purple);
+  transform: translateY(-4px);
+  box-shadow: var(--glow-purple);
+}
+
+.showcase-img {
+  width: 140px;
+  height: auto;
+  margin: 1.5rem auto 0.5rem;
+  display: block;
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.4));
+  transition: transform var(--transition-normal);
+}
+
+.showcase-card:hover .showcase-img {
+  transform: scale(1.05);
+}
+
+.showcase-info {
+  padding: 0.75rem 1.25rem 1.25rem;
+}
+
+.showcase-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 0.25rem 0;
+}
+
+.showcase-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0 0 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .resource-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -1060,6 +1120,64 @@ details.exercise summary:hover {
   margin-bottom: 1.5rem;
   box-shadow: var(--shadow-card);
   border: 1px solid var(--border-subtle);
+}
+
+/* --- Table of Contents --- */
+.chapter-toc {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.toc-header {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-item {
+  margin: 0;
+  padding: 0;
+}
+
+.toc-item a {
+  display: block;
+  padding: 4px 0;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color var(--transition-fast);
+  border-left: 2px solid transparent;
+  padding-left: 10px;
+}
+
+.toc-item a:hover {
+  color: var(--accent-purple);
+}
+
+.toc-item a.active {
+  color: var(--accent-purple);
+  border-left-color: var(--accent-purple);
+  font-weight: 600;
+}
+
+.toc-sub a {
+  padding-left: 24px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
 }
 
 /* --- Copy Code Button --- */
