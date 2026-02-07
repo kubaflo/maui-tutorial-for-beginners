@@ -77,6 +77,15 @@ cd MyFirstMauiApp
 dotnet build
 ```
 
+## 🗺️ Learning Path
+
+| Phase | Chapters | Focus |
+|:------|:---------|:------|
+| **🟢 Fundamentals** | 01–06 | Setup, XAML, layouts, MVVM, navigation |
+| **🟡 Intermediate** | 07–12 | Styling, APIs, storage, deployment, animations |
+| **🔴 Advanced** | 13–19 | Shell, toolkit, DI, testing, Blazor, gestures, media |
+| **⭐ Expert** | 20–22 | HybridWebView, Native AOT, real-world project |
+
 ---
 
 Built with ❤️ by [kubaflo](https://github.com/kubaflo)
