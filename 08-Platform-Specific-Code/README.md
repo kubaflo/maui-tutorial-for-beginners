@@ -189,6 +189,31 @@ await Clipboard.Default.SetTextAsync("Copied!");
 await Flashlight.Default.TurnOnAsync();
 ```
 
+## HybridWebView (.NET 9+)
+
+The `HybridWebView` control enables hosting HTML/JS/CSS content inside your MAUI app with bidirectional communication between JavaScript and C#:
+
+```xml
+<HybridWebView x:Name="myHybridWebView"
+               HybridRoot="wwwroot"
+               DefaultFile="index.html"
+               RawMessageReceived="OnRawMessageReceived" />
+```
+
+```csharp
+// Receive messages from JavaScript
+private void OnRawMessageReceived(object sender, HybridWebViewRawMessageReceivedEventArgs e)
+{
+    var message = e.Message;
+    // Process message from JS
+}
+
+// Invoke JavaScript from C#
+var result = await myHybridWebView.InvokeJavaScriptAsync("myJsFunction", ["arg1"]);
+```
+
+In .NET 10, `HybridWebView` also supports intercepting web requests via the `WebResourceRequested` event.
+
 ## Platform-Specific XAML
 
 Use `OnPlatform` to set different values per platform:
@@ -210,7 +235,7 @@ Use `OnPlatform` to set different values per platform:
 
 ## ✅ Checkpoint
 
-You now know multiple ways to write platform-specific code while keeping most of your app shared. Next, we'll connect to web APIs.
+You now know multiple ways to write platform-specific code while keeping most of your app shared, including the new HybridWebView for hosting web content. Next, we'll connect to web APIs.
 
 ---
 

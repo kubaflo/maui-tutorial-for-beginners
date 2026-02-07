@@ -11,8 +11,8 @@ A comprehensive, step-by-step guide to building cross-platform mobile and deskto
 ## 📋 Prerequisites
 
 - Basic knowledge of **C#**
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
-- [Visual Studio 2022](https://visualstudio.microsoft.com/) (v17.8+) with the **.NET MAUI workload** installed
+- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) (LTS) or later
+- [Visual Studio 2022](https://visualstudio.microsoft.com/) (v17.12+) with the **.NET MAUI workload** installed
   - Alternatively: VS Code with the [.NET MAUI Extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-maui)
 
 ## 📚 Tutorial Contents
@@ -40,7 +40,7 @@ A comprehensive, step-by-step guide to building cross-platform mobile and deskto
 - **macOS**
 - **Windows**
 
-It ships as part of .NET and is fully supported by Microsoft.
+It ships as part of .NET and is fully supported by Microsoft. As of .NET 10 (LTS), MAUI is distributed via NuGet packages for finer dependency control and supports Native AOT, .NET Aspire integration, and a new XAML source generator.
 
 ## 🚀 Quick Start
 

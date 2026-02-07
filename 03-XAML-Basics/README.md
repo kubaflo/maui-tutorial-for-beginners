@@ -164,9 +164,27 @@ private void OnGreetClicked(object sender, EventArgs e)
 }
 ```
 
+## Compiled Bindings (Important)
+
+Starting with .NET 9+, **compiled bindings** are strongly recommended for performance and compile-time safety. Use `x:DataType` on your pages to enable them:
+
+```xml
+<ContentPage x:DataType="vm:MyViewModel">
+    <Label Text="{Binding UserName}" />
+</ContentPage>
+```
+
+In .NET 10, you can also enable compilation of bindings with `Source` property by adding this to your `.csproj`:
+
+```xml
+<MauiEnableXamlCBindingWithSourceCompilation>true</MauiEnableXamlCBindingWithSourceCompilation>
+```
+
+> 💡 **Native AOT:** If you plan to use Native AOT deployment (supported on iOS in .NET 10), all bindings **must** be compiled.
+
 ## ✅ Checkpoint
 
-You now know how to write XAML, use markup extensions, define resources, and reference elements in code. Next, we'll explore layouts and controls to build real UIs.
+You now know how to write XAML, use markup extensions, define resources, compiled bindings, and reference elements in code. Next, we'll explore layouts and controls to build real UIs.
 
 ---
 

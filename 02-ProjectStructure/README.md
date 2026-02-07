@@ -104,6 +104,8 @@ public partial class App : Application
 }
 ```
 
+> 💡 **Breaking change (.NET 9+):** The `MainPage` property has been removed from `Application`. Use `CreateWindow()` to set the initial page instead.
+
 ### `AppShell.xaml`
 
 Defines the navigation structure of your app using Shell:
@@ -124,14 +126,16 @@ Defines the navigation structure of your app using Shell:
 
 ### `.csproj` File
 
-The project file contains target frameworks for all platforms:
+The project file contains target frameworks for all platforms. In .NET 10, MAUI is also distributed as NuGet packages, giving you finer control over versioning:
 
 ```xml
-<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
+<TargetFrameworks>net10.0-android;net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
 <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">
-    $(TargetFrameworks);net8.0-windows10.0.19041.0
+    $(TargetFrameworks);net10.0-windows10.0.19041.0
 </TargetFrameworks>
 ```
+
+> 💡 **New in .NET 10:** MAUI ships via NuGet packages in addition to the workload, so you can pin specific versions of MAUI independently from the .NET SDK.
 
 ## ✅ Checkpoint
 

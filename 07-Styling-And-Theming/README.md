@@ -190,9 +190,23 @@ Change appearance based on control state:
 </Style>
 ```
 
+## Safe Area Support (.NET 10)
+
+.NET MAUI 10 introduces a `SafeAreaEdges` property on layouts and pages, giving granular control over rendering content under device cutouts, home indicators, or keyboard overlays:
+
+```xml
+<ContentPage SafeAreaEdges="All">
+    <!-- Content stays within safe area on all edges -->
+</ContentPage>
+
+<VerticalStackLayout SafeAreaEdges="Top,Bottom">
+    <!-- Only respects top and bottom safe areas -->
+</VerticalStackLayout>
+```
+
 ## ✅ Checkpoint
 
-Your apps can now look polished with consistent styles, custom fonts, and theme support. Next, we'll explore platform-specific code.
+Your apps can now look polished with consistent styles, custom fonts, safe area handling, and theme support. Next, we'll explore platform-specific code.
 
 ---
 

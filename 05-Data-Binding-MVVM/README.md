@@ -233,6 +233,19 @@ public partial class UserViewModel : ObservableObject
 
 That's it! The toolkit auto-generates `INotifyPropertyChanged`, property setters, and commands.
 
+## Compiled Bindings in C# (.NET 9+)
+
+You can also create compiled bindings in C# code using `Binding.Create`:
+
+```csharp
+// Compiled lambda binding (replaces string-based "new Binding()")
+myLabel.SetBinding(
+    Label.TextProperty,
+    Binding.Create(static (UserViewModel vm) => vm.Name));
+```
+
+This provides compile-time safety and better performance, especially important for Native AOT.
+
 ## Dependency Injection for ViewModels
 
 Register ViewModels and pages in `MauiProgram.cs`:

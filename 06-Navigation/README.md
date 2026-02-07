@@ -67,6 +67,8 @@ await Shell.Current.GoToAsync("..");
 await Shell.Current.GoToAsync("//home");
 ```
 
+> 💡 **New in .NET 9+:** `BackButtonBehavior.IsVisible` and `BackButtonBehavior.IsEnabled` now default to `BindingMode.OneWay`, making it easier to dynamically control the back button via data binding.
+
 ## Passing Data Between Pages
 
 ### Using Query Parameters

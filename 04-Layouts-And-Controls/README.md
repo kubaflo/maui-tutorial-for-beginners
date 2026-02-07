@@ -209,6 +209,8 @@ Wrap content that may exceed the screen:
 
 > ⚠️ **Never** put a `CollectionView` inside a `ScrollView` — `CollectionView` handles its own scrolling.
 
+> 💡 **New in .NET 9/10:** `CollectionView` and `CarouselView` use new native handlers by default, bringing significantly better performance and stability on iOS and Mac Catalyst.
+
 ## LayoutOptions
 
 Control how an element is positioned within its parent:

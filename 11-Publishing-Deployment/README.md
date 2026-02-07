@@ -23,6 +23,19 @@ In your `.csproj` file:
 </PropertyGroup>
 ```
 
+### 2. Use Async Animation APIs (.NET 10)
+
+Older animation methods (`FadeTo`, `ScaleTo`, etc.) are deprecated in .NET 10. Use their `Async` variants:
+
+```csharp
+// ❌ Deprecated
+await myView.FadeTo(1.0, 500);
+
+// ✅ New
+await myView.FadeToAsync(1.0, 500);
+await myView.ScaleToAsync(1.2, 300);
+```
+
 ### 2. Set App Icons
 
 Place your app icon SVG in `Resources/AppIcon/`:
@@ -52,6 +65,18 @@ builder.Logging.AddDebug();
 #endif
 ```
 
+### 5. Consider Native AOT (iOS)
+
+.NET 10 officially supports **Native AOT** for iOS, reducing app size and improving startup time:
+
+```xml
+<PropertyGroup Condition="$(TargetFramework.Contains('-ios')) and '$(Configuration)' == 'Release'">
+    <PublishAot>true</PublishAot>
+</PropertyGroup>
+```
+
+> ⚠️ Native AOT requires all XAML and bindings to be compiled. Ensure `x:DataType` is set on all pages.
+
 ## Android — Google Play Store
 
 ### 1. Create a Keystore
@@ -78,7 +103,7 @@ keytool -genkeypair -v -keystore myapp.keystore \
 ### 3. Build the Release AAB
 
 ```bash
-dotnet publish -f net8.0-android -c Release
+dotnet publish -f net10.0-android -c Release
 ```
 
 The `.aab` file will be in `bin/Release/net8.0-android/publish/`.
@@ -106,7 +131,7 @@ In `Platforms/iOS/Info.plist`, ensure your bundle ID matches your Apple Develope
 ### 2. Build for Release
 
 ```bash
-dotnet publish -f net8.0-ios -c Release \
+dotnet publish -f net10.0-ios -c Release \
   -p:ArchiveOnBuild=true \
   -p:RuntimeIdentifier=ios-arm64 \
   -p:CodesignKey="Apple Distribution: Your Name (TEAMID)" \
@@ -125,7 +150,7 @@ dotnet publish -f net8.0-ios -c Release \
 ### 1. Create an MSIX Package
 
 ```bash
-dotnet publish -f net8.0-windows10.0.19041.0 -c Release
+dotnet publish -f net10.0-windows10.0.19041.0 -c Release
 ```
 
 ### 2. Configure Package Identity
@@ -150,7 +175,7 @@ In `Platforms/Windows/Package.appxmanifest`:
 ### Build for Mac Catalyst
 
 ```bash
-dotnet publish -f net8.0-maccatalyst -c Release
+dotnet publish -f net10.0-maccatalyst -c Release
 ```
 
 You can distribute via:
@@ -186,9 +211,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: '10.0.x'
       - run: dotnet workload install maui-android
-      - run: dotnet publish -f net8.0-android -c Release
+      - run: dotnet publish -f net10.0-android -c Release
       - uses: actions/upload-artifact@v4
         with:
           name: android-build
@@ -200,9 +225,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: '10.0.x'
       - run: dotnet workload install maui
-      - run: dotnet publish -f net8.0-ios -c Release -p:ArchiveOnBuild=true
+      - run: dotnet publish -f net10.0-ios -c Release -p:ArchiveOnBuild=true
 ```
 
 ## ✅ Congratulations!
@@ -214,10 +239,10 @@ You've completed the entire .NET MAUI tutorial! You now know how to:
 3. ✅ Architect apps with MVVM and data binding
 4. ✅ Navigate between pages
 5. ✅ Style and theme your app
-6. ✅ Write platform-specific code
+6. ✅ Write platform-specific code and use HybridWebView
 7. ✅ Connect to REST APIs
 8. ✅ Persist data locally
-9. ✅ Publish to app stores
+9. ✅ Publish to app stores with Native AOT support
 
 ## What's Next?
 

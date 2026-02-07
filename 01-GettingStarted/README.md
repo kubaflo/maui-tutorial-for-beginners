@@ -6,11 +6,13 @@
 - Create your first MAUI application
 - Run the app on an emulator or device
 
+> **Note:** This tutorial uses **.NET 10** (LTS) and .NET MAUI 10. If you're on .NET 9, the concepts are the same — just replace `net10.0` with `net9.0` in target frameworks.
+
 ## Step 1: Install Prerequisites
 
 ### Visual Studio 2022 (Recommended)
 
-1. Download [Visual Studio 2022](https://visualstudio.microsoft.com/) (Community edition is free).
+1. Download [Visual Studio 2022](https://visualstudio.microsoft.com/) (Community edition is free, v17.12+).
 2. During installation, select the **.NET Multi-platform App UI development** workload.
 3. Ensure the **Android SDK** is selected in the individual components tab.
 
@@ -108,7 +110,7 @@ public partial class MainPage : ContentPage
 ### Android
 
 ```bash
-dotnet build -t:Run -f net8.0-android
+dotnet build -t:Run -f net10.0-android
 ```
 
 Or press **F5** in Visual Studio with an Android emulator selected.
@@ -116,19 +118,19 @@ Or press **F5** in Visual Studio with an Android emulator selected.
 ### Windows
 
 ```bash
-dotnet build -t:Run -f net8.0-windows10.0.19041.0
+dotnet build -t:Run -f net10.0-windows10.0.19041.0
 ```
 
 ### iOS (macOS only)
 
 ```bash
-dotnet build -t:Run -f net8.0-ios
+dotnet build -t:Run -f net10.0-ios
 ```
 
 ### macOS (Mac Catalyst)
 
 ```bash
-dotnet build -t:Run -f net8.0-maccatalyst
+dotnet build -t:Run -f net10.0-maccatalyst
 ```
 
 ## ✅ Checkpoint
