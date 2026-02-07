@@ -274,4 +274,34 @@ The Community Toolkit supercharges your MAUI apps with battle-tested components.
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch14-q1" data-correct="c" data-explanation="The CommunityToolkit.Maui package provides converters, behaviors, views (like AvatarView, Expander), popups, and snackbars.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">Which package provides Popups, Snackbars, and AvatarView for MAUI?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch14-q1" value="a"> CommunityToolkit.Mvvm</label></li>
+    <li><label><input type="radio" name="ch14-q1" value="b"> Microsoft.Maui.Controls.Extras</label></li>
+    <li><label><input type="radio" name="ch14-q1" value="c"> CommunityToolkit.Maui</label></li>
+    <li><label><input type="radio" name="ch14-q1" value="d"> Xamarin.CommunityToolkit</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch14-q2" data-correct="b" data-explanation="You must call .UseMauiCommunityToolkit() on the MauiAppBuilder in MauiProgram.cs to register all toolkit services.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">How do you initialize the MAUI Community Toolkit?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch14-q2" value="a"> Add a <code>&lt;using&gt;</code> directive in App.xaml</label></li>
+    <li><label><input type="radio" name="ch14-q2" value="b"> Call <code>.UseMauiCommunityToolkit()</code> in MauiProgram.cs</label></li>
+    <li><label><input type="radio" name="ch14-q2" value="c"> Import the namespace in each XAML page</label></li>
+    <li><label><input type="radio" name="ch14-q2" value="d"> It initializes automatically when the NuGet is added</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+---
+
 **Previous:** [← 13 — Advanced Shell](../13-Shell-Advanced/README.md) · **Next:** [15 — Dependency Injection →](../15-Dependency-Injection/README.md)

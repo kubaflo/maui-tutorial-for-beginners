@@ -227,4 +227,21 @@ You now know how to use Shell for search, custom styling, navigation guards, and
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch13-q1" data-correct="b" data-explanation="Implement OnNavigating event handler or Shell.OnNavigating to intercept navigation and conditionally cancel it.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">How do you prevent navigation away from a page (e.g., unsaved changes)?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch13-q1" value="a"> Override <code>OnDisappearing()</code> and throw an exception</label></li>
+    <li><label><input type="radio" name="ch13-q1" value="b"> Handle the <code>Shell.Navigating</code> event and set <code>Cancel = true</code></label></li>
+    <li><label><input type="radio" name="ch13-q1" value="c"> Disable all navigation buttons programmatically</label></li>
+    <li><label><input type="radio" name="ch13-q1" value="d"> Set <code>IsEnabled = false</code> on the Shell</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+---
+
 **Previous:** [← 12 — Animations](../12-Animations/README.md) · **Next:** [14 — Community Toolkit →](../14-Community-Toolkit/README.md)

@@ -198,4 +198,34 @@ You can now add smooth, engaging animations to your MAUI apps. Next, we'll explo
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch12-q1" data-correct="a" data-explanation="In .NET 10, the animation methods are async and return Task, so you should use FadeToAsync, ScaleToAsync, etc.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">What is the modern way to fade a view in .NET MAUI 10?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch12-q1" value="a"> <code>await view.FadeTo(1, 500);</code></label></li>
+    <li><label><input type="radio" name="ch12-q1" value="b"> <code>view.Opacity = 1;</code> with a timer</label></li>
+    <li><label><input type="radio" name="ch12-q1" value="c"> <code>AnimationManager.Fade(view);</code></label></li>
+    <li><label><input type="radio" name="ch12-q1" value="d"> CSS transitions in a Blazor view</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch12-q2" data-correct="d" data-explanation="Task.WhenAll runs multiple animations simultaneously, while sequential awaits run them one after another.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">How do you run multiple animations at the same time?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch12-q2" value="a"> Chain them with <code>await</code> one after another</label></li>
+    <li><label><input type="radio" name="ch12-q2" value="b"> Use <code>Animation.WithConcurrency()</code></label></li>
+    <li><label><input type="radio" name="ch12-q2" value="c"> Wrap them in a <code>ParallelAnimation</code> class</label></li>
+    <li><label><input type="radio" name="ch12-q2" value="d"> Use <code>Task.WhenAll(anim1, anim2, ...)</code></label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+---
+
 **Previous:** [← 11 — Publishing & Deployment](../11-Publishing-Deployment/README.md) · **Next:** [13 — Advanced Shell →](../13-Shell-Advanced/README.md)

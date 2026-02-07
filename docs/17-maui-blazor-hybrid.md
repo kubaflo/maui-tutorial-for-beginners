@@ -229,4 +229,34 @@ You can now build hybrid apps that combine web technologies with native capabili
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch17-q1" data-correct="b" data-explanation="BlazorWebView is the control that hosts a Blazor application inside a native MAUI app, rendering Razor components.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">What control hosts Blazor/Razor components inside a MAUI app?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch17-q1" value="a"> WebView</label></li>
+    <li><label><input type="radio" name="ch17-q1" value="b"> BlazorWebView</label></li>
+    <li><label><input type="radio" name="ch17-q1" value="c"> HybridWebView</label></li>
+    <li><label><input type="radio" name="ch17-q1" value="d"> RazorView</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch17-q2" data-correct="d" data-explanation="Razor components in MAUI Blazor Hybrid can inject native MAUI services (like Geolocation, Camera) via DI and call them directly.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">How can Razor components access native device features in a Blazor Hybrid app?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch17-q2" value="a"> Through JavaScript interop only</label></li>
+    <li><label><input type="radio" name="ch17-q2" value="b"> They cannot — only XAML pages can access native APIs</label></li>
+    <li><label><input type="radio" name="ch17-q2" value="c"> Through platform channels like Flutter</label></li>
+    <li><label><input type="radio" name="ch17-q2" value="d"> By injecting native MAUI services via dependency injection</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+---
+
 **Previous:** [← 16 — Unit Testing](../16-Unit-Testing/README.md) · **Next:** [18 — Gestures & Touch →](../18-Gestures-And-Touch/README.md)

@@ -246,4 +246,34 @@ You now know multiple ways to write platform-specific code while keeping most of
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch08-q1" data-correct="b" data-explanation="Partial classes let you define platform-specific implementations in separate files under the Platforms/ folder while sharing the interface.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">What is the recommended approach for platform-specific functionality in .NET MAUI?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch08-q1" value="a"> Use #if directives everywhere</label></li>
+    <li><label><input type="radio" name="ch08-q1" value="b"> Partial classes with platform-specific implementations</label></li>
+    <li><label><input type="radio" name="ch08-q1" value="c"> Separate projects for each platform</label></li>
+    <li><label><input type="radio" name="ch08-q1" value="d"> Plugin packages for all platform features</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch08-q2" data-correct="a" data-explanation="DeviceInfo.Platform returns the current platform (Android, iOS, WinUI, macOS), useful for runtime platform checks.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">How do you check the current platform at runtime?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch08-q2" value="a"> <code>DeviceInfo.Platform == DevicePlatform.Android</code></label></li>
+    <li><label><input type="radio" name="ch08-q2" value="b"> <code>Environment.OSVersion.Platform</code></label></li>
+    <li><label><input type="radio" name="ch08-q2" value="c"> <code>#if ANDROID</code> conditional compilation</label></li>
+    <li><label><input type="radio" name="ch08-q2" value="d"> <code>Application.Current.Platform</code></label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+---
+
 **Previous:** [← 07 — Styling & Theming](../07-Styling-And-Theming/README.md) · **Next:** [09 — Working with APIs →](../09-Working-With-APIs/README.md)

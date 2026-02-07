@@ -244,4 +244,34 @@ You can now write unit tests for your ViewModels and services with mocking and a
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch16-q1" data-correct="a" data-explanation="Since ViewModels are plain C# classes with no MAUI dependencies (when using interfaces), they can be unit tested with standard xUnit.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">Why are ViewModels the easiest part of a MAUI app to unit test?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch16-q1" value="a"> They are plain C# classes with no direct UI framework dependencies</label></li>
+    <li><label><input type="radio" name="ch16-q1" value="b"> MAUI provides built-in test helpers for ViewModels</label></li>
+    <li><label><input type="radio" name="ch16-q1" value="c"> ViewModels run on a special test thread</label></li>
+    <li><label><input type="radio" name="ch16-q1" value="d"> xUnit has MAUI-specific assertions</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch16-q2" data-correct="c" data-explanation="Mocking frameworks like NSubstitute create fake implementations of interfaces, so you can test ViewModels in isolation.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">What is the purpose of NSubstitute (or Moq) in MAUI unit testing?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch16-q2" value="a"> To generate test data automatically</label></li>
+    <li><label><input type="radio" name="ch16-q2" value="b"> To run tests on physical devices</label></li>
+    <li><label><input type="radio" name="ch16-q2" value="c"> To create fake implementations of interfaces for isolated testing</label></li>
+    <li><label><input type="radio" name="ch16-q2" value="d"> To measure code coverage</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+---
+
 **Previous:** [← 15 — Dependency Injection](../15-Dependency-Injection/README.md) · **Next:** [17 — MAUI Blazor Hybrid →](../17-MAUI-Blazor-Hybrid/README.md)

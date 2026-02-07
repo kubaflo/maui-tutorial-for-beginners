@@ -248,4 +248,34 @@ You can now persist data using Preferences, SecureStorage, SQLite, and the file 
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch10-q1" data-correct="b" data-explanation="SecureStorage uses platform-specific secure storage (Keychain on iOS, Keystore on Android) to encrypt sensitive data.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">Where should you store sensitive data like API tokens in a MAUI app?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch10-q1" value="a"> <code>Preferences.Set()</code></label></li>
+    <li><label><input type="radio" name="ch10-q1" value="b"> <code>SecureStorage.SetAsync()</code></label></li>
+    <li><label><input type="radio" name="ch10-q1" value="c"> A local SQLite database</label></li>
+    <li><label><input type="radio" name="ch10-q1" value="d"> A plain text file in AppDataDirectory</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch10-q2" data-correct="c" data-explanation="SQLiteAsyncConnection provides async/await methods that don't block the UI thread, keeping your app responsive.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">Why should you use <code>SQLiteAsyncConnection</code> instead of <code>SQLiteConnection</code>?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch10-q2" value="a"> It supports more SQL features</label></li>
+    <li><label><input type="radio" name="ch10-q2" value="b"> It encrypts the database automatically</label></li>
+    <li><label><input type="radio" name="ch10-q2" value="c"> It runs database operations off the UI thread, preventing freezes</label></li>
+    <li><label><input type="radio" name="ch10-q2" value="d"> It's required for .NET 10</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+---
+
 **Previous:** [← 09 — Working with APIs](../09-Working-With-APIs/README.md) · **Next:** [11 — Publishing & Deployment →](../11-Publishing-Deployment/README.md)

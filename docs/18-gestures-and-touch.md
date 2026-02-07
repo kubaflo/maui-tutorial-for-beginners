@@ -242,4 +242,34 @@ You can now handle all types of user input — from simple taps to complex drag-
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch18-q1" data-correct="d" data-explanation="GestureRecognizers can be added to any visual element — Labels, Images, Frames, Grids, etc. — not just buttons.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">Can you add gesture recognizers to a Label or Image?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch18-q1" value="a"> No, only Button and ImageButton support gestures</label></li>
+    <li><label><input type="radio" name="ch18-q1" value="b"> Only on Android and iOS</label></li>
+    <li><label><input type="radio" name="ch18-q1" value="c"> Only TapGestureRecognizer, not others</label></li>
+    <li><label><input type="radio" name="ch18-q1" value="d"> Yes, any View can have GestureRecognizers added to it</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch18-q2" data-correct="b" data-explanation="SwipeView wraps content and provides swipe-to-reveal actions like delete, archive, etc.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">What control provides swipe-to-delete actions on list items?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch18-q2" value="a"> SwipeGestureRecognizer</label></li>
+    <li><label><input type="radio" name="ch18-q2" value="b"> SwipeView</label></li>
+    <li><label><input type="radio" name="ch18-q2" value="c"> CollectionView with SwipeMode</label></li>
+    <li><label><input type="radio" name="ch18-q2" value="d"> DragGestureRecognizer</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+---
+
 **Previous:** [← 17 — MAUI Blazor Hybrid](../17-MAUI-Blazor-Hybrid/README.md) · **Next:** [19 — Media & Camera →](../19-Media-And-Camera/README.md)

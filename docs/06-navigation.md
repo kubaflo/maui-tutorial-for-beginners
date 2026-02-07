@@ -230,4 +230,80 @@ You can now navigate between pages, pass data, and build tabbed or flyout naviga
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch06-q1" data-correct="b" data-explanation="Shell.Current.GoToAsync() is the modern way to navigate in MAUI Shell apps, supporting URI-based routes and query parameters.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">What is the recommended way to navigate between pages in a Shell-based MAUI app?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch06-q1" value="a"> <code>Navigation.PushAsync(new Page())</code></label></li>
+    <li><label><input type="radio" name="ch06-q1" value="b"> <code>Shell.Current.GoToAsync("route")</code></label></li>
+    <li><label><input type="radio" name="ch06-q1" value="c"> <code>Application.Current.MainPage = new Page()</code></label></li>
+    <li><label><input type="radio" name="ch06-q1" value="d"> <code>NavigationService.Navigate("route")</code></label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch06-q2" data-correct="d" data-explanation="[QueryProperty] maps URL query parameters to ViewModel properties, e.g. ?id=5 sets the TaskId property.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">How do you receive navigation parameters in a ViewModel?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch06-q2" value="a"> Override <code>OnNavigatedTo()</code> method</label></li>
+    <li><label><input type="radio" name="ch06-q2" value="b"> Use constructor injection</label></li>
+    <li><label><input type="radio" name="ch06-q2" value="c"> Read from <code>Application.Current.Properties</code></label></li>
+    <li><label><input type="radio" name="ch06-q2" value="d"> Use <code>[QueryProperty]</code> attribute or implement <code>IQueryAttributable</code></label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+## 🏋️ Exercise: Multi-Page App
+
+<div class="exercise-container">
+  <span class="exercise-badge">Intermediate</span>
+  <h3>💻 Build a Notes App Navigation</h3>
+  <p>Create a Shell-based app with:</p>
+  <ol>
+    <li>A <code>TabBar</code> with "Notes" and "About" tabs</li>
+    <li>A detail route registered for editing individual notes</li>
+    <li>Pass the note ID via query parameter when navigating to the detail page</li>
+  </ol>
+
+  <details class="solution">
+    <summary>💡 View Solution</summary>
+
+```xml
+<!-- AppShell.xaml -->
+<Shell FlyoutBehavior="Disabled">
+    <TabBar>
+        <ShellContent Title="Notes" Route="notes"
+                      ContentTemplate="{DataTemplate views:NotesPage}" />
+        <ShellContent Title="About" Route="about"
+                      ContentTemplate="{DataTemplate views:AboutPage}" />
+    </TabBar>
+</Shell>
+```
+
+```csharp
+// AppShell.xaml.cs
+Routing.RegisterRoute("notedetail", typeof(NoteDetailPage));
+
+// Navigate with parameter
+await Shell.Current.GoToAsync($"notedetail?id={note.Id}");
+
+// NoteDetailViewModel.cs
+[QueryProperty(nameof(NoteId), "id")]
+public partial class NoteDetailViewModel : ObservableObject
+{
+    [ObservableProperty]
+    private string _noteId = string.Empty;
+}
+```
+
+  </details>
+</div>
+
+---
+
 **Previous:** [← 05 — Data Binding & MVVM](../05-Data-Binding-MVVM/README.md) · **Next:** [07 — Styling & Theming →](../07-Styling-And-Theming/README.md)

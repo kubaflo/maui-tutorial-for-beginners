@@ -256,8 +256,38 @@ public async Task<bool> CheckAndRequestCameraPermission()
 
 ## ✅ Checkpoint
 
-You can now capture photos, pick files, play media, share content, and manage permissions. You've completed the entire tutorial!
+You can now capture photos, pick files, play media, share content, and manage permissions. Continue to the next chapters for advanced topics!
 
 ---
 
-**Previous:** [← 18 — Gestures & Touch](../18-Gestures-And-Touch/README.md) · **Back to:** [📚 Table of Contents](../README.md)
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch19-q1" data-correct="a" data-explanation="MediaPicker.CapturePhotoAsync() opens the camera, captures a photo, and returns a FileResult with the image path.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">Which API do you use to capture a photo from the camera?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch19-q1" value="a"> <code>MediaPicker.CapturePhotoAsync()</code></label></li>
+    <li><label><input type="radio" name="ch19-q1" value="b"> <code>Camera.TakePhotoAsync()</code></label></li>
+    <li><label><input type="radio" name="ch19-q1" value="c"> <code>FilePicker.PickAsync()</code> with camera filter</label></li>
+    <li><label><input type="radio" name="ch19-q1" value="d"> <code>DeviceCamera.Capture()</code></label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch19-q2" data-correct="c" data-explanation="You must check and request permissions before accessing camera, location, etc. Use Permissions.CheckStatusAsync and RequestAsync.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">What should you always do before accessing the camera or microphone?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch19-q2" value="a"> Nothing — MAUI handles permissions automatically</label></li>
+    <li><label><input type="radio" name="ch19-q2" value="b"> Add an entry to App.xaml</label></li>
+    <li><label><input type="radio" name="ch19-q2" value="c"> Check and request runtime permissions using <code>Permissions.RequestAsync</code></label></li>
+    <li><label><input type="radio" name="ch19-q2" value="d"> Install a permissions NuGet package</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+---
+
+**Previous:** [← 18 — Gestures & Touch](../18-Gestures-And-Touch/README.md) · **Next:** [20 — HybridWebView →](/docs/20-hybridwebview/) · **Back to:** [📚 Table of Contents](../README.md)

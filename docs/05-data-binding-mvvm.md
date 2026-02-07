@@ -281,4 +281,113 @@ You now understand data binding and MVVM — the core architectural pattern for 
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch05-q1" data-correct="b" data-explanation="TwoWay binding keeps both the UI and the source property in sync — when either changes, the other updates automatically.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">Which binding mode should you use for an Entry that both displays and updates a property?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch05-q1" value="a"> OneWay</label></li>
+    <li><label><input type="radio" name="ch05-q1" value="b"> TwoWay</label></li>
+    <li><label><input type="radio" name="ch05-q1" value="c"> OneTime</label></li>
+    <li><label><input type="radio" name="ch05-q1" value="d"> OneWayToSource</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch05-q2" data-correct="c" data-explanation="[ObservableProperty] auto-generates the public property with INotifyPropertyChanged support. [RelayCommand] generates an ICommand.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">What does <code>[ObservableProperty]</code> from CommunityToolkit.Mvvm do?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch05-q2" value="a"> Registers the property with dependency injection</label></li>
+    <li><label><input type="radio" name="ch05-q2" value="b"> Makes the property observable in the database</label></li>
+    <li><label><input type="radio" name="ch05-q2" value="c"> Generates a public property with INotifyPropertyChanged notification</label></li>
+    <li><label><input type="radio" name="ch05-q2" value="d"> Creates a two-way binding automatically in XAML</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch05-q3" data-correct="a" data-explanation="ObservableCollection notifies the UI when items are added/removed. A regular List does not trigger UI updates.">
+  <h3>Question 3</h3>
+  <p class="quiz-question">Why use <code>ObservableCollection&lt;T&gt;</code> instead of <code>List&lt;T&gt;</code> for bound collections?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch05-q3" value="a"> ObservableCollection raises change notifications when items are added or removed</label></li>
+    <li><label><input type="radio" name="ch05-q3" value="b"> List is not supported in MAUI data binding</label></li>
+    <li><label><input type="radio" name="ch05-q3" value="c"> ObservableCollection is faster for large datasets</label></li>
+    <li><label><input type="radio" name="ch05-q3" value="d"> List cannot be used with CollectionView</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+## 🏋️ Exercise: Build a Contact List
+
+<div class="exercise-container">
+  <span class="exercise-badge">Intermediate</span>
+  <h3>💻 Try It Yourself</h3>
+  <p>Build a contact list using MVVM with these requirements:</p>
+  <ol>
+    <li>A <code>Contact</code> model with Name, Phone, and Email</li>
+    <li>A ViewModel using <code>[ObservableProperty]</code> and <code>[RelayCommand]</code></li>
+    <li>An "Add Contact" form with TwoWay bindings</li>
+    <li>A CollectionView displaying all contacts</li>
+    <li>A "Delete" swipe action on each contact</li>
+  </ol>
+
+  <details class="solution">
+    <summary>💡 View Solution</summary>
+
+```csharp
+// Models/Contact.cs
+public class Contact
+{
+    public string Name { get; set; } = string.Empty;
+    public string Phone { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
+}
+
+// ViewModels/ContactViewModel.cs
+public partial class ContactViewModel : ObservableObject
+{
+    [ObservableProperty]
+    private string _name = string.Empty;
+
+    [ObservableProperty]
+    private string _phone = string.Empty;
+
+    [ObservableProperty]
+    private string _email = string.Empty;
+
+    public ObservableCollection<Contact> Contacts { get; } = new();
+
+    [RelayCommand]
+    private void AddContact()
+    {
+        if (string.IsNullOrWhiteSpace(Name)) return;
+
+        Contacts.Add(new Contact
+        {
+            Name = Name,
+            Phone = Phone,
+            Email = Email
+        });
+
+        Name = Phone = Email = string.Empty;
+    }
+
+    [RelayCommand]
+    private void DeleteContact(Contact contact)
+    {
+        Contacts.Remove(contact);
+    }
+}
+```
+
+  </details>
+</div>
+
+---
+
 **Previous:** [← 04 — Layouts & Controls](../04-Layouts-And-Controls/README.md) · **Next:** [06 — Navigation →](../06-Navigation/README.md)

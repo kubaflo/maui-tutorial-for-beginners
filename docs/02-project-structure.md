@@ -150,4 +150,34 @@ You should now understand what each file and folder does in a MAUI project. This
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch02-q1" data-correct="c" data-explanation="MauiProgram.cs contains the CreateMauiApp() method which configures services, fonts, and the app builder — it's the entry point.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">Which file is the entry point that configures the MAUI app builder and services?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch02-q1" value="a"> App.xaml.cs</label></li>
+    <li><label><input type="radio" name="ch02-q1" value="b"> MainPage.xaml.cs</label></li>
+    <li><label><input type="radio" name="ch02-q1" value="c"> MauiProgram.cs</label></li>
+    <li><label><input type="radio" name="ch02-q1" value="d"> AppShell.xaml.cs</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch02-q2" data-correct="a" data-explanation="MAUI uses a single project with platform-specific code in the Platforms/ folder, unlike Xamarin which used separate projects per platform.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">How does .NET MAUI organize platform-specific code?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch02-q2" value="a"> In a <code>Platforms/</code> folder within a single shared project</label></li>
+    <li><label><input type="radio" name="ch02-q2" value="b"> In separate projects for each platform</label></li>
+    <li><label><input type="radio" name="ch02-q2" value="c"> Using #if directives only</label></li>
+    <li><label><input type="radio" name="ch02-q2" value="d"> Through plugin packages</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+---
+
 **Previous:** [← 01 — Getting Started](../01-GettingStarted/README.md) · **Next:** [03 — XAML Basics →](../03-XAML-Basics/README.md)

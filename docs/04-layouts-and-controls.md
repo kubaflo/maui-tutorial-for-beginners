@@ -240,4 +240,73 @@ You can now build complete user interfaces with layouts and controls. Next, we'l
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch04-q1" data-correct="b" data-explanation="Grid is the most flexible layout, supporting rows, columns, spanning, and precise positioning — ideal for complex UIs.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">Which layout is best for creating complex, multi-row/column interfaces?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch04-q1" value="a"> VerticalStackLayout</label></li>
+    <li><label><input type="radio" name="ch04-q1" value="b"> Grid</label></li>
+    <li><label><input type="radio" name="ch04-q1" value="c"> FlexLayout</label></li>
+    <li><label><input type="radio" name="ch04-q1" value="d"> AbsoluteLayout</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch04-q2" data-correct="c" data-explanation="CollectionView is the modern, virtualized list control in MAUI. ListView is older and less performant. Always prefer CollectionView.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">What is the recommended control for displaying scrollable lists of data in MAUI?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch04-q2" value="a"> ListView</label></li>
+    <li><label><input type="radio" name="ch04-q2" value="b"> ScrollView with StackLayout</label></li>
+    <li><label><input type="radio" name="ch04-q2" value="c"> CollectionView</label></li>
+    <li><label><input type="radio" name="ch04-q2" value="d"> TableView</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+## 🏋️ Exercise: Login Form
+
+<div class="exercise-container">
+  <span class="exercise-badge">Hands-On</span>
+  <h3>💻 Build a Login Page</h3>
+  <p>Create a responsive login page using:</p>
+  <ol>
+    <li>A <code>Grid</code> layout with centered content</li>
+    <li>An app logo (Image), username Entry, password Entry, and Login Button</li>
+    <li>A "Forgot Password?" label below the button</li>
+    <li>Proper spacing and padding for a clean look</li>
+  </ol>
+
+  <details class="solution">
+    <summary>💡 View Solution</summary>
+
+```xml
+<ContentPage>
+    <Grid RowDefinitions="*,Auto,Auto,Auto,Auto,Auto,*"
+          Padding="30">
+        <Image Grid.Row="1" Source="logo.png"
+               HeightRequest="100" Aspect="AspectFit" />
+        <Entry Grid.Row="2" Placeholder="Username"
+               Margin="0,20,0,0" />
+        <Entry Grid.Row="3" Placeholder="Password"
+               IsPassword="True" Margin="0,10,0,0" />
+        <Button Grid.Row="4" Text="Log In"
+                BackgroundColor="#7c3aed" TextColor="White"
+                CornerRadius="8" Margin="0,20,0,0" />
+        <Label Grid.Row="5" Text="Forgot Password?"
+               HorizontalOptions="Center" Margin="0,10,0,0"
+               TextColor="#7c3aed" />
+    </Grid>
+</ContentPage>
+```
+
+  </details>
+</div>
+
+---
+
 **Previous:** [← 03 — XAML Basics](../03-XAML-Basics/README.md) · **Next:** [05 — Data Binding & MVVM →](../05-Data-Binding-MVVM/README.md)

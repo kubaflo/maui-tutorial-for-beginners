@@ -195,4 +195,87 @@ You now know how to write XAML, use markup extensions, define resources, compile
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch03-q1" data-correct="a" data-explanation="x:DataType enables compiled bindings, which are checked at build time for type safety and better performance.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">What does the <code>x:DataType</code> attribute enable?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch03-q1" value="a"> Compiled bindings with type checking at build time</label></li>
+    <li><label><input type="radio" name="ch03-q1" value="b"> Automatic data validation on input controls</label></li>
+    <li><label><input type="radio" name="ch03-q1" value="c"> Type conversion for binding values</label></li>
+    <li><label><input type="radio" name="ch03-q1" value="d"> Database schema generation from XAML</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch03-q2" data-correct="d" data-explanation="StaticResource is resolved once at load time, while DynamicResource watches for changes and updates automatically — useful for theming.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">What is the difference between <code>StaticResource</code> and <code>DynamicResource</code>?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch03-q2" value="a"> StaticResource is for strings, DynamicResource is for objects</label></li>
+    <li><label><input type="radio" name="ch03-q2" value="b"> StaticResource only works in code-behind, DynamicResource only in XAML</label></li>
+    <li><label><input type="radio" name="ch03-q2" value="c"> There is no difference — they are interchangeable</label></li>
+    <li><label><input type="radio" name="ch03-q2" value="d"> StaticResource is resolved once at load time; DynamicResource updates when the resource changes</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch03-q3" data-correct="b" data-explanation="XAML namespaces map CLR namespaces to XML prefixes — xmlns:vm='clr-namespace:...' makes your ViewModels available in XAML.">
+  <h3>Question 3</h3>
+  <p class="quiz-question">What is the purpose of <code>xmlns:vm="clr-namespace:MyApp.ViewModels"</code>?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch03-q3" value="a"> It creates a virtual machine for the ViewModel</label></li>
+    <li><label><input type="radio" name="ch03-q3" value="b"> It maps a CLR namespace to an XML prefix for use in XAML</label></li>
+    <li><label><input type="radio" name="ch03-q3" value="c"> It imports JavaScript modules into the page</label></li>
+    <li><label><input type="radio" name="ch03-q3" value="d"> It registers the namespace for dependency injection</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+## 🏋️ Exercise: Resource Dictionary
+
+<div class="exercise-container">
+  <span class="exercise-badge">Hands-On</span>
+  <h3>💻 Build a Reusable Style</h3>
+  <p>Create a ResourceDictionary with:</p>
+  <ol>
+    <li>A color palette (Primary, Secondary, Background, Text)</li>
+    <li>A reusable <code>Style</code> for all buttons in your app</li>
+    <li>A string resource for your app's name</li>
+  </ol>
+
+  <details class="solution">
+    <summary>💡 View Solution</summary>
+
+```xml
+<ResourceDictionary>
+    <!-- Color Palette -->
+    <Color x:Key="Primary">#7c3aed</Color>
+    <Color x:Key="Secondary">#22c55e</Color>
+    <Color x:Key="Background">#1a1a2e</Color>
+    <Color x:Key="TextPrimary">#e0e0e0</Color>
+
+    <!-- App Name -->
+    <x:String x:Key="AppName">My MAUI App</x:String>
+
+    <!-- Button Style -->
+    <Style TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="Padding" Value="12,8" />
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
+</ResourceDictionary>
+```
+
+  </details>
+</div>
+
+---
+
 **Previous:** [← 02 — Project Structure](../02-ProjectStructure/README.md) · **Next:** [04 — Layouts & Controls →](../04-Layouts-And-Controls/README.md)

@@ -279,4 +279,91 @@ You can now fetch and display data from REST APIs with proper loading and error 
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch09-q1" data-correct="d" data-explanation="HttpClient should be registered as a Singleton (or use IHttpClientFactory) because creating new instances per request can exhaust socket connections.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">What is the recommended lifetime for HttpClient in a MAUI app?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch09-q1" value="a"> Transient — new instance per request</label></li>
+    <li><label><input type="radio" name="ch09-q1" value="b"> Scoped — per navigation scope</label></li>
+    <li><label><input type="radio" name="ch09-q1" value="c"> Create with <code>new HttpClient()</code> each time</label></li>
+    <li><label><input type="radio" name="ch09-q1" value="d"> Singleton or via IHttpClientFactory</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch09-q2" data-correct="a" data-explanation="GetFromJsonAsync deserializes the JSON response directly into a typed object, combining the HTTP call and deserialization.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">Which method simplifies fetching and deserializing JSON from an API?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch09-q2" value="a"> <code>httpClient.GetFromJsonAsync&lt;T&gt;()</code></label></li>
+    <li><label><input type="radio" name="ch09-q2" value="b"> <code>httpClient.GetStringAsync()</code> then manual parsing</label></li>
+    <li><label><input type="radio" name="ch09-q2" value="c"> <code>httpClient.DownloadJson&lt;T&gt;()</code></label></li>
+    <li><label><input type="radio" name="ch09-q2" value="d"> <code>JsonSerializer.DeserializeStream()</code></label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+## 🏋️ Exercise: Weather App
+
+<div class="exercise-container">
+  <span class="exercise-badge">Intermediate</span>
+  <h3>💻 Build a Weather Display</h3>
+  <p>Create a page that fetches weather data from a public API:</p>
+  <ol>
+    <li>Use <code>IHttpClientFactory</code> registered in DI</li>
+    <li>Display a loading indicator with <code>ActivityIndicator</code></li>
+    <li>Show temperature, condition, and an icon</li>
+    <li>Handle errors gracefully with a retry button</li>
+  </ol>
+
+  <details class="solution">
+    <summary>💡 View Solution Skeleton</summary>
+
+```csharp
+public partial class WeatherViewModel : ObservableObject
+{
+    private readonly HttpClient _http;
+
+    [ObservableProperty] private bool _isLoading;
+    [ObservableProperty] private string _temperature = "--°";
+    [ObservableProperty] private string _condition = "Loading...";
+    [ObservableProperty] private string _errorMessage = string.Empty;
+
+    public WeatherViewModel(IHttpClientFactory httpFactory)
+    {
+        _http = httpFactory.CreateClient("weather");
+    }
+
+    [RelayCommand]
+    private async Task LoadWeatherAsync()
+    {
+        try
+        {
+            IsLoading = true;
+            ErrorMessage = string.Empty;
+            var data = await _http.GetFromJsonAsync<WeatherResponse>("current.json?q=London");
+            Temperature = $"{data?.Current.TempC}°C";
+            Condition = data?.Current.Condition.Text ?? "Unknown";
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = $"Failed to load: {ex.Message}";
+        }
+        finally
+        {
+            IsLoading = false;
+        }
+    }
+}
+```
+
+  </details>
+</div>
+
+---
+
 **Previous:** [← 08 — Platform-Specific Code](../08-Platform-Specific-Code/README.md) · **Next:** [10 — Local Storage →](../10-Local-Storage/README.md)

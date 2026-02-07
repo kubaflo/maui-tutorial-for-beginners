@@ -260,4 +260,21 @@ You've completed the entire .NET MAUI tutorial! You now know how to:
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch11-q1" data-correct="c" data-explanation="The .csproj file contains ApplicationTitle, ApplicationId, ApplicationVersion, and ApplicationDisplayVersion settings.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">Where do you configure the app version number and display name for publishing?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch11-q1" value="a"> AndroidManifest.xml</label></li>
+    <li><label><input type="radio" name="ch11-q1" value="b"> Info.plist</label></li>
+    <li><label><input type="radio" name="ch11-q1" value="c"> The .csproj file</label></li>
+    <li><label><input type="radio" name="ch11-q1" value="d"> App.xaml</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+---
+
 **Previous:** [← 10 — Local Storage](../10-Local-Storage/README.md) · **Next:** [12 — Animations →](../12-Animations/README.md)

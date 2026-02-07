@@ -217,4 +217,34 @@ Your apps can now look polished with consistent styles, custom fonts, safe area 
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch07-q1" data-correct="a" data-explanation="AppThemeBinding automatically switches values based on the system's light/dark mode setting, e.g. TextColor='{AppThemeBinding Light=Black, Dark=White}'.">
+  <h3>Question 1</h3>
+  <p class="quiz-question">How do you make a property respond to light/dark mode in XAML?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch07-q1" value="a"> <code>AppThemeBinding</code> markup extension</label></li>
+    <li><label><input type="radio" name="ch07-q1" value="b"> <code>DynamicResource</code> with manual switching</label></li>
+    <li><label><input type="radio" name="ch07-q1" value="c"> CSS media queries</label></li>
+    <li><label><input type="radio" name="ch07-q1" value="d"> Platform-specific conditional compilation</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch07-q2" data-correct="b" data-explanation="An implicit style (no x:Key) applies automatically to all controls of that TargetType. An explicit style (with x:Key) must be referenced manually.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">What makes a Style "implicit" vs "explicit" in MAUI?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch07-q2" value="a"> Implicit styles use StaticResource, explicit use DynamicResource</label></li>
+    <li><label><input type="radio" name="ch07-q2" value="b"> Implicit styles have no x:Key and apply to all matching controls automatically</label></li>
+    <li><label><input type="radio" name="ch07-q2" value="c"> Implicit styles are defined in code, explicit in XAML</label></li>
+    <li><label><input type="radio" name="ch07-q2" value="d"> There is no difference in MAUI</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+---
+
 **Previous:** [← 06 — Navigation](../06-Navigation/README.md) · **Next:** [08 — Platform-Specific Code →](../08-Platform-Specific-Code/README.md)

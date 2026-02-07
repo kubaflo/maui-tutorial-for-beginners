@@ -13,7 +13,8 @@ A comprehensive, step-by-step guide to building cross-platform mobile and deskto
 {: .fs-6 .fw-300 }
 
 [Get Started]({% link docs/01-getting-started.md %}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View on GitHub](https://github.com/kubaflo/maui-tutorial-for-beginners){: .btn .fs-5 .mb-4 .mb-md-0 }
+[View on GitHub](https://github.com/kubaflo/maui-tutorial-for-beginners){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[📊 Track Progress]({% link docs/progress.md %}){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
@@ -25,7 +26,7 @@ A comprehensive, step-by-step guide to building cross-platform mobile and deskto
 
 ## What You'll Learn
 
-This tutorial takes you from zero to publishing across **19 lessons**:
+This tutorial takes you from zero to publishing across **22 lessons** — with interactive quizzes and hands-on exercises:
 
 | # | Topic | Description |
 |:--|:------|:------------|
@@ -48,12 +49,24 @@ This tutorial takes you from zero to publishing across **19 lessons**:
 | 17 | [Blazor Hybrid]({% link docs/17-maui-blazor-hybrid.md %}) | Razor components in MAUI |
 | 18 | [Gestures & Touch]({% link docs/18-gestures-and-touch.md %}) | Tap, swipe, pan, drag-and-drop |
 | 19 | [Media & Camera]({% link docs/19-media-and-camera.md %}) | Photos, video, file picking |
+| 20 | [HybridWebView]({% link docs/20-hybridwebview.md %}) | Embed web content, JS interop |
+| 21 | [Native AOT & Performance]({% link docs/21-native-aot-performance.md %}) | AOT compilation, XAML source gen |
+| 22 | [Real-World Project]({% link docs/22-real-world-project.md %}) | Build a complete task manager app |
 
 ## Prerequisites
 
 - Basic knowledge of **C#**
 - [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) (LTS)
 - [Visual Studio 2022](https://visualstudio.microsoft.com/) (v17.12+) with the .NET MAUI workload
+
+## 🎮 Interactive Learning
+
+Every chapter includes:
+
+- **📝 Quizzes** — Test your knowledge with multiple-choice questions (answers saved in your browser)
+- **🏋️ Hands-on exercises** — Build real features with expandable solutions
+- **📊 Progress tracking** — [Track your progress](/progress/) across all 22 chapters
+- **💡 Tips & best practices** — Modern .NET 10 patterns and AOT-ready code
 
 ## Quick Start
 

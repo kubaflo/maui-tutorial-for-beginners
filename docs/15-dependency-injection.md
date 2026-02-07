@@ -214,4 +214,81 @@ You now understand how to structure your MAUI apps with dependency injection for
 
 ---
 
+## 📝 Quiz
+
+<div class="quiz-container" data-quiz-id="ch15-q1" data-correct="c" data-explanation="Singleton: one instance for the app's lifetime. Transient: new instance every time. Scoped: one instance per scope (less common in MAUI).">
+  <h3>Question 1</h3>
+  <p class="quiz-question">What is the difference between Singleton and Transient service lifetimes?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch15-q1" value="a"> Singleton is faster, Transient is thread-safe</label></li>
+    <li><label><input type="radio" name="ch15-q1" value="b"> Singleton is for interfaces, Transient is for concrete types</label></li>
+    <li><label><input type="radio" name="ch15-q1" value="c"> Singleton creates one shared instance; Transient creates a new instance each time it's requested</label></li>
+    <li><label><input type="radio" name="ch15-q1" value="d"> There is no practical difference in MAUI</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container" data-quiz-id="ch15-q2" data-correct="a" data-explanation="Extension methods like RegisterServices() and RegisterViewModels() keep MauiProgram.cs clean and organized.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">What is the recommended pattern for organizing DI registration in a large MAUI app?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch15-q2" value="a"> Extension methods on MauiAppBuilder (e.g., RegisterServices, RegisterViewModels)</label></li>
+    <li><label><input type="radio" name="ch15-q2" value="b"> Register everything in App.xaml.cs</label></li>
+    <li><label><input type="radio" name="ch15-q2" value="c"> Use a third-party DI container like Autofac</label></li>
+    <li><label><input type="radio" name="ch15-q2" value="d"> Create separate MauiProgram files for each module</label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+## 🏋️ Exercise: Service Architecture
+
+<div class="exercise-container">
+  <span class="exercise-badge">Intermediate</span>
+  <h3>💻 Design a Service Layer</h3>
+  <p>Design the DI registration for a weather app with:</p>
+  <ol>
+    <li>An <code>IWeatherService</code> interface and implementation</li>
+    <li>A <code>ILocationService</code> that wraps MAUI's Geolocation API</li>
+    <li>A ViewModel that depends on both services</li>
+    <li>Correct lifetimes for each registration</li>
+  </ol>
+
+  <details class="solution">
+    <summary>💡 View Solution</summary>
+
+```csharp
+public static MauiAppBuilder RegisterServices(this MauiAppBuilder builder)
+{
+    // HttpClient — Singleton to reuse connections
+    builder.Services.AddSingleton<HttpClient>();
+
+    // Weather API — Singleton (stateless, reusable)
+    builder.Services.AddSingleton<IWeatherService, WeatherService>();
+
+    // Location — Singleton (wraps platform API)
+    builder.Services.AddSingleton<ILocationService, LocationService>();
+
+    return builder;
+}
+
+public static MauiAppBuilder RegisterViewModels(this MauiAppBuilder builder)
+{
+    builder.Services.AddTransient<WeatherViewModel>();
+    return builder;
+}
+
+public static MauiAppBuilder RegisterViews(this MauiAppBuilder builder)
+{
+    builder.Services.AddTransient<WeatherPage>();
+    return builder;
+}
+```
+
+  </details>
+</div>
+
+---
+
 **Previous:** [← 14 — Community Toolkit](../14-Community-Toolkit/README.md) · **Next:** [16 — Unit Testing →](../16-Unit-Testing/README.md)
