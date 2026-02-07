@@ -367,6 +367,11 @@ permalink: /
     <div class="resource-card-title">Progress Tracker</div>
     <div class="resource-card-desc">Track your quiz scores</div>
   </a>
+  <a href="{% link docs/playground.md %}" class="resource-card fade-in-up">
+    <span class="resource-card-icon">🎮</span>
+    <div class="resource-card-title">XAML Playground</div>
+    <div class="resource-card-desc">Live XAML layout editor</div>
+  </a>
 </div>
 
 <div style="text-align:center; margin-top:3rem; padding:1.5rem; color: var(--text-muted); font-size: 0.85rem;">
