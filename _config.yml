@@ -19,6 +19,9 @@ nav_sort: order
 heading_anchors: true
 
 search_enabled: true
+search.button: true
+search.rel_url: true
+search.previews: 3
 
 back_to_top: true
 back_to_top_text: "Back to top"
