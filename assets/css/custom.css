@@ -1832,3 +1832,55 @@ details.exercise summary:hover {
 .chapter-completion.completed .completion-text strong {
   color: var(--accent-green);
 }
+
+/* --- Print Stylesheet --- */
+@media print {
+  .side-bar,
+  .search,
+  #reading-progress,
+  #scroll-top-btn,
+  .chapter-toc,
+  .xp-toast,
+  .level-badge,
+  .quiz-btn,
+  .chapter-completion .complete-chapter-btn,
+  .copy-code-btn,
+  .hero-buttons,
+  .stats-bar,
+  .path-cards,
+  .resource-grid,
+  .showcase-grid {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: #1a1a2e !important;
+  }
+
+  .main-content {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 1rem !important;
+  }
+
+  .main-content h1, .main-content h2, .main-content h3 {
+    color: #1a1a2e !important;
+    break-after: avoid;
+  }
+
+  pre, code {
+    background: #f5f5f5 !important;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+  }
+
+  .quiz-container, .exercise-container, .key-takeaways, .callout {
+    break-inside: avoid;
+    border: 1px solid #ccc !important;
+    background: #fafafa !important;
+  }
+
+  a { color: #333 !important; text-decoration: underline !important; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #666; }
+}
