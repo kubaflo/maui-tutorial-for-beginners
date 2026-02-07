@@ -41,6 +41,8 @@ A comprehensive, step-by-step guide to building cross-platform mobile and deskto
 | 20 | [HybridWebView](docs/20-hybridwebview.md) | Embed web content, JS interop |
 | 21 | [Native AOT & Performance](docs/21-native-aot-performance.md) | AOT compilation, XAML source gen, optimization |
 | 22 | [Real-World Project](docs/22-real-world-project.md) | Build a complete task manager app |
+| 23 | [Maps & Location](docs/23-maps-location.md) | GPS, geocoding, map pins, navigation |
+| 24 | [Accessibility](docs/24-accessibility.md) | Screen readers, semantic properties, WCAG |
 
 ## 🛠️ What Is .NET MAUI?
 

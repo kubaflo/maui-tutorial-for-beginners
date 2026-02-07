@@ -79,7 +79,9 @@ permalink: /progress/
     { id: 'ch19', name: 'Media & Camera', num: '19', quizzes: 2 },
     { id: 'ch20', name: 'HybridWebView', num: '20', quizzes: 2 },
     { id: 'ch21', name: 'Native AOT & Performance', num: '21', quizzes: 3 },
-    { id: 'ch22', name: 'Real-World Project', num: '22', quizzes: 3 }
+    { id: 'ch22', name: 'Real-World Project', num: '22', quizzes: 3 },
+    { id: 'ch23', name: 'Maps & Location', num: '23', quizzes: 3 },
+    { id: 'ch24', name: 'Accessibility', num: '24', quizzes: 2 }
   ];
 
   var progress = {};
