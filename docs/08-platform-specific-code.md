@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/08-platform-specific-code/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/platform.svg" alt="Chapter banner" class="chapter-banner">
+
 # Platform-Specific Code
 
 ## What You'll Learn

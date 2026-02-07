@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#1a1040"/><stop offset="100%" style="stop-color:#0f0c29"/></linearGradient><linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#22d3ee"/><stop offset="100%" style="stop-color:#a855f7"/></linearGradient></defs>
+  <rect width="800" height="200" rx="16" fill="url(#bg)"/><rect x="0" y="196" width="800" height="4" fill="url(#accent)"/>
+  <g transform="translate(50,30)">
+    <rect x="0" y="10" width="65" height="55" rx="8" fill="rgba(34,211,238,0.15)" stroke="#22d3ee" stroke-width="1"/>
+    <text x="32" y="32" fill="#22d3ee" font-family="Inter" font-size="20" text-anchor="middle">🧰</text>
+    <text x="32" y="52" fill="#22d3ee" font-family="Inter" font-size="9" text-anchor="middle">Toolkit</text>
+    <rect x="80" y="10" width="65" height="55" rx="8" fill="rgba(168,85,247,0.15)" stroke="#a855f7" stroke-width="1"/>
+    <text x="112" y="32" fill="#a855f7" font-family="Inter" font-size="20" text-anchor="middle">📱</text>
+    <text x="112" y="52" fill="#a855f7" font-family="Inter" font-size="9" text-anchor="middle">Popup</text>
+    <rect x="160" y="10" width="65" height="55" rx="8" fill="rgba(52,211,153,0.15)" stroke="#34d399" stroke-width="1"/>
+    <text x="192" y="32" fill="#34d399" font-family="Inter" font-size="20" text-anchor="middle">✨</text>
+    <text x="192" y="52" fill="#34d399" font-family="Inter" font-size="9" text-anchor="middle">Behaviors</text>
+    <rect x="240" y="10" width="65" height="55" rx="8" fill="rgba(251,146,60,0.15)" stroke="#fb923c" stroke-width="1"/>
+    <text x="272" y="32" fill="#fb923c" font-family="Inter" font-size="20" text-anchor="middle">⚡</text>
+    <text x="272" y="52" fill="#fb923c" font-family="Inter" font-size="9" text-anchor="middle">MVVM</text>
+    <text x="0" y="95" fill="#a0a0b8" font-family="monospace" font-size="11">[ObservableProperty]</text>
+    <text x="0" y="115" fill="#22d3ee" font-family="monospace" font-size="11">[RelayCommand]</text>
+    <text x="0" y="135" fill="#a855f7" font-family="monospace" font-size="11">StatusBarBehavior</text>
+  </g>
+  <text x="500" y="80" fill="#f0f0f5" font-family="Inter, sans-serif" font-size="28" font-weight="700" text-anchor="middle">Chapter 14</text>
+  <text x="500" y="110" fill="#a0a0b8" font-family="Inter, sans-serif" font-size="16" text-anchor="middle">Community Toolkit</text>
+  <text x="500" y="140" fill="#6b6b80" font-family="Inter, sans-serif" font-size="13" text-anchor="middle">⏱ ~35 min · Advanced</text>
+</svg>

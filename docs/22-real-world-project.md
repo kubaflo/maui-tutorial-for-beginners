@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/22-real-world-project/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/project.svg" alt="Chapter banner" class="chapter-banner">
+
 # Capstone Project: TaskFlow — A Full-Featured Task Manager
 
 ## What You'll Build

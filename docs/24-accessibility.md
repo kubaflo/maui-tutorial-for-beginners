@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/24-accessibility/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/accessibility.svg" alt="Chapter banner" class="chapter-banner">
+
 # Chapter 24: Building Accessible MAUI Apps
 
 Make your apps usable by everyone — including users with screen readers, motor impairments, and low vision.

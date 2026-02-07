@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/12-animations/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/animations.svg" alt="Chapter banner" class="chapter-banner">
+
 # Animations
 
 ## What You'll Learn

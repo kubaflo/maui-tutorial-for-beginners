@@ -1052,6 +1052,115 @@ details.exercise summary:hover {
   color: white;
 }
 
+/* --- Chapter Banner --- */
+.chapter-banner {
+  width: 100%;
+  max-width: 100%;
+  border-radius: var(--radius-lg);
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border-subtle);
+}
+
+/* --- Copy Code Button --- */
+.copy-code-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(168, 85, 247, 0.2);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  color: var(--text-secondary);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  opacity: 0;
+  transition: all var(--transition-fast);
+  z-index: 10;
+}
+
+.main-content pre:hover .copy-code-btn {
+  opacity: 1;
+}
+
+.copy-code-btn:hover {
+  background: rgba(168, 85, 247, 0.4);
+  color: white;
+}
+
+.copy-code-btn.copied {
+  background: rgba(52, 211, 153, 0.3);
+  border-color: rgba(52, 211, 153, 0.5);
+  color: #34d399;
+}
+
+/* --- Chapter Meta Info --- */
+.chapter-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.chapter-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.chapter-meta-item img {
+  width: 18px;
+  height: 18px;
+}
+
+/* --- Prev/Next Navigation --- */
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.chapter-nav a {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  text-decoration: none !important;
+  transition: all var(--transition-fast);
+  max-width: 45%;
+}
+
+.chapter-nav a:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent-purple);
+  box-shadow: var(--glow-purple);
+}
+
+.chapter-nav .nav-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.chapter-nav .nav-title {
+  font-size: 0.95rem;
+  color: var(--accent-purple);
+  font-weight: 600;
+}
+
 /* --- Animations --- */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }

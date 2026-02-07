@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/09-working-with-apis/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/apis.svg" alt="Chapter banner" class="chapter-banner">
+
 # Working with APIs
 
 ## What You'll Learn

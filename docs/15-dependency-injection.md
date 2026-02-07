@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/15-dependency-injection/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/di.svg" alt="Chapter banner" class="chapter-banner">
+
 # Dependency Injection
 
 ## What You'll Learn

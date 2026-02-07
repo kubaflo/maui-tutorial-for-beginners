@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/03-xaml-basics/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/xaml.svg" alt="Chapter banner" class="chapter-banner">
+
 # XAML Basics
 
 ## What You'll Learn

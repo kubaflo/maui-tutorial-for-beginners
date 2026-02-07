@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/04-layouts-and-controls/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/layouts.svg" alt="Chapter banner" class="chapter-banner">
+
 # Layouts & Controls
 
 ## What You'll Learn

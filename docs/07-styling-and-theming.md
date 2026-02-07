@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/07-styling-and-theming/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/styling.svg" alt="Chapter banner" class="chapter-banner">
+
 # Styling & Theming
 
 ## What You'll Learn

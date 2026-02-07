@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/13-shell-advanced/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/shell.svg" alt="Chapter banner" class="chapter-banner">
+
 # Advanced Shell
 
 ## What You'll Learn

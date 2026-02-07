@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/14-community-toolkit/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/toolkit.svg" alt="Chapter banner" class="chapter-banner">
+
 # Community Toolkit
 
 ## What You'll Learn

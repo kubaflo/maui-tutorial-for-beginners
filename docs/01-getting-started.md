@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/01-getting-started/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/getting-started.svg" alt="Chapter banner" class="chapter-banner">
+
 # Getting Started
 
 ## What You'll Learn

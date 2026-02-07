@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/19-media-and-camera/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/media.svg" alt="Chapter banner" class="chapter-banner">
+
 # Media & Camera
 
 ## What You'll Learn

@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/16-unit-testing/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/testing.svg" alt="Chapter banner" class="chapter-banner">
+
 # Unit Testing
 
 ## What You'll Learn

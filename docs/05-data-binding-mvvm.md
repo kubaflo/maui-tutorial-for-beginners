@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/05-data-binding-mvvm/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/data-binding.svg" alt="Chapter banner" class="chapter-banner">
+
 # Data Binding & MVVM
 
 ## What You'll Learn

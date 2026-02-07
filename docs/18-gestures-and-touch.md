@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/18-gestures-and-touch/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/gestures.svg" alt="Chapter banner" class="chapter-banner">
+
 # Gestures & Touch
 
 ## What You'll Learn

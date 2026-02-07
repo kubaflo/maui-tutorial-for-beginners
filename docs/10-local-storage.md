@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/10-local-storage/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/storage.svg" alt="Chapter banner" class="chapter-banner">
+
 # Local Storage
 
 ## What You'll Learn

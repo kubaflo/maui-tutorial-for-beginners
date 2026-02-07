@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/21-native-aot-performance/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/aot.svg" alt="Chapter banner" class="chapter-banner">
+
 # Native AOT & Performance Optimization
 
 ## What You'll Learn

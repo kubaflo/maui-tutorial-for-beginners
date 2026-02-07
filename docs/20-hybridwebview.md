@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/20-hybridwebview/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/hybridwebview.svg" alt="Chapter banner" class="chapter-banner">
+
 # HybridWebView & JavaScript Interop
 
 ## What You'll Learn

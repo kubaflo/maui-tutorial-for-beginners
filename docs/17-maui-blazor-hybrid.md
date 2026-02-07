@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/17-maui-blazor-hybrid/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/blazor.svg" alt="Chapter banner" class="chapter-banner">
+
 # MAUI Blazor Hybrid
 
 ## What You'll Learn

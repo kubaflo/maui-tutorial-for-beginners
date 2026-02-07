@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/02-project-structure/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/project-structure.svg" alt="Chapter banner" class="chapter-banner">
+
 # Project Structure
 
 ## What You'll Learn

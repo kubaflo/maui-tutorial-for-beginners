@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#1a1040"/><stop offset="100%" style="stop-color:#0f0c29"/></linearGradient><linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#6366f1"/><stop offset="100%" style="stop-color:#a855f7"/></linearGradient></defs>
+  <rect width="800" height="200" rx="16" fill="url(#bg)"/><rect x="0" y="196" width="800" height="4" fill="url(#accent)"/>
+  <g transform="translate(50,30)">
+    <rect x="0" y="10" width="130" height="50" rx="8" fill="rgba(99,102,241,0.2)" stroke="#6366f1" stroke-width="1.5"/>
+    <text x="65" y="40" fill="#6366f1" font-family="Inter" font-size="14" font-weight="700" text-anchor="middle">Blazor</text>
+    <text x="140" y="40" fill="#a0a0b8" font-family="Inter" font-size="22" text-anchor="middle">+</text>
+    <rect x="155" y="10" width="130" height="50" rx="8" fill="rgba(168,85,247,0.2)" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="220" y="40" fill="#a855f7" font-family="Inter" font-size="14" font-weight="700" text-anchor="middle">MAUI</text>
+    <text x="15" y="90" fill="#a0a0b8" font-family="monospace" font-size="11">&lt;BlazorWebView&gt;</text>
+    <text x="25" y="110" fill="#6366f1" font-family="monospace" font-size="11">  @page "/counter"</text>
+    <text x="25" y="128" fill="#a855f7" font-family="monospace" font-size="11">  @code { int i; }</text>
+  </g>
+  <text x="500" y="80" fill="#f0f0f5" font-family="Inter, sans-serif" font-size="28" font-weight="700" text-anchor="middle">Chapter 17</text>
+  <text x="500" y="110" fill="#a0a0b8" font-family="Inter, sans-serif" font-size="16" text-anchor="middle">MAUI Blazor Hybrid</text>
+  <text x="500" y="140" fill="#6b6b80" font-family="Inter, sans-serif" font-size="13" text-anchor="middle">⏱ ~35 min · Advanced</text>
+</svg>

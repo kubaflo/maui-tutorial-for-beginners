@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/23-maps-location/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/maps.svg" alt="Chapter banner" class="chapter-banner">
+
 # Chapter 23: Maps & Location Services
 
 Build location-aware apps with maps, pins, geocoding, and GPS tracking.

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1040"/>
+      <stop offset="100%" style="stop-color:#0f0c29"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22d3ee"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="200" rx="16" fill="url(#bg)"/>
+  <rect x="0" y="196" width="800" height="4" fill="url(#accent)"/>
+  <!-- Platform icons -->
+  <g transform="translate(50, 35)">
+    <rect width="280" height="130" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <!-- Android -->
+    <rect x="20" y="20" width="55" height="45" rx="6" fill="rgba(52,211,153,0.15)" stroke="#34d399" stroke-width="1"/>
+    <text x="47" y="48" fill="#34d399" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle">Android</text>
+    <!-- iOS -->
+    <rect x="85" y="20" width="55" height="45" rx="6" fill="rgba(168,85,247,0.15)" stroke="#a855f7" stroke-width="1"/>
+    <text x="112" y="48" fill="#a855f7" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle">iOS</text>
+    <!-- Windows -->
+    <rect x="150" y="20" width="55" height="45" rx="6" fill="rgba(99,102,241,0.15)" stroke="#6366f1" stroke-width="1"/>
+    <text x="177" y="48" fill="#6366f1" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle">Windows</text>
+    <!-- Mac -->
+    <rect x="215" y="20" width="50" height="45" rx="6" fill="rgba(244,114,182,0.15)" stroke="#f472b6" stroke-width="1"/>
+    <text x="240" y="48" fill="#f472b6" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle">macOS</text>
+    <text x="20" y="90" fill="#a0a0b8" font-family="monospace" font-size="11">#if ANDROID</text>
+    <text x="30" y="108" fill="#34d399" font-family="monospace" font-size="11">  // Platform code</text>
+    <text x="20" y="124" fill="#a0a0b8" font-family="monospace" font-size="11">#endif</text>
+  </g>
+  <text x="480" y="80" fill="#f0f0f5" font-family="Inter, sans-serif" font-size="28" font-weight="700" text-anchor="middle">Chapter 8</text>
+  <text x="480" y="110" fill="#a0a0b8" font-family="Inter, sans-serif" font-size="16" text-anchor="middle">Platform-Specific Code</text>
+  <text x="480" y="140" fill="#6b6b80" font-family="Inter, sans-serif" font-size="13" text-anchor="middle">⏱ ~30 min · Intermediate</text>
+</svg>

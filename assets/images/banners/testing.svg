@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#1a1040"/><stop offset="100%" style="stop-color:#0f0c29"/></linearGradient><linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#34d399"/><stop offset="100%" style="stop-color:#22d3ee"/></linearGradient></defs>
+  <rect width="800" height="200" rx="16" fill="url(#bg)"/><rect x="0" y="196" width="800" height="4" fill="url(#accent)"/>
+  <g transform="translate(50,35)"><rect width="280" height="130" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="20" y="30" fill="#34d399" font-family="monospace" font-size="12">✓ Should_Return_True</text>
+    <text x="20" y="52" fill="#34d399" font-family="monospace" font-size="12">✓ Should_Navigate</text>
+    <text x="20" y="74" fill="#34d399" font-family="monospace" font-size="12">✓ Should_Load_Data</text>
+    <text x="20" y="96" fill="#ef4444" font-family="monospace" font-size="12">✗ Should_Handle_Error</text>
+    <rect x="20" y="108" width="240" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+    <rect x="20" y="108" width="180" height="8" rx="4" fill="rgba(52,211,153,0.5)"/>
+  </g>
+  <text x="480" y="80" fill="#f0f0f5" font-family="Inter, sans-serif" font-size="28" font-weight="700" text-anchor="middle">Chapter 16</text>
+  <text x="480" y="110" fill="#a0a0b8" font-family="Inter, sans-serif" font-size="16" text-anchor="middle">Unit Testing</text>
+  <text x="480" y="140" fill="#6b6b80" font-family="Inter, sans-serif" font-size="13" text-anchor="middle">⏱ ~30 min · Advanced</text>
+</svg>

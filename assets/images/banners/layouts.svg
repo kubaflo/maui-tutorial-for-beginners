@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1040"/>
+      <stop offset="100%" style="stop-color:#0f0c29"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#34d399"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="200" rx="16" fill="url(#bg)"/>
+  <rect x="0" y="196" width="800" height="4" fill="url(#accent)"/>
+  <!-- Layout grid illustration -->
+  <g transform="translate(50, 35)">
+    <rect width="280" height="130" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <!-- Grid cells -->
+    <rect x="15" y="15" width="80" height="50" rx="6" fill="rgba(168,85,247,0.2)" stroke="rgba(168,85,247,0.4)" stroke-width="1"/>
+    <rect x="105" y="15" width="80" height="50" rx="6" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.4)" stroke-width="1"/>
+    <rect x="195" y="15" width="70" height="50" rx="6" fill="rgba(34,211,238,0.2)" stroke="rgba(34,211,238,0.4)" stroke-width="1"/>
+    <rect x="15" y="75" width="250" height="40" rx="6" fill="rgba(52,211,153,0.2)" stroke="rgba(52,211,153,0.4)" stroke-width="1"/>
+    <text x="55" y="45" fill="#a855f7" font-family="monospace" font-size="10" text-anchor="middle">Grid</text>
+    <text x="145" y="45" fill="#6366f1" font-family="monospace" font-size="10" text-anchor="middle">Stack</text>
+    <text x="230" y="45" fill="#22d3ee" font-family="monospace" font-size="10" text-anchor="middle">Flex</text>
+    <text x="140" y="100" fill="#34d399" font-family="monospace" font-size="10" text-anchor="middle">AbsoluteLayout</text>
+  </g>
+  <text x="430" y="80" fill="#f0f0f5" font-family="Inter, sans-serif" font-size="28" font-weight="700" text-anchor="middle">Chapter 4</text>
+  <text x="430" y="110" fill="#a0a0b8" font-family="Inter, sans-serif" font-size="16" text-anchor="middle">Layouts &amp; Controls</text>
+  <text x="430" y="140" fill="#6b6b80" font-family="Inter, sans-serif" font-size="13" text-anchor="middle">⏱ ~30 min · Beginner</text>
+</svg>

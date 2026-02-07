@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/11-publishing-deployment/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/publishing.svg" alt="Chapter banner" class="chapter-banner">
+
 # Publishing & Deployment
 
 ## What You'll Learn

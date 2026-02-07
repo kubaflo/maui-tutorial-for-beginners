@@ -6,6 +6,8 @@ parent: "📖 Lessons"
 permalink: /docs/25-notifications-background/
 ---
 
+<img src="/maui-tutorial-for-beginners/assets/images/banners/notifications.svg" alt="Chapter banner" class="chapter-banner">
+
 # Chapter 25: Notifications & Background Tasks
 
 Send local notifications, handle push notifications, and run background work.
