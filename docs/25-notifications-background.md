@@ -1,5 +1,5 @@
 ---
-title: "25 — Notifications & Background Tasks"
+title: "Notifications & Background Tasks"
 layout: default
 nav_order: 25
 parent: "📖 Lessons"
