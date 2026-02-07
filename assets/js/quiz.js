@@ -339,8 +339,37 @@
         saveGamification(g);
         banner.className = 'chapter-completion completed';
         banner.innerHTML = '<div class="completion-check">✅</div><div class="completion-text"><strong>Chapter Completed!</strong><br><span>You\'ve mastered this topic. Great job!</span></div>';
+        celebrateCompletion();
       });
     }
+  }
+
+  // Mini confetti celebration
+  function celebrateCompletion() {
+    var colors = ['#a855f7', '#6366f1', '#22d3ee', '#34d399', '#fb923c', '#f472b6'];
+    var container = document.createElement('div');
+    container.style.cssText = 'position:fixed;inset:0;pointer-events:none;z-index:100000;overflow:hidden;';
+    document.body.appendChild(container);
+
+    for (var i = 0; i < 50; i++) {
+      var particle = document.createElement('div');
+      var color = colors[Math.floor(Math.random() * colors.length)];
+      var x = Math.random() * 100;
+      var delay = Math.random() * 0.5;
+      var size = Math.random() * 8 + 4;
+      particle.style.cssText = 'position:absolute;top:-10px;left:' + x + '%;width:' + size + 'px;height:' + size + 'px;background:' + color + ';border-radius:' + (Math.random() > 0.5 ? '50%' : '2px') + ';animation:confetti-fall ' + (Math.random() * 2 + 1.5) + 's ease-in ' + delay + 's forwards;opacity:0.9;';
+      container.appendChild(particle);
+    }
+
+    // Add confetti keyframes if not exists
+    if (!document.getElementById('confetti-style')) {
+      var style = document.createElement('style');
+      style.id = 'confetti-style';
+      style.textContent = '@keyframes confetti-fall { 0% { transform: translateY(0) rotate(0deg); opacity: 1; } 100% { transform: translateY(100vh) rotate(' + (Math.random() * 720 - 360) + 'deg); opacity: 0; } }';
+      document.head.appendChild(style);
+    }
+
+    setTimeout(function () { container.remove(); }, 4000);
   }
 
   // --- Reset ---

@@ -1,5 +1,17 @@
 // Reading Progress Bar + Scroll to Top + Table of Contents
 document.addEventListener('DOMContentLoaded', function() {
+  // Smooth page entrance animation
+  var mainContent = document.querySelector('.main-content');
+  if (mainContent) {
+    mainContent.style.opacity = '0';
+    mainContent.style.transform = 'translateY(12px)';
+    mainContent.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+    requestAnimationFrame(function() {
+      mainContent.style.opacity = '1';
+      mainContent.style.transform = 'translateY(0)';
+    });
+  }
+
   // Reading Progress Bar
   var progressBar = document.createElement('div');
   progressBar.id = 'reading-progress';
