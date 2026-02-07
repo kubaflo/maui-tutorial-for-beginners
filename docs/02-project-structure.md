@@ -180,4 +180,23 @@ You should now understand what each file and folder does in a MAUI project. This
 
 ---
 
+## 🏋️ Exercise: Explore Your Project
+
+Open a new MAUI project and answer these questions by exploring the file structure:
+
+1. What is the return type of `CreateMauiApp()` in `MauiProgram.cs`?
+2. Find the `AndroidManifest.xml` file — what folder is it in?
+3. Open `App.xaml` — what `ResourceDictionary` entries does it include?
+
+<details class="exercise">
+<summary>Show Answers</summary>
+
+1. `MauiApp` — the method returns a configured `MauiApp` instance
+2. `Platforms/Android/` — each platform has its own subfolder under `Platforms/`
+3. By default it includes `Resources/Styles/Colors.xaml` and `Resources/Styles/Styles.xaml` as merged dictionaries
+
+</details>
+
+---
+
 **Previous:** [← 01 — Getting Started](../01-GettingStarted/README.md) · **Next:** [03 — XAML Basics →](../03-XAML-Basics/README.md)
