@@ -226,6 +226,55 @@ You can now add smooth, engaging animations to your MAUI apps. Next, we'll explo
   <div class="quiz-feedback"></div>
 </div>
 
+## 🏋️ Exercise: Animated Card
+
+<div class="exercise-container">
+  <span class="exercise-badge">Hands-On</span>
+  <h3>💻 Create an Animated Welcome Screen</h3>
+  <p>Build an animated entrance for your app:</p>
+  <ol>
+    <li>A logo that fades in and scales up from 0.5 to 1.0</li>
+    <li>A welcome text that slides in from below (TranslateTo)</li>
+    <li>A "Get Started" button that bounces in with <code>Easing.SpringOut</code></li>
+    <li>All animations happen in sequence with slight delays</li>
+  </ol>
+
+  <details class="solution">
+    <summary>💡 View Solution</summary>
+
+```csharp
+protected override async void OnAppearing()
+{
+    base.OnAppearing();
+
+    // Start invisible
+    Logo.Opacity = 0;
+    Logo.Scale = 0.5;
+    WelcomeLabel.Opacity = 0;
+    WelcomeLabel.TranslationY = 50;
+    GetStartedButton.Opacity = 0;
+    GetStartedButton.Scale = 0;
+
+    // Animate logo
+    await Task.WhenAll(
+        Logo.FadeTo(1, 800),
+        Logo.ScaleTo(1, 800, Easing.CubicOut));
+
+    // Animate welcome text
+    await Task.WhenAll(
+        WelcomeLabel.FadeTo(1, 500),
+        WelcomeLabel.TranslateTo(0, 0, 500, Easing.CubicOut));
+
+    // Bounce in button
+    await Task.WhenAll(
+        GetStartedButton.FadeTo(1, 300),
+        GetStartedButton.ScaleTo(1, 500, Easing.SpringOut));
+}
+```
+
+  </details>
+</div>
+
 ---
 
 **Previous:** [← 11 — Publishing & Deployment](../11-Publishing-Deployment/README.md) · **Next:** [13 — Advanced Shell →](../13-Shell-Advanced/README.md)

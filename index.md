@@ -13,7 +13,7 @@ A comprehensive, step-by-step guide to building cross-platform mobile and deskto
 {: .fs-6 .fw-300 }
 
 [Get Started]({% link docs/01-getting-started.md %}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View on GitHub](https://github.com/kubaflo/maui-tutorial-for-beginners){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[⚡ Quick Start]({% link docs/quickstart.md %}){: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [📊 Track Progress]({% link docs/progress.md %}){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
