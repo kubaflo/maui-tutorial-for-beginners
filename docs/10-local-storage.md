@@ -276,6 +276,62 @@ You can now persist data using Preferences, SecureStorage, SQLite, and the file 
   <div class="quiz-feedback"></div>
 </div>
 
+## 🏋️ Exercise: Bookmark Manager
+
+<div class="exercise-container">
+  <span class="exercise-badge">Intermediate</span>
+  <h3>💻 Build a Bookmark Storage System</h3>
+  <p>Create a simple bookmark manager that persists data:</p>
+  <ol>
+    <li>Store bookmarks in SQLite with Title, URL, and Category</li>
+    <li>Use <code>SecureStorage</code> to save an API token for a sync feature</li>
+    <li>Use <code>Preferences</code> to remember the last selected category filter</li>
+    <li>Display bookmarks in a <code>CollectionView</code> grouped by category</li>
+  </ol>
+
+  <details class="solution">
+    <summary>💡 View Solution</summary>
+
+```csharp
+// Model
+public class Bookmark
+{
+    [PrimaryKey, AutoIncrement]
+    public int Id { get; set; }
+    public string Title { get; set; } = string.Empty;
+    public string Url { get; set; } = string.Empty;
+    public string Category { get; set; } = "General";
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+}
+
+// Service
+public class BookmarkService
+{
+    private readonly SQLiteAsyncConnection _db;
+
+    public BookmarkService()
+    {
+        var path = Path.Combine(FileSystem.AppDataDirectory, "bookmarks.db3");
+        _db = new SQLiteAsyncConnection(path);
+        _db.CreateTableAsync<Bookmark>().Wait();
+    }
+
+    public Task<List<Bookmark>> GetByCategory(string category) =>
+        _db.Table<Bookmark>()
+           .Where(b => b.Category == category)
+           .OrderByDescending(b => b.CreatedAt)
+           .ToListAsync();
+
+    public Task<int> Save(Bookmark b) =>
+        b.Id != 0 ? _db.UpdateAsync(b) : _db.InsertAsync(b);
+
+    public Task<int> Delete(Bookmark b) => _db.DeleteAsync(b);
+}
+```
+
+  </details>
+</div>
+
 ---
 
 **Previous:** [← 09 — Working with APIs](../09-Working-With-APIs/README.md) · **Next:** [11 — Publishing & Deployment →](../11-Publishing-Deployment/README.md)

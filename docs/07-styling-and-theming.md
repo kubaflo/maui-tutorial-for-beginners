@@ -245,6 +245,49 @@ Your apps can now look polished with consistent styles, custom fonts, safe area 
   <div class="quiz-feedback"></div>
 </div>
 
+## 🏋️ Exercise: Dark/Light Theme Toggle
+
+<div class="exercise-container">
+  <span class="exercise-badge">Hands-On</span>
+  <h3>💻 Build a Theme Switcher</h3>
+  <p>Create a settings page with a theme toggle:</p>
+  <ol>
+    <li>Define light and dark color palettes in <code>App.xaml</code> using <code>AppThemeBinding</code></li>
+    <li>Create a Switch that toggles between themes</li>
+    <li>Save the theme preference using <code>Preferences</code></li>
+    <li>Apply the saved theme on app startup</li>
+  </ol>
+
+  <details class="solution">
+    <summary>💡 View Solution</summary>
+
+```xml
+<!-- App.xaml Resources -->
+<Color x:Key="PageBg">{AppThemeBinding Light=#FFFFFF, Dark=#1a1a2e}</Color>
+<Color x:Key="CardBg">{AppThemeBinding Light=#F5F5F5, Dark=#2d2d44}</Color>
+<Color x:Key="TextPrimary">{AppThemeBinding Light=#1a1a1a, Dark=#e0e0e0}</Color>
+```
+
+```csharp
+// Theme toggle in ViewModel
+[RelayCommand]
+private void ToggleTheme()
+{
+    var current = Application.Current!.UserAppTheme;
+    var newTheme = current == AppTheme.Dark ? AppTheme.Light : AppTheme.Dark;
+    Application.Current.UserAppTheme = newTheme;
+    Preferences.Set("app_theme", newTheme.ToString());
+}
+
+// In App.xaml.cs constructor
+var savedTheme = Preferences.Get("app_theme", "Unspecified");
+if (Enum.TryParse<AppTheme>(savedTheme, out var theme))
+    UserAppTheme = theme;
+```
+
+  </details>
+</div>
+
 ---
 
 **Previous:** [← 06 — Navigation](../06-Navigation/README.md) · **Next:** [08 — Platform-Specific Code →](../08-Platform-Specific-Code/README.md)

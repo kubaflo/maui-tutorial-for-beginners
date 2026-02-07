@@ -257,6 +257,64 @@ You can now build hybrid apps that combine web technologies with native capabili
   <div class="quiz-feedback"></div>
 </div>
 
+## 🏋️ Exercise: Hybrid Dashboard
+
+<div class="exercise-container">
+  <span class="exercise-badge">Advanced</span>
+  <h3>💻 Build a Blazor + XAML Hybrid Page</h3>
+  <p>Create an app that mixes native MAUI pages with Blazor components:</p>
+  <ol>
+    <li>A native MAUI Shell with two tabs</li>
+    <li>Tab 1: A regular XAML page for settings</li>
+    <li>Tab 2: A Blazor component that displays a list from a shared service</li>
+    <li>The Blazor component should inject the MAUI <code>IConnectivity</code> service to show online/offline status</li>
+  </ol>
+
+  <details class="solution">
+    <summary>💡 View Solution</summary>
+
+```razor
+@* Components/Dashboard.razor *@
+@inject IConnectivity Connectivity
+@inject IDataService DataService
+
+<h2>Dashboard</h2>
+
+<p class="@(isOnline ? "text-success" : "text-danger")">
+    Status: @(isOnline ? "🟢 Online" : "🔴 Offline")
+</p>
+
+@if (items.Any())
+{
+    <ul>
+        @foreach (var item in items)
+        {
+            <li>@item.Name — @item.Status</li>
+        }
+    </ul>
+}
+
+@code {
+    private bool isOnline;
+    private List<DataItem> items = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        isOnline = Connectivity.NetworkAccess == NetworkAccess.Internet;
+        items = await DataService.GetItemsAsync();
+    }
+}
+```
+
+```csharp
+// MauiProgram.cs
+builder.Services.AddSingleton(Connectivity.Current);
+builder.Services.AddSingleton<IDataService, DataService>();
+```
+
+  </details>
+</div>
+
 ---
 
 **Previous:** [← 16 — Unit Testing](../16-Unit-Testing/README.md) · **Next:** [18 — Gestures & Touch →](../18-Gestures-And-Touch/README.md)
