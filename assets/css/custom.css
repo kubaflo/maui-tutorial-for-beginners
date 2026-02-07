@@ -633,6 +633,48 @@ body {
   color: var(--accent-red) !important;
 }
 
+/* Quiz option labels (old markup uses li > label) */
+.quiz-options label.correct {
+  background: rgba(52, 211, 153, 0.12) !important;
+  border-color: var(--accent-green) !important;
+  color: var(--accent-green) !important;
+  display: block;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--accent-green);
+}
+
+.quiz-options label.incorrect {
+  background: rgba(239, 68, 68, 0.12) !important;
+  border-color: var(--accent-red) !important;
+  color: var(--accent-red) !important;
+  display: block;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--accent-red);
+}
+
+.quiz-options label {
+  display: block;
+  padding: 12px 16px;
+  margin: 8px 0;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  font-size: 0.92rem;
+}
+
+.quiz-options label:hover {
+  background: rgba(168, 85, 247, 0.08);
+  border-color: var(--accent-purple);
+  color: var(--text-primary);
+}
+
 .quiz-result {
   margin-top: 1rem;
   padding: 1rem;
@@ -655,6 +697,39 @@ body {
   color: var(--accent-red);
 }
 
+/* Old quiz markup compatibility */
+.quiz-feedback {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  display: none;
+}
+
+.quiz-feedback.show { display: block; }
+
+.quiz-feedback.correct {
+  background: rgba(52, 211, 153, 0.08);
+  border: 1px solid rgba(52, 211, 153, 0.2);
+  color: var(--accent-green);
+}
+
+.quiz-feedback.incorrect {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: var(--accent-red);
+}
+
+.quiz-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quiz-options li {
+  margin: 0;
+}
+
 .quiz-xp {
   display: inline-flex;
   align-items: center;
@@ -664,7 +739,8 @@ body {
   color: var(--accent-orange);
 }
 
-.quiz-check-btn {
+.quiz-check-btn,
+.quiz-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -680,7 +756,8 @@ body {
   margin-top: 0.75rem;
 }
 
-.quiz-check-btn:hover {
+.quiz-check-btn:hover,
+.quiz-btn:hover {
   transform: translateY(-2px);
   box-shadow: var(--glow-purple);
 }
