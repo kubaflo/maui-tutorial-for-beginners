@@ -292,6 +292,30 @@ public static MauiAppBuilder RegisterViews(this MauiAppBuilder builder)
   </details>
 </div>
 
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li><strong>DI is built into MAUI</strong> via <code>MauiAppBuilder</code> — no third-party container needed</li>
+    <li>Use <code>AddSingleton</code> (one instance), <code>AddTransient</code> (new every time), or <code>AddScoped</code> (per-scope)</li>
+    <li>Services are <strong>constructor-injected</strong> into ViewModels and Pages automatically</li>
+    <li>Register <strong>interfaces → implementations</strong> to keep code testable and loosely coupled</li>
+  </ul>
+</div>
+
+<div class="callout callout-tip">
+  <div class="callout-title">💡 Tip</div>
+  Register your pages as <code>AddTransient</code> and ViewModels as <code>AddTransient</code> too — unless you need a ViewModel to survive navigation (then use <code>AddSingleton</code>).
+</div>
+
+<div class="related-chapters">
+  <h4>📖 Related Chapters</h4>
+  <ul>
+    <li><a href="/maui-tutorial-for-beginners/docs/05-data-binding-mvvm/">Ch 05 — Data Binding & MVVM</a></li>
+    <li><a href="/maui-tutorial-for-beginners/docs/16-unit-testing/">Ch 16 — Unit Testing (mock injected services)</a></li>
+    <li><a href="/maui-tutorial-for-beginners/docs/22-real-world-project/">Ch 22 — Real-World Project</a></li>
+  </ul>
+</div>
+
 ---
 
 **Previous:** [← 14 — Community Toolkit](/docs/14-community-toolkit/) · **Next:** [16 — Unit Testing →](/docs/16-unit-testing/)

@@ -1634,3 +1634,158 @@ details.exercise summary:hover {
   color: #b48ef2 !important;
   border-bottom-color: rgba(180, 142, 242, 0.3);
 }
+
+/* --- Callout / Admonition Boxes --- */
+.callout {
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid;
+  position: relative;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.callout-title {
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.callout-tip {
+  background: rgba(52, 211, 153, 0.08);
+  border-color: var(--accent-green);
+}
+.callout-tip .callout-title { color: var(--accent-green); }
+
+.callout-warning {
+  background: rgba(251, 146, 60, 0.08);
+  border-color: var(--accent-orange);
+}
+.callout-warning .callout-title { color: var(--accent-orange); }
+
+.callout-important {
+  background: rgba(239, 68, 68, 0.08);
+  border-color: var(--accent-red);
+}
+.callout-important .callout-title { color: var(--accent-red); }
+
+.callout-info {
+  background: rgba(99, 102, 241, 0.08);
+  border-color: var(--accent-blue);
+}
+.callout-info .callout-title { color: var(--accent-blue); }
+
+/* --- Related Chapters Card --- */
+.related-chapters {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin: 2rem 0;
+}
+
+.related-chapters h4 {
+  color: var(--accent-cyan) !important;
+  margin: 0 0 0.75rem !important;
+  font-size: 0.9rem;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.related-chapters ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.5rem;
+}
+
+.related-chapters li a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.03);
+  transition: all var(--transition-fast);
+  border-bottom: none !important;
+  font-size: 0.88rem;
+}
+
+.related-chapters li a:hover {
+  background: rgba(168, 85, 247, 0.1);
+  transform: translateX(4px);
+}
+
+/* --- Key Takeaways Summary Box --- */
+.key-takeaways {
+  background: linear-gradient(145deg, rgba(168, 85, 247, 0.06), rgba(99, 102, 241, 0.03));
+  border: 1px solid rgba(168, 85, 247, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.key-takeaways h4 {
+  color: var(--accent-purple) !important;
+  margin: 0 0 0.75rem !important;
+  border: none !important;
+  padding: 0 !important;
+  font-size: 1rem;
+}
+
+.key-takeaways ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.key-takeaways li {
+  color: var(--text-secondary);
+  margin-bottom: 0.35rem;
+  line-height: 1.6;
+}
+
+.key-takeaways li::marker {
+  color: var(--accent-green);
+}
+
+/* --- Chapter Prev/Next Navigation Styling --- */
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.chapter-nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary) !important;
+  border-bottom: none !important;
+  transition: all var(--transition-fast);
+  font-size: 0.9rem;
+  text-decoration: none !important;
+}
+
+.chapter-nav a:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent-purple);
+  color: var(--text-primary) !important;
+  transform: translateY(-2px);
+}
+
+.chapter-nav .nav-next {
+  margin-left: auto;
+}

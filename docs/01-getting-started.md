@@ -218,6 +218,30 @@ private void OnResetClicked(object sender, EventArgs e)
   </details>
 </div>
 
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li><strong>MAUI = one codebase, all platforms</strong> — Write C# and XAML once, deploy to Android, iOS, macOS, and Windows</li>
+    <li>Use <code>dotnet new maui</code> or Visual Studio templates to scaffold a project</li>
+    <li>The <code>MainPage.xaml</code> file defines the UI; <code>MainPage.xaml.cs</code> handles events</li>
+    <li><code>Clicked</code> events connect button taps to C# methods</li>
+  </ul>
+</div>
+
+<div class="callout callout-tip">
+  <div class="callout-title">💡 Tip</div>
+  If you're on macOS, you can use Visual Studio Code with the <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-maui">MAUI extension</a> instead of Visual Studio for Mac (which is discontinued).
+</div>
+
+<div class="related-chapters">
+  <h4>📖 Related Chapters</h4>
+  <ul>
+    <li><a href="/maui-tutorial-for-beginners/docs/02-project-structure/">Ch 02 — Project Structure</a></li>
+    <li><a href="/maui-tutorial-for-beginners/docs/03-xaml-basics/">Ch 03 — XAML Basics</a></li>
+    <li><a href="/maui-tutorial-for-beginners/quickstart/">Quick Start Guide</a></li>
+  </ul>
+</div>
+
 ---
 
 **Next:** [02 — Project Structure →](/docs/02-project-structure/)

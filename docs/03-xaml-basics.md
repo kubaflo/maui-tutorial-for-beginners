@@ -279,6 +279,22 @@ You now know how to write XAML, use markup extensions, define resources, compile
   </details>
 </div>
 
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li><strong>XAML is a markup language</strong> for declaring .NET MAUI user interfaces</li>
+    <li>XAML elements map to C# classes — <code>&lt;Button /&gt;</code> is <code>new Button()</code></li>
+    <li><strong>Properties</strong> are set as XML attributes; use <strong>property element syntax</strong> for complex values</li>
+    <li><strong>x:Name</strong> lets you reference elements from C# code-behind</li>
+    <li><strong>Resources &amp; Styles</strong> reduce repetition and centralize theming</li>
+  </ul>
+</div>
+
+<div class="callout callout-tip">
+  <div class="callout-title">💡 Tip</div>
+  Enable XAML Hot Reload in Visual Studio to see your XAML changes instantly without rebuilding. It's active by default — just save the file and watch the app update.
+</div>
+
 ---
 
 **Previous:** [← 02 — Project Structure](/docs/02-project-structure/) · **Next:** [04 — Layouts & Controls →](/docs/04-layouts-and-controls/)

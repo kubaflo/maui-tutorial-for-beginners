@@ -307,6 +307,30 @@ public partial class NoteDetailViewModel : ObservableObject
   </details>
 </div>
 
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li><strong>Shell</strong> provides tabs, flyout, and URI-based routing in one place</li>
+    <li>Register routes with <code>Routing.RegisterRoute()</code> for programmatic navigation</li>
+    <li>Pass data between pages using <strong>query parameters</strong> and <code>[QueryProperty]</code></li>
+    <li><code>Shell.Current.GoToAsync()</code> is the primary navigation method</li>
+    <li>Use <code>".."</code> to navigate back instead of managing the stack manually</li>
+  </ul>
+</div>
+
+<div class="callout callout-info">
+  <div class="callout-title">ℹ️ Info</div>
+  In .NET MAUI 10, Shell supports <code>BackButtonBehavior</code> for custom back button icons and commands. See <a href="/maui-tutorial-for-beginners/docs/13-shell-advanced/">Chapter 13 — Shell Advanced</a> for details.
+</div>
+
+<div class="related-chapters">
+  <h4>📖 Related Chapters</h4>
+  <ul>
+    <li><a href="/maui-tutorial-for-beginners/docs/13-shell-advanced/">Ch 13 — Shell Advanced (search, guards, deep links)</a></li>
+    <li><a href="/maui-tutorial-for-beginners/docs/05-data-binding-mvvm/">Ch 05 — Data Binding & MVVM</a></li>
+  </ul>
+</div>
+
 ---
 
 **Previous:** [← 05 — Data Binding & MVVM](/docs/05-data-binding-mvvm/) · **Next:** [07 — Styling & Theming →](/docs/07-styling-and-theming/)

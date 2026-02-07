@@ -391,6 +391,31 @@ public partial class ContactViewModel : ObservableObject
   </details>
 </div>
 
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li><strong>Data binding</strong> connects UI to data — changes flow automatically</li>
+    <li><strong>MVVM pattern</strong> separates View (XAML), ViewModel (logic), and Model (data)</li>
+    <li><code>INotifyPropertyChanged</code> tells the UI when properties update</li>
+    <li><code>ObservableCollection&lt;T&gt;</code> notifies the UI when items are added/removed</li>
+    <li>The <strong>MVVM Community Toolkit</strong> eliminates boilerplate with <code>[ObservableProperty]</code> and <code>[RelayCommand]</code></li>
+  </ul>
+</div>
+
+<div class="callout callout-important">
+  <div class="callout-title">⚠️ Important</div>
+  In .NET MAUI 10, always use <code>x:DataType</code> on your pages and templates to enable <strong>compiled bindings</strong>. This catches binding errors at compile time and improves performance.
+</div>
+
+<div class="related-chapters">
+  <h4>📖 Related Chapters</h4>
+  <ul>
+    <li><a href="/maui-tutorial-for-beginners/docs/14-community-toolkit/">Ch 14 — Community Toolkit (MVVM helpers)</a></li>
+    <li><a href="/maui-tutorial-for-beginners/docs/15-dependency-injection/">Ch 15 — Dependency Injection</a></li>
+    <li><a href="/maui-tutorial-for-beginners/docs/09-working-with-apis/">Ch 09 — Working with APIs</a></li>
+  </ul>
+</div>
+
 ---
 
 **Previous:** [← 04 — Layouts & Controls](/docs/04-layouts-and-controls/) · **Next:** [06 — Navigation →](/docs/06-navigation/)
