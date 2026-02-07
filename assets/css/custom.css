@@ -40,6 +40,10 @@
 }
 
 /* --- Global Resets & Body --- */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--gradient-hero) !important;
   background-attachment: fixed !important;
@@ -925,6 +929,27 @@ details.exercise summary:hover {
   line-height: 1.6;
 }
 
+/* --- Syntax Highlighting (Rouge) --- */
+.highlight .c, .highlight .c1, .highlight .cm, .highlight .cs { color: #6b6b80 !important; font-style: italic; }
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr { color: #c792ea !important; }
+.highlight .kt, .highlight .nc, .highlight .nn { color: #ffcb6b !important; }
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc, .highlight .sh { color: #c3e88d !important; }
+.highlight .na, .highlight .no { color: #82aaff !important; }
+.highlight .nf, .highlight .nb { color: #82aaff !important; }
+.highlight .mi, .highlight .mf, .highlight .mh, .highlight .mo { color: #f78c6c !important; }
+.highlight .nt { color: #ff5370 !important; }
+.highlight .o, .highlight .ow { color: #89ddff !important; }
+.highlight .p { color: #a0a0b8 !important; }
+.highlight .nv, .highlight .vi, .highlight .vg { color: #f07178 !important; }
+.highlight .sr { color: #89ddff !important; }
+.highlight .ss { color: #c3e88d !important; }
+.highlight .err { color: #ff5370 !important; background: transparent !important; }
+.highlight .ge { font-style: italic; }
+.highlight .gs { font-weight: bold; }
+
+/* Line numbers */
+.highlight .lineno { color: #4a4a60; padding-right: 12px; border-right: 1px solid rgba(255,255,255,0.06); margin-right: 12px; user-select: none; }
+
 /* --- Tables --- */
 .main-content table {
   border-collapse: separate;
@@ -973,6 +998,19 @@ details.exercise summary:hover {
 .site-footer {
   border-top: 1px solid var(--border-subtle) !important;
   color: var(--text-muted) !important;
+}
+
+/* --- Content Links --- */
+.main-content a:not(.btn-primary):not(.btn-secondary):not(.resource-card):not(.path-card):not(.lesson-item) {
+  color: var(--accent-purple) !important;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(168, 85, 247, 0.3);
+  transition: all var(--transition-fast);
+}
+
+.main-content a:not(.btn-primary):not(.btn-secondary):not(.resource-card):not(.path-card):not(.lesson-item):hover {
+  color: var(--accent-cyan) !important;
+  border-bottom-color: var(--accent-cyan);
 }
 
 /* --- Breadcrumbs --- */
@@ -1073,6 +1111,27 @@ details.exercise summary:hover {
   .hero-buttons {
     flex-direction: column;
     align-items: center;
+  }
+
+  .chapter-banner {
+    border-radius: var(--radius-md);
+  }
+
+  .chapter-toc {
+    font-size: 0.85rem;
+  }
+
+  .chapter-nav {
+    flex-direction: column;
+  }
+
+  .chapter-nav a {
+    max-width: 100%;
+  }
+
+  .main-content pre {
+    padding: 1rem !important;
+    font-size: 0.8rem;
   }
 }
 
