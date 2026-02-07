@@ -1,0 +1,24 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+*.csproj.user
+
+## MAUI
+*.ipa
+*.apk
+*.aab
+
+## macOS
+.DS_Store
+*.dmg
+
+## IDE
+.idea/
+.vscode/
+*.swp
+*~
