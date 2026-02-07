@@ -380,4 +380,4 @@ protected override async void OnAppearing()
 
 ---
 
-**Previous:** [← 11 — Publishing & Deployment](/docs/11-publishing-deployment/) · **Next:** [13 — Advanced Shell →](/docs/13-shell-advanced/)
+**Previous:** [← 11 — Publishing & Deployment](/maui-tutorial-for-beginners/docs/11-publishing-deployment/) · **Next:** [13 — Advanced Shell →](/maui-tutorial-for-beginners/docs/13-shell-advanced/)

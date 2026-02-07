@@ -186,7 +186,7 @@ public static class MauiProgram
 Key things happening here:
 - `UseMauiApp<App>()` — Sets the root `Application` class
 - `ConfigureFonts` — Registers custom fonts from `Resources/Fonts/`
-- `builder.Services` — Microsoft DI container (covered in [Chapter 15]({% link docs/15-dependency-injection.md %}))
+- `builder.Services` — Microsoft DI container (covered in [Chapter 15]({{ '/docs/15-dependency-injection/' | relative_url }}))
 - `AddDebug()` — Enables debug logging in development
 
 ## Deep Dive: App.xaml
@@ -245,7 +245,7 @@ The Shell defines your app's navigation structure with tabs, flyout menus, and r
 </Shell>
 ```
 
-You'll learn more about Shell navigation in [Chapter 6]({% link docs/06-navigation.md %}) and [Chapter 13]({% link docs/13-shell-advanced.md %}).
+You'll learn more about Shell navigation in [Chapter 6]({{ '/docs/06-navigation/' | relative_url }}) and [Chapter 13]({{ '/docs/13-shell-advanced/' | relative_url }}).
 
 ## ✅ Checkpoint
 
@@ -314,4 +314,4 @@ Open a new MAUI project and answer these questions by exploring the file structu
 
 ---
 
-**Previous:** [← 01 — Getting Started](/docs/01-getting-started/) · **Next:** [03 — XAML Basics →](/docs/03-xaml-basics/)
+**Previous:** [← 01 — Getting Started](/maui-tutorial-for-beginners/docs/01-getting-started/) · **Next:** [03 — XAML Basics →](/maui-tutorial-for-beginners/docs/03-xaml-basics/)

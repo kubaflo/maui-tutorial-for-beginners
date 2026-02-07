@@ -318,4 +318,4 @@ public static MauiAppBuilder RegisterViews(this MauiAppBuilder builder)
 
 ---
 
-**Previous:** [← 14 — Community Toolkit](/docs/14-community-toolkit/) · **Next:** [16 — Unit Testing →](/docs/16-unit-testing/)
+**Previous:** [← 14 — Community Toolkit](/maui-tutorial-for-beginners/docs/14-community-toolkit/) · **Next:** [16 — Unit Testing →](/maui-tutorial-for-beginners/docs/16-unit-testing/)

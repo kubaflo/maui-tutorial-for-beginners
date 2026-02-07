@@ -348,4 +348,4 @@ public class BookmarkService
 
 ---
 
-**Previous:** [← 09 — Working with APIs](/docs/09-working-with-apis/) · **Next:** [11 — Publishing & Deployment →](/docs/11-publishing-deployment/)
+**Previous:** [← 09 — Working with APIs](/maui-tutorial-for-beginners/docs/09-working-with-apis/) · **Next:** [11 — Publishing & Deployment →](/maui-tutorial-for-beginners/docs/11-publishing-deployment/)

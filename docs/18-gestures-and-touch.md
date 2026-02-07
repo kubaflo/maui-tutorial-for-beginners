@@ -361,4 +361,4 @@ private void OnPanUpdated(object sender, PanUpdatedEventArgs e)
 
 ---
 
-**Previous:** [← 17 — MAUI Blazor Hybrid](/docs/17-maui-blazor-hybrid/) · **Next:** [19 — Media & Camera →](/docs/19-media-and-camera/)
+**Previous:** [← 17 — MAUI Blazor Hybrid](/maui-tutorial-for-beginners/docs/17-maui-blazor-hybrid/) · **Next:** [19 — Media & Camera →](/maui-tutorial-for-beginners/docs/19-media-and-camera/)

@@ -359,4 +359,4 @@ Take this inaccessible form and add proper accessibility properties:
 
 ---
 
-[← Chapter 23: Maps & Location]({% link docs/23-maps-location.md %}) · [Chapter 25: Notifications →]({% link docs/25-notifications-background.md %})
+[← Chapter 23: Maps & Location]({{ '/docs/23-maps-location/' | relative_url }}) · [Chapter 25: Notifications →]({{ '/docs/25-notifications-background/' | relative_url }})

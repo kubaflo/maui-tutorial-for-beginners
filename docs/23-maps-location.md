@@ -519,4 +519,4 @@ private async void OnSearch(object sender, EventArgs e)
 
 ---
 
-[← Chapter 22: Real-World Project]({% link docs/22-real-world-project.md %}) · [Chapter 24: Accessibility →]({% link docs/24-accessibility.md %})
+[← Chapter 22: Real-World Project]({{ '/docs/22-real-world-project/' | relative_url }}) · [Chapter 24: Accessibility →]({{ '/docs/24-accessibility/' | relative_url }})

@@ -800,4 +800,4 @@ Congratulations! You've built a complete, production-quality MAUI app that uses:
 
 ---
 
-**Previous:** [← 21 — Native AOT & Performance](/docs/21-native-aot-performance/) · **Next:** [23 — Maps & Location →](/docs/23-maps-location/)
+**Previous:** [← 21 — Native AOT & Performance](/maui-tutorial-for-beginners/docs/21-native-aot-performance/) · **Next:** [23 — Maps & Location →](/maui-tutorial-for-beginners/docs/23-maps-location/)

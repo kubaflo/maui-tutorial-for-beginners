@@ -397,4 +397,4 @@ dotnet publish -f net10.0-android -c Release
 
 ---
 
-**Previous:** [← 10 — Local Storage](/docs/10-local-storage/) · **Next:** [12 — Animations →](/docs/12-animations/)
+**Previous:** [← 10 — Local Storage](/maui-tutorial-for-beginners/docs/10-local-storage/) · **Next:** [12 — Animations →](/maui-tutorial-for-beginners/docs/12-animations/)

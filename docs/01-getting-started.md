@@ -244,4 +244,4 @@ private void OnResetClicked(object sender, EventArgs e)
 
 ---
 
-**Next:** [02 — Project Structure →](/docs/02-project-structure/)
+**Next:** [02 — Project Structure →](/maui-tutorial-for-beginners/docs/02-project-structure/)

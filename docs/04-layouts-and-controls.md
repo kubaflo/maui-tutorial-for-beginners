@@ -324,4 +324,4 @@ You can now build complete user interfaces with layouts and controls. Next, we'l
 
 ---
 
-**Previous:** [← 03 — XAML Basics](/docs/03-xaml-basics/) · **Next:** [05 — Data Binding & MVVM →](/docs/05-data-binding-mvvm/)
+**Previous:** [← 03 — XAML Basics](/maui-tutorial-for-beginners/docs/03-xaml-basics/) · **Next:** [05 — Data Binding & MVVM →](/maui-tutorial-for-beginners/docs/05-data-binding-mvvm/)

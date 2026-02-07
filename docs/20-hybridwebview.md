@@ -403,4 +403,4 @@ async function calculate() {
 
 ---
 
-**Previous:** [← 19 — Media & Camera](/docs/19-media-and-camera/) · **Next:** [21 — Native AOT & Performance →](/docs/21-native-aot-performance/)
+**Previous:** [← 19 — Media & Camera](/maui-tutorial-for-beginners/docs/19-media-and-camera/) · **Next:** [21 — Native AOT & Performance →](/maui-tutorial-for-beginners/docs/21-native-aot-performance/)

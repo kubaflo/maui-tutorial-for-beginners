@@ -299,4 +299,4 @@ public record Transfer(string From, string To, decimal Amount);
 
 ## 📊 Track Your Challenge Progress
 
-Use the [Progress Tracker](/progress/) to monitor your quiz scores across all chapters, then come back here to apply what you've learned!
+Use the [Progress Tracker](/maui-tutorial-for-beginners/progress/) to monitor your quiz scores across all chapters, then come back here to apply what you've learned!

@@ -399,4 +399,4 @@ private async void OnSetReminder(object sender, EventArgs e)
 
 ---
 
-[← Chapter 24: Accessibility]({% link docs/24-accessibility.md %})
+[← Chapter 24: Accessibility]({{ '/docs/24-accessibility/' | relative_url }})

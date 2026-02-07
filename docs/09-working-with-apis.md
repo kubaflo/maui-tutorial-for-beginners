@@ -393,4 +393,4 @@ public partial class WeatherViewModel : ObservableObject
 
 ---
 
-**Previous:** [← 08 — Platform-Specific Code](/docs/08-platform-specific-code/) · **Next:** [10 — Local Storage →](/docs/10-local-storage/)
+**Previous:** [← 08 — Platform-Specific Code](/maui-tutorial-for-beginners/docs/08-platform-specific-code/) · **Next:** [10 — Local Storage →](/maui-tutorial-for-beginners/docs/10-local-storage/)

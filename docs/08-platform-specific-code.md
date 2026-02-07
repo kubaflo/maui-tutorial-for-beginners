@@ -348,4 +348,4 @@ public partial class DeviceInfoViewModel : ObservableObject
 
 ---
 
-**Previous:** [← 07 — Styling & Theming](/docs/07-styling-and-theming/) · **Next:** [09 — Working with APIs →](/docs/09-working-with-apis/)
+**Previous:** [← 07 — Styling & Theming](/maui-tutorial-for-beginners/docs/07-styling-and-theming/) · **Next:** [09 — Working with APIs →](/maui-tutorial-for-beginners/docs/09-working-with-apis/)

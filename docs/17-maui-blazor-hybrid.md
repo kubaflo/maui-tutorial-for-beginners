@@ -336,4 +336,4 @@ builder.Services.AddSingleton<IDataService, DataService>();
 
 ---
 
-**Previous:** [← 16 — Unit Testing](/docs/16-unit-testing/) · **Next:** [18 — Gestures & Touch →](/docs/18-gestures-and-touch/)
+**Previous:** [← 16 — Unit Testing](/maui-tutorial-for-beginners/docs/16-unit-testing/) · **Next:** [18 — Gestures & Touch →](/maui-tutorial-for-beginners/docs/18-gestures-and-touch/)

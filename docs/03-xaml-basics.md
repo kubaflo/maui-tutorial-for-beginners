@@ -297,4 +297,4 @@ You now know how to write XAML, use markup extensions, define resources, compile
 
 ---
 
-**Previous:** [← 02 — Project Structure](/docs/02-project-structure/) · **Next:** [04 — Layouts & Controls →](/docs/04-layouts-and-controls/)
+**Previous:** [← 02 — Project Structure](/maui-tutorial-for-beginners/docs/02-project-structure/) · **Next:** [04 — Layouts & Controls →](/maui-tutorial-for-beginners/docs/04-layouts-and-controls/)

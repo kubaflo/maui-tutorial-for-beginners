@@ -418,4 +418,4 @@ public partial class ContactViewModel : ObservableObject
 
 ---
 
-**Previous:** [← 04 — Layouts & Controls](/docs/04-layouts-and-controls/) · **Next:** [06 — Navigation →](/docs/06-navigation/)
+**Previous:** [← 04 — Layouts & Controls](/maui-tutorial-for-beginners/docs/04-layouts-and-controls/) · **Next:** [06 — Navigation →](/maui-tutorial-for-beginners/docs/06-navigation/)

@@ -392,4 +392,4 @@ public partial class TaskViewModel : ObservableObject
 
 ---
 
-**Previous:** [← 13 — Advanced Shell](/docs/13-shell-advanced/) · **Next:** [15 — Dependency Injection →](/docs/15-dependency-injection/)
+**Previous:** [← 13 — Advanced Shell](/maui-tutorial-for-beginners/docs/13-shell-advanced/) · **Next:** [15 — Dependency Injection →](/maui-tutorial-for-beginners/docs/15-dependency-injection/)

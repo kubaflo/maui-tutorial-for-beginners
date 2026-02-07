@@ -162,9 +162,9 @@ You now have a working MAUI app with modern MVVM! Continue the tutorial:
 
 | Next Step | What You'll Learn |
 |:----------|:-----------------|
-| [📖 Full Tutorial (Ch 1–22)](/docs/01-getting-started/) | Complete learning path |
-| [🔖 Cheat Sheet](/cheat-sheet/) | Quick reference for patterns |
-| [🎯 Coding Challenges](/challenges/) | Practice with real projects |
+| [📖 Full Tutorial (Ch 1–22)](/maui-tutorial-for-beginners/docs/01-getting-started/) | Complete learning path |
+| [🔖 Cheat Sheet](/maui-tutorial-for-beginners/cheat-sheet/) | Quick reference for patterns |
+| [🎯 Coding Challenges](/maui-tutorial-for-beginners/challenges/) | Practice with real projects |
 
 ---
 

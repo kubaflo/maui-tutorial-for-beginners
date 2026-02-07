@@ -333,4 +333,4 @@ public partial class NoteDetailViewModel : ObservableObject
 
 ---
 
-**Previous:** [← 05 — Data Binding & MVVM](/docs/05-data-binding-mvvm/) · **Next:** [07 — Styling & Theming →](/docs/07-styling-and-theming/)
+**Previous:** [← 05 — Data Binding & MVVM](/maui-tutorial-for-beginners/docs/05-data-binding-mvvm/) · **Next:** [07 — Styling & Theming →](/maui-tutorial-for-beginners/docs/07-styling-and-theming/)

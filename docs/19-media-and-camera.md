@@ -363,4 +363,4 @@ private async Task CapturePhotoAsync()
 
 ---
 
-**Previous:** [← 18 — Gestures & Touch](/docs/18-gestures-and-touch/) · **Next:** [20 — HybridWebView →](/docs/20-hybridwebview/)
+**Previous:** [← 18 — Gestures & Touch](/maui-tutorial-for-beginners/docs/18-gestures-and-touch/) · **Next:** [20 — HybridWebView →](/maui-tutorial-for-beginners/docs/20-hybridwebview/)

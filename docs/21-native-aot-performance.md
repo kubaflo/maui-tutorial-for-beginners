@@ -424,4 +424,4 @@ You now know how to optimize your MAUI app for production with Native AOT, XAML 
 
 ---
 
-**Previous:** [← 20 — HybridWebView](/docs/20-hybridwebview/) · **Next:** [22 — Real-World Project →](/docs/22-real-world-project/)
+**Previous:** [← 20 — HybridWebView](/maui-tutorial-for-beginners/docs/20-hybridwebview/) · **Next:** [22 — Real-World Project →](/maui-tutorial-for-beginners/docs/22-real-world-project/)

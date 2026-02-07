@@ -331,4 +331,4 @@ public class AnimalSearchHandler : SearchHandler
 
 ---
 
-**Previous:** [← 12 — Animations](/docs/12-animations/) · **Next:** [14 — Community Toolkit →](/docs/14-community-toolkit/)
+**Previous:** [← 12 — Animations](/maui-tutorial-for-beginners/docs/12-animations/) · **Next:** [14 — Community Toolkit →](/maui-tutorial-for-beginners/docs/14-community-toolkit/)

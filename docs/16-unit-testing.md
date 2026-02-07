@@ -391,4 +391,4 @@ public class TodoViewModelTests
 
 ---
 
-**Previous:** [← 15 — Dependency Injection](/docs/15-dependency-injection/) · **Next:** [17 — MAUI Blazor Hybrid →](/docs/17-maui-blazor-hybrid/)
+**Previous:** [← 15 — Dependency Injection](/maui-tutorial-for-beginners/docs/15-dependency-injection/) · **Next:** [17 — MAUI Blazor Hybrid →](/maui-tutorial-for-beginners/docs/17-maui-blazor-hybrid/)

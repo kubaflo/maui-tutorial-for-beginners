@@ -309,4 +309,4 @@ if (Enum.TryParse<AppTheme>(savedTheme, out var theme))
 
 ---
 
-**Previous:** [← 06 — Navigation](/docs/06-navigation/) · **Next:** [08 — Platform-Specific Code →](/docs/08-platform-specific-code/)
+**Previous:** [← 06 — Navigation](/maui-tutorial-for-beginners/docs/06-navigation/) · **Next:** [08 — Platform-Specific Code →](/maui-tutorial-for-beginners/docs/08-platform-specific-code/)
