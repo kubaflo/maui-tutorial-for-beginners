@@ -416,6 +416,27 @@ permalink: /
   </a>
 </div>
 
+<div class="section-header">
+  <img src="{{ '/assets/images/icons/challenges.svg' | relative_url }}" alt="" style="width:32px;height:32px;">
+  <h2>Test Your Knowledge</h2>
+</div>
+
+<div id="homepage-quiz" style="max-width: 600px; margin: 0 auto 2rem;">
+  <div class="quiz-container" data-quiz-id="home-q1" data-correct="c" data-explanation=".NET MAUI (Multi-platform App UI) lets you build apps for Android, iOS, macOS, and Windows from a single C# and XAML codebase.">
+    <h3>Quick Quiz</h3>
+    <p class="quiz-question">What does MAUI stand for in .NET MAUI?</p>
+    <ul class="quiz-options">
+      <li><label><input type="radio" name="home-q1" value="a"> Mobile App User Interface</label></li>
+      <li><label><input type="radio" name="home-q1" value="b"> Modern Application Unified Interface</label></li>
+      <li><label><input type="radio" name="home-q1" value="c"> Multi-platform App UI</label></li>
+      <li><label><input type="radio" name="home-q1" value="d"> Microsoft Azure Universal Interface</label></li>
+    </ul>
+    <button class="quiz-btn">Check Answer</button>
+    <div class="quiz-feedback"></div>
+  </div>
+  <p style="text-align:center;margin-top:1rem;"><a href="{% link docs/01-getting-started.md %}" class="btn-primary" style="display:inline-block;">Start the Full Tutorial →</a></p>
+</div>
+
 <div style="text-align:center; margin-top:3rem; padding:1.5rem; color: var(--text-muted); font-size: 0.85rem;">
   <p>Prerequisites: Basic C# · <a href="https://dotnet.microsoft.com/download/dotnet/10.0">.NET 10 SDK</a> · <a href="https://visualstudio.microsoft.com/">Visual Studio 2022</a> (v17.12+)</p>
   <p style="margin-top:0.5rem;">Built with ❤️ by <a href="https://github.com/kubaflo">kubaflo</a></p>
