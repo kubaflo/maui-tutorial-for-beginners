@@ -90,4 +90,70 @@ document.addEventListener('DOMContentLoaded', function() {
   }, { rootMargin: '-20% 0px -70% 0px' });
 
   headings.forEach(function(h) { observer.observe(h); });
+
+  // Keyboard Shortcuts for chapter navigation
+  document.addEventListener('keydown', function(e) {
+    // Ignore if user is typing in an input/textarea
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) return;
+
+    // Left arrow or 'p' = Previous chapter
+    if (e.key === 'ArrowLeft' || (e.key === 'p' && !e.ctrlKey && !e.metaKey)) {
+      var prevLink = document.querySelector('a[href*="Previous"], .main-content a:has(> :contains("Previous"))');
+      // Find prev/next links in the footer nav text
+      var allLinks = mainContent.querySelectorAll('a');
+      for (var i = 0; i < allLinks.length; i++) {
+        if (allLinks[i].textContent.indexOf('←') !== -1 || allLinks[i].textContent.indexOf('Previous') !== -1) {
+          window.location.href = allLinks[i].href;
+          return;
+        }
+      }
+    }
+
+    // Right arrow or 'n' = Next chapter
+    if (e.key === 'ArrowRight' || (e.key === 'n' && !e.ctrlKey && !e.metaKey)) {
+      var allLinks2 = mainContent.querySelectorAll('a');
+      for (var j = 0; j < allLinks2.length; j++) {
+        if (allLinks2[j].textContent.indexOf('→') !== -1 || allLinks2[j].textContent.indexOf('Next') !== -1) {
+          window.location.href = allLinks2[j].href;
+          return;
+        }
+      }
+    }
+
+    // 't' = scroll to top
+    if (e.key === 't' && !e.ctrlKey && !e.metaKey) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // '?' = show keyboard shortcuts
+    if (e.key === '?' && !e.ctrlKey && !e.metaKey) {
+      showShortcutsModal();
+    }
+  });
+
+  // Shortcuts modal
+  function showShortcutsModal() {
+    var existing = document.getElementById('shortcuts-modal');
+    if (existing) { existing.remove(); return; }
+
+    var modal = document.createElement('div');
+    modal.id = 'shortcuts-modal';
+    modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:100000;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px);';
+    modal.innerHTML = '<div style="background:#1a1040;border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:2rem;max-width:400px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.5);">' +
+      '<h3 style="color:#a855f7;margin:0 0 1rem;font-size:1.1rem;">⌨️ Keyboard Shortcuts</h3>' +
+      '<div style="display:grid;grid-template-columns:auto 1fr;gap:0.5rem 1rem;font-size:0.9rem;">' +
+      '<kbd style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:4px;font-family:monospace;color:#f0f0f5;">←</kbd><span style="color:#c8c8d8;">Previous chapter</span>' +
+      '<kbd style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:4px;font-family:monospace;color:#f0f0f5;">→</kbd><span style="color:#c8c8d8;">Next chapter</span>' +
+      '<kbd style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:4px;font-family:monospace;color:#f0f0f5;">t</kbd><span style="color:#c8c8d8;">Scroll to top</span>' +
+      '<kbd style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:4px;font-family:monospace;color:#f0f0f5;">?</kbd><span style="color:#c8c8d8;">Show shortcuts</span>' +
+      '</div>' +
+      '<p style="color:#7a7a94;font-size:0.8rem;margin:1rem 0 0;">Press any key or click to close</p>' +
+      '</div>';
+
+    modal.addEventListener('click', function() { modal.remove(); });
+    document.addEventListener('keydown', function closeModal(e) {
+      if (e.key !== '?') { modal.remove(); document.removeEventListener('keydown', closeModal); }
+    });
+    document.body.appendChild(modal);
+  }
 });

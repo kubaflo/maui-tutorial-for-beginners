@@ -175,175 +175,175 @@ permalink: /
     <span class="lesson-num">01</span>
     <div class="lesson-info">
       <div class="lesson-title">Getting Started</div>
-      <div class="lesson-meta">Install tools, create your first app · 2 quizzes</div>
+      <div class="lesson-meta">Install tools, create your first app · 4 min · 2 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/02-project-structure.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">02</span>
     <div class="lesson-info">
       <div class="lesson-title">Project Structure</div>
-      <div class="lesson-meta">Anatomy of a MAUI project · 2 quizzes</div>
+      <div class="lesson-meta">Anatomy of a MAUI project · 6 min · 2 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/03-xaml-basics.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">03</span>
     <div class="lesson-info">
       <div class="lesson-title">XAML Basics</div>
-      <div class="lesson-meta">Syntax, markup extensions, resources · 3 quizzes</div>
+      <div class="lesson-meta">Syntax, markup extensions, resources · 6 min · 3 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/04-layouts-and-controls.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">04</span>
     <div class="lesson-info">
       <div class="lesson-title">Layouts & Controls</div>
-      <div class="lesson-meta">Grid, StackLayout, CollectionView · 3 quizzes</div>
+      <div class="lesson-meta">Grid, StackLayout, CollectionView · 5 min · 3 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/05-data-binding-mvvm.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">05</span>
     <div class="lesson-info">
       <div class="lesson-title">Data Binding & MVVM</div>
-      <div class="lesson-meta">MVVM pattern and data binding · 3 quizzes</div>
+      <div class="lesson-meta">MVVM pattern and data binding · 7 min · 3 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/06-navigation.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">06</span>
     <div class="lesson-info">
       <div class="lesson-title">Navigation</div>
-      <div class="lesson-meta">Shell, tabs, flyout, passing data · 2 quizzes</div>
+      <div class="lesson-meta">Shell, tabs, flyout, passing data · 5 min · 2 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/07-styling-and-theming.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">07</span>
     <div class="lesson-info">
       <div class="lesson-title">Styling & Theming</div>
-      <div class="lesson-meta">Styles, themes, custom fonts · 2 quizzes</div>
+      <div class="lesson-meta">Styles, themes, custom fonts · 5 min · 2 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/08-platform-specific-code.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">08</span>
     <div class="lesson-info">
       <div class="lesson-title">Platform-Specific Code</div>
-      <div class="lesson-meta">Conditional compilation, partial classes · 2 quizzes</div>
+      <div class="lesson-meta">Conditional compilation, partial classes · 5 min · 2 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/09-working-with-apis.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">09</span>
     <div class="lesson-info">
       <div class="lesson-title">Working with APIs</div>
-      <div class="lesson-meta">REST APIs with HttpClient · 3 quizzes</div>
+      <div class="lesson-meta">REST APIs with HttpClient · 6 min · 3 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/10-local-storage.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">10</span>
     <div class="lesson-info">
       <div class="lesson-title">Local Storage</div>
-      <div class="lesson-meta">Preferences, SecureStorage, SQLite · 2 quizzes</div>
+      <div class="lesson-meta">Preferences, SecureStorage, SQLite · 6 min · 2 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/11-publishing-deployment.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">11</span>
     <div class="lesson-info">
       <div class="lesson-title">Publishing & Deployment</div>
-      <div class="lesson-meta">App stores and CI/CD · 2 quizzes</div>
+      <div class="lesson-meta">App stores and CI/CD · 7 min · 2 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/12-animations.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">12</span>
     <div class="lesson-info">
       <div class="lesson-title">Animations</div>
-      <div class="lesson-meta">View animations and easing functions · 2 quizzes</div>
+      <div class="lesson-meta">View animations and easing functions · 7 min · 2 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/13-shell-advanced.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">13</span>
     <div class="lesson-info">
       <div class="lesson-title">Advanced Shell</div>
-      <div class="lesson-meta">Search, flyout customization · 2 quizzes</div>
+      <div class="lesson-meta">Search, flyout customization · 5 min · 2 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/14-community-toolkit.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">14</span>
     <div class="lesson-info">
       <div class="lesson-title">Community Toolkit</div>
-      <div class="lesson-meta">Converters, behaviors, popups · 3 quizzes</div>
+      <div class="lesson-meta">Converters, behaviors, popups · 5 min · 3 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/15-dependency-injection.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">15</span>
     <div class="lesson-info">
       <div class="lesson-title">Dependency Injection</div>
-      <div class="lesson-meta">DI and service lifetimes · 2 quizzes</div>
+      <div class="lesson-meta">DI and service lifetimes · 5 min · 2 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/16-unit-testing.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">16</span>
     <div class="lesson-info">
       <div class="lesson-title">Unit Testing</div>
-      <div class="lesson-meta">xUnit, mocking, testing ViewModels · 3 quizzes</div>
+      <div class="lesson-meta">xUnit, mocking, testing ViewModels · 6 min · 3 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/17-maui-blazor-hybrid.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">17</span>
     <div class="lesson-info">
       <div class="lesson-title">Blazor Hybrid</div>
-      <div class="lesson-meta">Razor components in MAUI · 3 quizzes</div>
+      <div class="lesson-meta">Razor components in MAUI · 6 min · 3 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/18-gestures-and-touch.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">18</span>
     <div class="lesson-info">
       <div class="lesson-title">Gestures & Touch</div>
-      <div class="lesson-meta">Tap, swipe, pan, drag-and-drop · 2 quizzes</div>
+      <div class="lesson-meta">Tap, swipe, pan, drag-and-drop · 5 min · 2 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/19-media-and-camera.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">19</span>
     <div class="lesson-info">
       <div class="lesson-title">Media & Camera</div>
-      <div class="lesson-meta">Photos, video, file picking · 2 quizzes</div>
+      <div class="lesson-meta">Photos, video, file picking · 6 min · 2 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/20-hybridwebview.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">20</span>
     <div class="lesson-info">
       <div class="lesson-title">HybridWebView & JS Interop</div>
-      <div class="lesson-meta">Embed web content, JS interop · 2 quizzes</div>
+      <div class="lesson-meta">Embed web content, JS interop · 6 min · 2 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/21-native-aot-performance.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">21</span>
     <div class="lesson-info">
       <div class="lesson-title">Native AOT & Performance</div>
-      <div class="lesson-meta">AOT compilation, XAML source gen · 2 quizzes</div>
+      <div class="lesson-meta">AOT compilation, XAML source gen · 7 min · 2 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/22-real-world-project.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">22</span>
     <div class="lesson-info">
       <div class="lesson-title">Real-World Project</div>
-      <div class="lesson-meta">Build a complete task manager app · Capstone</div>
+      <div class="lesson-meta">Build a complete task manager app · 11 min · Capstone</div>
     </div>
   </a>
   <a href="{% link docs/23-maps-location.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">23</span>
     <div class="lesson-info">
       <div class="lesson-title">Maps & Location</div>
-      <div class="lesson-meta">GPS, geocoding, pins, map controls · 3 quizzes</div>
+      <div class="lesson-meta">GPS, geocoding, pins, map controls · 7 min · 3 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/24-accessibility.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">24</span>
     <div class="lesson-info">
       <div class="lesson-title">Accessibility</div>
-      <div class="lesson-meta">Screen readers, semantic properties, WCAG · 2 quizzes</div>
+      <div class="lesson-meta">Screen readers, semantic properties · 6 min · 2 quizzes</div>
     </div>
   </a>
   <a href="{% link docs/25-notifications-background.md %}" class="lesson-item fade-in-up">
     <span class="lesson-num">25</span>
     <div class="lesson-info">
       <div class="lesson-title">Notifications & Background Tasks</div>
-      <div class="lesson-meta">Local notifications, background services, connectivity · 2 quizzes</div>
+      <div class="lesson-meta">Local notifications, background tasks · 5 min · 2 quizzes</div>
     </div>
   </a>
 </div>
