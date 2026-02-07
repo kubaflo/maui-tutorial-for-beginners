@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" fill="none">
+  <defs>
+    <linearGradient id="g404" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0.1"/>
+    </linearGradient>
+  </defs>
+  <!-- Broken link illustration -->
+  <circle cx="150" cy="90" r="60" fill="url(#g404)" stroke="rgba(168,85,247,0.3)" stroke-width="2"/>
+  <!-- Chain link 1 -->
+  <rect x="100" y="75" width="40" height="30" rx="15" fill="none" stroke="#a855f7" stroke-width="3" transform="rotate(-20 120 90)"/>
+  <!-- Chain link 2 (broken) -->
+  <rect x="155" y="75" width="40" height="30" rx="15" fill="none" stroke="#6366f1" stroke-width="3" transform="rotate(15 175 90)"/>
+  <!-- Break marks -->
+  <path d="M138 82l4 -6M142 96l4 -6" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+  <!-- Question mark -->
+  <text x="150" y="170" font-family="Inter,Arial,sans-serif" font-size="18" text-anchor="middle" fill="rgba(168,85,247,0.5)" font-weight="700">Page not found</text>
+</svg>
