@@ -505,6 +505,18 @@ private async void OnSearch(object sender, EventArgs e)
 
 </details>
 
+
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li>Use <code>Microsoft.Maui.Controls.Maps</code> for native map controls</li>
+    <li><strong>Geocoding</strong> converts addresses to coordinates and vice versa</li>
+    <li><strong>Geolocation</strong> provides GPS position with configurable accuracy</li>
+    <li>Add <strong>pins</strong>, <strong>polylines</strong>, and <strong>custom overlays</strong> to maps</li>
+    <li>Declare location permissions per platform</li>
+  </ul>
+</div>
+
 ---
 
 [← Chapter 22: Real-World Project]({% link docs/22-real-world-project.md %}) · [Chapter 24: Accessibility →]({% link docs/24-accessibility.md %})

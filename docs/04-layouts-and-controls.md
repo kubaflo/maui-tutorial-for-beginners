@@ -310,6 +310,18 @@ You can now build complete user interfaces with layouts and controls. Next, we'l
   </details>
 </div>
 
+
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li><strong>VerticalStackLayout / HorizontalStackLayout</strong> — simple stacking in one direction</li>
+    <li><strong>Grid</strong> — the most powerful layout, uses rows and columns</li>
+    <li><strong>FlexLayout</strong> — CSS Flexbox-inspired, great for wrapping</li>
+    <li>Common controls: <code>Button</code>, <code>Entry</code>, <code>Label</code>, <code>Image</code>, <code>CollectionView</code></li>
+    <li>Use <strong>layout nesting</strong> to create complex UIs from simple building blocks</li>
+  </ul>
+</div>
+
 ---
 
 **Previous:** [← 03 — XAML Basics](/docs/03-xaml-basics/) · **Next:** [05 — Data Binding & MVVM →](/docs/05-data-binding-mvvm/)

@@ -300,6 +300,18 @@ Open a new MAUI project and answer these questions by exploring the file structu
 
 </details>
 
+
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li><strong>MauiProgram.cs</strong> is the entry point — configures fonts, services, and DI</li>
+    <li>The <strong>Platforms/</strong> folder contains platform-specific startup code</li>
+    <li><strong>Resources/</strong> holds shared images, fonts, styles, and raw assets</li>
+    <li>A single <strong>.csproj</strong> file targets all platforms via multi-targeting</li>
+    <li><strong>App.xaml</strong> defines global resources; <strong>AppShell.xaml</strong> defines navigation structure</li>
+  </ul>
+</div>
+
 ---
 
 **Previous:** [← 01 — Getting Started](/docs/01-getting-started/) · **Next:** [03 — XAML Basics →](/docs/03-xaml-basics/)

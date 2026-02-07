@@ -366,6 +366,18 @@ protected override async void OnAppearing()
   </details>
 </div>
 
+
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li><strong>Basic animations</strong>: <code>FadeTo</code>, <code>TranslateTo</code>, <code>ScaleTo</code>, <code>RotateTo</code></li>
+    <li>Chain animations with <code>await</code> or run them concurrently with <code>Task.WhenAll</code></li>
+    <li>Use <strong>easing functions</strong> (SpringIn, BounceOut, CubicInOut) for natural motion</li>
+    <li><strong>Lottie animations</strong> via SkiaSharp for complex, designer-created animations</li>
+    <li>Always consider <strong>reduced motion</strong> preferences for accessibility</li>
+  </ul>
+</div>
+
 ---
 
 **Previous:** [← 11 — Publishing & Deployment](/docs/11-publishing-deployment/) · **Next:** [13 — Advanced Shell →](/docs/13-shell-advanced/)

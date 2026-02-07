@@ -317,6 +317,18 @@ public class AnimalSearchHandler : SearchHandler
 
 ---
 
+
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li><strong>SearchHandler</strong> adds search to the Shell navigation bar</li>
+    <li><strong>Navigation guards</strong> prevent leaving pages with unsaved changes</li>
+    <li><strong>Deep linking</strong> allows opening specific pages via URIs</li>
+    <li>Customize flyout items, icons, and behavior programmatically</li>
+    <li>Use <code>Shell.BackButtonBehavior</code> for custom back navigation</li>
+  </ul>
+</div>
+
 ---
 
 **Previous:** [← 12 — Animations](/docs/12-animations/) · **Next:** [14 — Community Toolkit →](/docs/14-community-toolkit/)

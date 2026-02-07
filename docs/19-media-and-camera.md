@@ -349,6 +349,18 @@ private async Task CapturePhotoAsync()
 
 ---
 
+
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li>Use <code>MediaPicker</code> to capture photos/videos or pick from gallery</li>
+    <li>Always request <strong>permissions</strong> before accessing camera or microphone</li>
+    <li><code>MediaElement</code> plays audio and video with built-in transport controls</li>
+    <li>Handle <strong>file paths</strong> carefully — use <code>FileSystem.CacheDirectory</code> for temp files</li>
+    <li>Declare platform permissions in <code>AndroidManifest.xml</code> and <code>Info.plist</code></li>
+  </ul>
+</div>
+
 ---
 
 **Previous:** [← 18 — Gestures & Touch](/docs/18-gestures-and-touch/) · **Next:** [20 — HybridWebView →](/docs/20-hybridwebview/)

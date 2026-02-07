@@ -377,6 +377,18 @@ public class TodoViewModelTests
   </details>
 </div>
 
+
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li>Use <strong>xUnit</strong> (or NUnit/MSTest) for testing MAUI ViewModels and services</li>
+    <li><strong>Mock dependencies</strong> with Moq or NSubstitute for isolated unit tests</li>
+    <li>Test <strong>ViewModels</strong>, not Views — MVVM makes this natural</li>
+    <li>Use <code>[Fact]</code> for single tests and <code>[Theory]</code> with <code>[InlineData]</code> for parameterized tests</li>
+    <li>Aim for testing business logic and edge cases, not UI rendering</li>
+  </ul>
+</div>
+
 ---
 
 **Previous:** [← 15 — Dependency Injection](/docs/15-dependency-injection/) · **Next:** [17 — MAUI Blazor Hybrid →](/docs/17-maui-blazor-hybrid/)

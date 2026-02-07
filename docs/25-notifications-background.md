@@ -385,6 +385,18 @@ private async void OnSetReminder(object sender, EventArgs e)
 
 </details>
 
+
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li>Local notifications use <strong>Plugin.LocalNotification</strong></li>
+    <li>Push notifications require <strong>Firebase (Android)</strong> and <strong>APNs (iOS)</strong></li>
+    <li>Background tasks use <strong>platform-specific APIs</strong></li>
+    <li>Android 13+ requires explicit notification permission request</li>
+    <li>Use <strong>background fetch</strong> for periodic data sync</li>
+  </ul>
+</div>
+
 ---
 
 [← Chapter 24: Accessibility]({% link docs/24-accessibility.md %})

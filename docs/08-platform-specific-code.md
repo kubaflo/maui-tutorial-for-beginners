@@ -334,6 +334,18 @@ public partial class DeviceInfoViewModel : ObservableObject
   </details>
 </div>
 
+
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li>Use <strong>partial classes</strong> with platform-specific implementations in <code>Platforms/</code></li>
+    <li><strong>Conditional compilation</strong> (<code>#if ANDROID</code>) for small platform differences</li>
+    <li><strong>Device.RuntimePlatform</strong> or <code>DeviceInfo.Platform</code> for runtime checks</li>
+    <li><strong>Custom handlers</strong> replace Xamarin's renderers for customizing native controls</li>
+    <li>Access native APIs through <strong>dependency injection</strong> with platform-specific services</li>
+  </ul>
+</div>
+
 ---
 
 **Previous:** [← 07 — Styling & Theming](/docs/07-styling-and-theming/) · **Next:** [09 — Working with APIs →](/docs/09-working-with-apis/)

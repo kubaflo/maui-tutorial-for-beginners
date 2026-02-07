@@ -345,6 +345,18 @@ Take this inaccessible form and add proper accessibility properties:
 
 </details>
 
+
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li>Set <code>SemanticProperties.Description</code> on all interactive elements</li>
+    <li>Support <strong>Dynamic Type</strong> and <strong>font scaling</strong></li>
+    <li>Ensure minimum <strong>4.5:1 contrast ratio</strong> for text</li>
+    <li>Test with <strong>screen readers</strong> (TalkBack, VoiceOver)</li>
+    <li>Use <code>SemanticProperties.HeadingLevel</code> for page structure</li>
+  </ul>
+</div>
+
 ---
 
 [← Chapter 23: Maps & Location]({% link docs/23-maps-location.md %}) · [Chapter 25: Notifications →]({% link docs/25-notifications-background.md %})

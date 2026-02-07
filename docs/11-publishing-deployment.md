@@ -383,6 +383,18 @@ dotnet publish -f net10.0-android -c Release
 
 ---
 
+
+<div class="key-takeaways">
+  <h4>📌 Key Takeaways</h4>
+  <ul>
+    <li>Set <strong>app version</strong>, <strong>bundle ID</strong>, and <strong>display name</strong> in the .csproj file</li>
+    <li>Use <code>dotnet publish -c Release</code> with the appropriate target framework</li>
+    <li>Android needs a <strong>signed keystore</strong>; iOS requires an <strong>Apple Developer account</strong></li>
+    <li>Enable <strong>AOT</strong> and <strong>trimming</strong> for smaller, faster release builds</li>
+    <li>Test on real devices before submitting to app stores</li>
+  </ul>
+</div>
+
 ---
 
 **Previous:** [← 10 — Local Storage](/docs/10-local-storage/) · **Next:** [12 — Animations →](/docs/12-animations/)
