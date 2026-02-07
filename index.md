@@ -17,7 +17,7 @@ permalink: /
 </svg>
 
 <div class="hero-section">
-  <span class="hero-logo">🚀</span>
+  <img src="{{ '/assets/images/hero-devices.svg' | relative_url }}" alt="Cross-platform app development" class="hero-illustration" style="max-width: 340px; margin: 0 auto 1.5rem; display: block;">
   <h1 class="hero-title">.NET MAUI Tutorial</h1>
   <p class="hero-subtitle">Master cross-platform app development with 25 interactive lessons, hands-on exercises, and real-world projects — powered by .NET 10 LTS</p>
   <div class="hero-buttons">
@@ -29,36 +29,36 @@ permalink: /
 
 <div class="stats-bar" id="statsBar">
   <div class="stat-item">
-    <span class="stat-icon">⚡</span>
+    <img src="{{ '/assets/images/icons/xp.svg' | relative_url }}" alt="" class="stat-icon-img">
     <span class="stat-value" id="statXP">0</span>
     <span class="stat-label">XP Earned</span>
   </div>
   <div class="stat-item">
-    <span class="stat-icon">🔥</span>
+    <img src="{{ '/assets/images/icons/streak.svg' | relative_url }}" alt="" class="stat-icon-img">
     <span class="stat-value" id="statStreak">0</span>
     <span class="stat-label">Day Streak</span>
   </div>
   <div class="stat-item">
-    <span class="stat-icon">🏆</span>
+    <img src="{{ '/assets/images/icons/level.svg' | relative_url }}" alt="" class="stat-icon-img">
     <span class="stat-value" id="statLevel">1</span>
     <span class="stat-label">Level</span>
   </div>
   <div class="stat-item">
-    <span class="stat-icon">✅</span>
+    <img src="{{ '/assets/images/icons/completed.svg' | relative_url }}" alt="" class="stat-icon-img">
     <span class="stat-value" id="statCompleted">0/25</span>
     <span class="stat-label">Completed</span>
   </div>
 </div>
 
 <div class="section-header">
-  <span class="section-icon">🗺️</span>
+  <img src="{{ '/assets/images/icons/roadmap.svg' | relative_url }}" alt="" style="width:32px;height:32px;">
   <h2>Learning Paths</h2>
 </div>
 
 <div class="path-cards">
   <a href="{% link docs/01-getting-started.md %}" class="path-card fade-in-up">
     <div class="path-card-header">
-      <span class="path-card-icon">🟢</span>
+      <img src="{{ '/assets/images/icons/fundamentals.svg' | relative_url }}" alt="" class="path-card-icon-img">
       <div class="path-card-progress" data-path="fundamentals">
         <svg viewBox="0 0 36 36">
           <circle class="progress-bg" cx="18" cy="18" r="15.5"/>
@@ -77,7 +77,7 @@ permalink: /
 
   <a href="{% link docs/07-styling-and-theming.md %}" class="path-card fade-in-up">
     <div class="path-card-header">
-      <span class="path-card-icon">🟡</span>
+      <img src="{{ '/assets/images/icons/intermediate.svg' | relative_url }}" alt="" class="path-card-icon-img">
       <div class="path-card-progress" data-path="intermediate">
         <svg viewBox="0 0 36 36">
           <circle class="progress-bg" cx="18" cy="18" r="15.5"/>
@@ -96,7 +96,7 @@ permalink: /
 
   <a href="{% link docs/13-shell-advanced.md %}" class="path-card fade-in-up">
     <div class="path-card-header">
-      <span class="path-card-icon">🔴</span>
+      <img src="{{ '/assets/images/icons/advanced.svg' | relative_url }}" alt="" class="path-card-icon-img">
       <div class="path-card-progress" data-path="advanced">
         <svg viewBox="0 0 36 36">
           <circle class="progress-bg" cx="18" cy="18" r="15.5"/>
@@ -115,7 +115,7 @@ permalink: /
 
   <a href="{% link docs/20-hybridwebview.md %}" class="path-card fade-in-up">
     <div class="path-card-header">
-      <span class="path-card-icon">⭐</span>
+      <img src="{{ '/assets/images/icons/expert.svg' | relative_url }}" alt="" class="path-card-icon-img">
       <div class="path-card-progress" data-path="expert">
         <svg viewBox="0 0 36 36">
           <circle class="progress-bg" cx="18" cy="18" r="15.5"/>
@@ -134,7 +134,7 @@ permalink: /
 </div>
 
 <div class="section-header">
-  <span class="section-icon">📖</span>
+  <img src="{{ '/assets/images/icons/cheatsheet.svg' | relative_url }}" alt="" style="width:32px;height:32px;">
   <h2>All Lessons</h2>
 </div>
 
@@ -317,63 +317,63 @@ permalink: /
 </div>
 
 <div class="section-header">
-  <span class="section-icon">📚</span>
+  <img src="{{ '/assets/images/icons/architecture.svg' | relative_url }}" alt="" style="width:32px;height:32px;">
   <h2>Resources & Reference</h2>
 </div>
 
 <div class="resource-grid">
   <a href="{% link docs/quickstart.md %}" class="resource-card fade-in-up">
-    <span class="resource-card-icon">⚡</span>
+    <img src="{{ '/assets/images/icons/quickstart.svg' | relative_url }}" alt="" class="resource-card-icon-img">
     <div class="resource-card-title">Quick Start</div>
     <div class="resource-card-desc">5-minute setup guide</div>
   </a>
   <a href="{% link docs/cheat-sheet.md %}" class="resource-card fade-in-up">
-    <span class="resource-card-icon">🔖</span>
+    <img src="{{ '/assets/images/icons/cheatsheet.svg' | relative_url }}" alt="" class="resource-card-icon-img">
     <div class="resource-card-title">Cheat Sheet</div>
     <div class="resource-card-desc">Common patterns & snippets</div>
   </a>
   <a href="{% link docs/architecture.md %}" class="resource-card fade-in-up">
-    <span class="resource-card-icon">🏛️</span>
+    <img src="{{ '/assets/images/icons/architecture.svg' | relative_url }}" alt="" class="resource-card-icon-img">
     <div class="resource-card-title">Architecture</div>
     <div class="resource-card-desc">MVVM, repository, messaging</div>
   </a>
   <a href="{% link docs/best-practices.md %}" class="resource-card fade-in-up">
-    <span class="resource-card-icon">✨</span>
+    <img src="{{ '/assets/images/icons/practices.svg' | relative_url }}" alt="" class="resource-card-icon-img">
     <div class="resource-card-title">Best Practices</div>
     <div class="resource-card-desc">Production coding standards</div>
   </a>
   <a href="{% link docs/whats-new.md %}" class="resource-card fade-in-up">
-    <span class="resource-card-icon">🆕</span>
+    <img src="{{ '/assets/images/icons/whatsnew.svg' | relative_url }}" alt="" class="resource-card-icon-img">
     <div class="resource-card-title">What's New</div>
     <div class="resource-card-desc">MAUI 10 features</div>
   </a>
   <a href="{% link docs/challenges.md %}" class="resource-card fade-in-up">
-    <span class="resource-card-icon">🎯</span>
+    <img src="{{ '/assets/images/icons/challenges.svg' | relative_url }}" alt="" class="resource-card-icon-img">
     <div class="resource-card-title">Challenges</div>
     <div class="resource-card-desc">Practice projects to build</div>
   </a>
   <a href="{% link docs/troubleshooting.md %}" class="resource-card fade-in-up">
-    <span class="resource-card-icon">🐛</span>
+    <img src="{{ '/assets/images/icons/troubleshoot.svg' | relative_url }}" alt="" class="resource-card-icon-img">
     <div class="resource-card-title">Troubleshooting</div>
     <div class="resource-card-desc">Common mistakes & fixes</div>
   </a>
   <a href="{% link docs/faq.md %}" class="resource-card fade-in-up">
-    <span class="resource-card-icon">❓</span>
+    <img src="{{ '/assets/images/icons/faq.svg' | relative_url }}" alt="" class="resource-card-icon-img">
     <div class="resource-card-title">FAQ & Glossary</div>
     <div class="resource-card-desc">Questions & terminology</div>
   </a>
   <a href="{% link docs/progress.md %}" class="resource-card fade-in-up">
-    <span class="resource-card-icon">📊</span>
+    <img src="{{ '/assets/images/icons/progress.svg' | relative_url }}" alt="" class="resource-card-icon-img">
     <div class="resource-card-title">Progress Tracker</div>
     <div class="resource-card-desc">Track your quiz scores</div>
   </a>
   <a href="{% link docs/playground.md %}" class="resource-card fade-in-up">
-    <span class="resource-card-icon">🎮</span>
+    <img src="{{ '/assets/images/icons/playground.svg' | relative_url }}" alt="" class="resource-card-icon-img">
     <div class="resource-card-title">XAML Playground</div>
     <div class="resource-card-desc">Live XAML layout editor</div>
   </a>
   <a href="{% link docs/roadmap.md %}" class="resource-card fade-in-up">
-    <span class="resource-card-icon">🗺️</span>
+    <img src="{{ '/assets/images/icons/roadmap.svg' | relative_url }}" alt="" class="resource-card-icon-img">
     <div class="resource-card-title">Learning Roadmap</div>
     <div class="resource-card-desc">Visual learning path guide</div>
   </a>

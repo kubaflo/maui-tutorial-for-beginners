@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f0c29;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Phone frame -->
+  <rect x="60" y="30" width="120" height="220" rx="18" fill="#1e1b4b" stroke="url(#grad1)" stroke-width="2.5"/>
+  <rect x="68" y="48" width="104" height="186" rx="4" fill="url(#screenGrad)"/>
+  <!-- Phone screen content -->
+  <rect x="76" y="58" width="88" height="12" rx="3" fill="rgba(168,85,247,0.3)"/>
+  <rect x="76" y="78" width="60" height="6" rx="2" fill="rgba(255,255,255,0.15)"/>
+  <rect x="76" y="90" width="75" height="6" rx="2" fill="rgba(255,255,255,0.1)"/>
+  <rect x="76" y="106" width="88" height="40" rx="6" fill="rgba(168,85,247,0.12)" stroke="rgba(168,85,247,0.3)" stroke-width="1"/>
+  <rect x="82" y="112" width="30" height="4" rx="1" fill="rgba(255,255,255,0.2)"/>
+  <rect x="82" y="120" width="50" height="3" rx="1" fill="rgba(255,255,255,0.1)"/>
+  <rect x="82" y="128" width="76" height="12" rx="4" fill="url(#grad1)" opacity="0.8"/>
+  <rect x="76" y="154" width="88" height="40" rx="6" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+  <rect x="82" y="160" width="40" height="4" rx="1" fill="rgba(255,255,255,0.2)"/>
+  <rect x="82" y="168" width="55" height="3" rx="1" fill="rgba(255,255,255,0.1)"/>
+  <rect x="82" y="178" width="76" height="12" rx="4" fill="url(#grad2)" opacity="0.6"/>
+  <!-- Bottom nav -->
+  <circle cx="100" cy="218" r="4" fill="rgba(168,85,247,0.6)"/>
+  <circle cx="120" cy="218" r="4" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="140" cy="218" r="4" fill="rgba(255,255,255,0.15)"/>
+  <!-- Tablet frame -->
+  <rect x="210" y="50" width="160" height="200" rx="14" fill="#1e1b4b" stroke="url(#grad2)" stroke-width="2"/>
+  <rect x="220" y="62" width="140" height="176" rx="4" fill="url(#screenGrad)"/>
+  <!-- Tablet screen content -->
+  <rect x="228" y="72" width="54" height="8" rx="3" fill="rgba(168,85,247,0.3)"/>
+  <rect x="228" y="90" width="124" height="32" rx="6" fill="rgba(168,85,247,0.08)" stroke="rgba(168,85,247,0.2)" stroke-width="1"/>
+  <rect x="236" y="96" width="40" height="4" rx="1" fill="rgba(255,255,255,0.2)"/>
+  <rect x="236" y="104" width="80" height="3" rx="1" fill="rgba(255,255,255,0.1)"/>
+  <rect x="236" y="112" width="50" height="6" rx="3" fill="url(#grad1)" opacity="0.6"/>
+  <rect x="228" y="130" width="60" height="48" rx="6" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <rect x="236" y="138" width="30" height="4" rx="1" fill="rgba(52,211,153,0.4)"/>
+  <rect x="236" y="148" width="44" height="3" rx="1" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="248" cy="166" r="6" fill="none" stroke="rgba(52,211,153,0.4)" stroke-width="2"/>
+  <rect x="294" y="130" width="58" height="48" rx="6" fill="rgba(251,146,60,0.08)" stroke="rgba(251,146,60,0.2)" stroke-width="1"/>
+  <rect x="302" y="138" width="25" height="4" rx="1" fill="rgba(251,146,60,0.4)"/>
+  <rect x="302" y="148" width="42" height="3" rx="1" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="314" cy="166" r="6" fill="none" stroke="rgba(251,146,60,0.4)" stroke-width="2"/>
+  <rect x="228" y="186" width="124" height="14" rx="4" fill="url(#grad1)" opacity="0.7"/>
+  <rect x="228" y="208" width="124" height="14" rx="4" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <!-- Code brackets floating -->
+  <text x="30" y="90" font-family="monospace" font-size="28" fill="rgba(168,85,247,0.25)" transform="rotate(-15 30 90)">&lt;/&gt;</text>
+  <text x="340" y="40" font-family="monospace" font-size="22" fill="rgba(99,102,241,0.2)" transform="rotate(10 340 40)">{ }</text>
+  <text x="20" y="240" font-family="monospace" font-size="18" fill="rgba(34,211,238,0.15)" transform="rotate(5 20 240)">C#</text>
+  <!-- Dots decoration -->
+  <circle cx="380" cy="260" r="3" fill="rgba(168,85,247,0.2)"/>
+  <circle cx="370" cy="275" r="2" fill="rgba(99,102,241,0.2)"/>
+  <circle cx="390" cy="245" r="2" fill="rgba(34,211,238,0.15)"/>
+  <circle cx="15" y="150" r="3" fill="rgba(168,85,247,0.15)"/>
+  <circle cx="25" cy="170" r="2" fill="rgba(99,102,241,0.15)"/>
+</svg>

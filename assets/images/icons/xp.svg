@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <path d="M16 4l3 6 7 1-5 5 1.2 7L16 20l-6.2 3L11 16 6 11l7-1z" fill="url(#xpGrad)" stroke="none"/>
+  <defs>
+    <linearGradient id="xpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fb923c"/>
+      <stop offset="100%" style="stop-color:#f97316"/>
+    </linearGradient>
+  </defs>
+</svg>

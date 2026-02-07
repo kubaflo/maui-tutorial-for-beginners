@@ -227,6 +227,28 @@ body {
   flex-wrap: wrap;
 }
 
+/* --- SVG Image Icons --- */
+.hero-illustration {
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 30px rgba(168, 85, 247, 0.2));
+}
+
+.stat-icon-img {
+  width: 28px;
+  height: 28px;
+}
+
+.path-card-icon-img {
+  width: 48px;
+  height: 48px;
+}
+
+.resource-card-icon-img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.5rem;
+}
+
 .btn-primary {
   display: inline-flex;
   align-items: center;
