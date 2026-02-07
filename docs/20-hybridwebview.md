@@ -2,6 +2,7 @@
 title: "HybridWebView & JS Interop"
 layout: default
 nav_order: 20
+parent: "📖 Lessons"
 permalink: /docs/20-hybridwebview/
 ---
 

@@ -2,6 +2,7 @@
 title: "XAML Basics"
 layout: default
 nav_order: 3
+parent: "📖 Lessons"
 permalink: /docs/03-xaml-basics/
 ---
 
@@ -278,4 +279,4 @@ You now know how to write XAML, use markup extensions, define resources, compile
 
 ---
 
-**Previous:** [← 02 — Project Structure](../02-ProjectStructure/README.md) · **Next:** [04 — Layouts & Controls →](../04-Layouts-And-Controls/README.md)
+**Previous:** [← 02 — Project Structure](/docs/02-project-structure/) · **Next:** [04 — Layouts & Controls →](/docs/04-layouts-and-controls/)

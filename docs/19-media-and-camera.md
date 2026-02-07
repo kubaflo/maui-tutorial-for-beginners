@@ -2,6 +2,7 @@
 title: "Media & Camera"
 layout: default
 nav_order: 19
+parent: "📖 Lessons"
 permalink: /docs/19-media-and-camera/
 ---
 
@@ -290,4 +291,4 @@ You can now capture photos, pick files, play media, share content, and manage pe
 
 ---
 
-**Previous:** [← 18 — Gestures & Touch](../18-Gestures-And-Touch/README.md) · **Next:** [20 — HybridWebView →](/docs/20-hybridwebview/) · **Back to:** [📚 Table of Contents](../README.md)
+**Previous:** [← 18 — Gestures & Touch](/docs/18-gestures-and-touch/) · **Next:** [20 — HybridWebView →](/docs/20-hybridwebview/)

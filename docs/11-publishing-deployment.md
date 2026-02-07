@@ -2,6 +2,7 @@
 title: "Publishing & Deployment"
 layout: default
 nav_order: 11
+parent: "📖 Lessons"
 permalink: /docs/11-publishing-deployment/
 ---
 
@@ -333,4 +334,4 @@ jobs:
 
 ---
 
-**Previous:** [← 10 — Local Storage](../10-Local-Storage/README.md) · **Next:** [12 — Animations →](../12-Animations/README.md)
+**Previous:** [← 10 — Local Storage](/docs/10-local-storage/) · **Next:** [12 — Animations →](/docs/12-animations/)

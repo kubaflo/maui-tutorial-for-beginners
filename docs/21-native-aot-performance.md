@@ -2,6 +2,7 @@
 title: "Native AOT & Performance"
 layout: default
 nav_order: 21
+parent: "📖 Lessons"
 permalink: /docs/21-native-aot-performance/
 ---
 

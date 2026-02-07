@@ -2,6 +2,7 @@
 title: "Data Binding & MVVM"
 layout: default
 nav_order: 5
+parent: "📖 Lessons"
 permalink: /docs/05-data-binding-mvvm/
 ---
 
@@ -390,4 +391,4 @@ public partial class ContactViewModel : ObservableObject
 
 ---
 
-**Previous:** [← 04 — Layouts & Controls](../04-Layouts-And-Controls/README.md) · **Next:** [06 — Navigation →](../06-Navigation/README.md)
+**Previous:** [← 04 — Layouts & Controls](/docs/04-layouts-and-controls/) · **Next:** [06 — Navigation →](/docs/06-navigation/)

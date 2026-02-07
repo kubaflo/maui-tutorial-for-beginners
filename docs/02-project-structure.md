@@ -2,6 +2,7 @@
 title: "Project Structure"
 layout: default
 nav_order: 2
+parent: "📖 Lessons"
 permalink: /docs/02-project-structure/
 ---
 
@@ -199,4 +200,4 @@ Open a new MAUI project and answer these questions by exploring the file structu
 
 ---
 
-**Previous:** [← 01 — Getting Started](../01-GettingStarted/README.md) · **Next:** [03 — XAML Basics →](../03-XAML-Basics/README.md)
+**Previous:** [← 01 — Getting Started](/docs/01-getting-started/) · **Next:** [03 — XAML Basics →](/docs/03-xaml-basics/)

@@ -2,6 +2,7 @@
 title: "Advanced Shell"
 layout: default
 nav_order: 13
+parent: "📖 Lessons"
 permalink: /docs/13-shell-advanced/
 ---
 
@@ -244,4 +245,4 @@ You now know how to use Shell for search, custom styling, navigation guards, and
 
 ---
 
-**Previous:** [← 12 — Animations](../12-Animations/README.md) · **Next:** [14 — Community Toolkit →](../14-Community-Toolkit/README.md)
+**Previous:** [← 12 — Animations](/docs/12-animations/) · **Next:** [14 — Community Toolkit →](/docs/14-community-toolkit/)

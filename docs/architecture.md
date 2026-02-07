@@ -1,7 +1,8 @@
 ---
 title: "🏛️ Architecture Patterns"
 layout: default
-nav_order: 93
+nav_order: 3
+parent: "📚 Reference"
 permalink: /architecture/
 ---
 

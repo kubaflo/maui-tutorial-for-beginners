@@ -2,6 +2,7 @@
 title: "Platform-Specific Code"
 layout: default
 nav_order: 8
+parent: "📖 Lessons"
 permalink: /docs/08-platform-specific-code/
 ---
 
@@ -333,4 +334,4 @@ public partial class DeviceInfoViewModel : ObservableObject
 
 ---
 
-**Previous:** [← 07 — Styling & Theming](../07-Styling-And-Theming/README.md) · **Next:** [09 — Working with APIs →](../09-Working-With-APIs/README.md)
+**Previous:** [← 07 — Styling & Theming](/docs/07-styling-and-theming/) · **Next:** [09 — Working with APIs →](/docs/09-working-with-apis/)

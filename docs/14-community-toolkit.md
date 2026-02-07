@@ -2,6 +2,7 @@
 title: "Community Toolkit"
 layout: default
 nav_order: 14
+parent: "📖 Lessons"
 permalink: /docs/14-community-toolkit/
 ---
 
@@ -304,4 +305,4 @@ The Community Toolkit supercharges your MAUI apps with battle-tested components.
 
 ---
 
-**Previous:** [← 13 — Advanced Shell](../13-Shell-Advanced/README.md) · **Next:** [15 — Dependency Injection →](../15-Dependency-Injection/README.md)
+**Previous:** [← 13 — Advanced Shell](/docs/13-shell-advanced/) · **Next:** [15 — Dependency Injection →](/docs/15-dependency-injection/)

@@ -2,6 +2,7 @@
 title: "Local Storage"
 layout: default
 nav_order: 10
+parent: "📖 Lessons"
 permalink: /docs/10-local-storage/
 ---
 
@@ -334,4 +335,4 @@ public class BookmarkService
 
 ---
 
-**Previous:** [← 09 — Working with APIs](../09-Working-With-APIs/README.md) · **Next:** [11 — Publishing & Deployment →](../11-Publishing-Deployment/README.md)
+**Previous:** [← 09 — Working with APIs](/docs/09-working-with-apis/) · **Next:** [11 — Publishing & Deployment →](/docs/11-publishing-deployment/)

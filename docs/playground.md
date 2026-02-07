@@ -1,7 +1,8 @@
 ---
 title: "🎮 XAML Playground"
 layout: default
-nav_order: 97
+nav_order: 1
+parent: "🛠️ Tools"
 permalink: /playground/
 ---
 

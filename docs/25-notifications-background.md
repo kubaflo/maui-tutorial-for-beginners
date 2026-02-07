@@ -2,6 +2,7 @@
 title: "25 — Notifications & Background Tasks"
 layout: default
 nav_order: 25
+parent: "📖 Lessons"
 permalink: /docs/25-notifications-background/
 ---
 

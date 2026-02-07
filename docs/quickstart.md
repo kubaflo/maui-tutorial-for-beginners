@@ -1,7 +1,8 @@
 ---
 title: "⚡ Quick Start Guide"
 layout: default
-nav_order: -1
+nav_order: 1
+parent: "📚 Reference"
 permalink: /quickstart/
 ---
 

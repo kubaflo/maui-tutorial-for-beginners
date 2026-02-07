@@ -2,6 +2,7 @@
 title: "Animations"
 layout: default
 nav_order: 12
+parent: "📖 Lessons"
 permalink: /docs/12-animations/
 ---
 
@@ -277,4 +278,4 @@ protected override async void OnAppearing()
 
 ---
 
-**Previous:** [← 11 — Publishing & Deployment](../11-Publishing-Deployment/README.md) · **Next:** [13 — Advanced Shell →](../13-Shell-Advanced/README.md)
+**Previous:** [← 11 — Publishing & Deployment](/docs/11-publishing-deployment/) · **Next:** [13 — Advanced Shell →](/docs/13-shell-advanced/)

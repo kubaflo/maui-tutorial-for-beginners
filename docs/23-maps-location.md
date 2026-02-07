@@ -2,6 +2,7 @@
 title: "Maps & Location"
 layout: default
 nav_order: 23
+parent: "📖 Lessons"
 permalink: /docs/23-maps-location/
 ---
 

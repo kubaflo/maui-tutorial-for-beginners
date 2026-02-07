@@ -2,6 +2,7 @@
 title: "Unit Testing"
 layout: default
 nav_order: 16
+parent: "📖 Lessons"
 permalink: /docs/16-unit-testing/
 ---
 
@@ -376,4 +377,4 @@ public class TodoViewModelTests
 
 ---
 
-**Previous:** [← 15 — Dependency Injection](../15-Dependency-Injection/README.md) · **Next:** [17 — MAUI Blazor Hybrid →](../17-MAUI-Blazor-Hybrid/README.md)
+**Previous:** [← 15 — Dependency Injection](/docs/15-dependency-injection/) · **Next:** [17 — MAUI Blazor Hybrid →](/docs/17-maui-blazor-hybrid/)

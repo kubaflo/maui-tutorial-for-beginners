@@ -2,6 +2,7 @@
 title: "Working with APIs"
 layout: default
 nav_order: 9
+parent: "📖 Lessons"
 permalink: /docs/09-working-with-apis/
 ---
 
@@ -366,4 +367,4 @@ public partial class WeatherViewModel : ObservableObject
 
 ---
 
-**Previous:** [← 08 — Platform-Specific Code](../08-Platform-Specific-Code/README.md) · **Next:** [10 — Local Storage →](../10-Local-Storage/README.md)
+**Previous:** [← 08 — Platform-Specific Code](/docs/08-platform-specific-code/) · **Next:** [10 — Local Storage →](/docs/10-local-storage/)

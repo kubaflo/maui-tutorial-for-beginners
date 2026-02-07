@@ -2,6 +2,7 @@
 title: "Getting Started"
 layout: default
 nav_order: 1
+parent: "📖 Lessons"
 permalink: /docs/01-getting-started/
 ---
 
@@ -217,4 +218,4 @@ private void OnResetClicked(object sender, EventArgs e)
 
 ---
 
-**Next:** [02 — Project Structure →](../02-ProjectStructure/README.md)
+**Next:** [02 — Project Structure →](/docs/02-project-structure/)

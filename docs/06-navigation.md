@@ -2,6 +2,7 @@
 title: "Navigation"
 layout: default
 nav_order: 6
+parent: "📖 Lessons"
 permalink: /docs/06-navigation/
 ---
 
@@ -306,4 +307,4 @@ public partial class NoteDetailViewModel : ObservableObject
 
 ---
 
-**Previous:** [← 05 — Data Binding & MVVM](../05-Data-Binding-MVVM/README.md) · **Next:** [07 — Styling & Theming →](../07-Styling-And-Theming/README.md)
+**Previous:** [← 05 — Data Binding & MVVM](/docs/05-data-binding-mvvm/) · **Next:** [07 — Styling & Theming →](/docs/07-styling-and-theming/)

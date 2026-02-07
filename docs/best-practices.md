@@ -1,7 +1,8 @@
 ---
 title: "✨ Best Practices"
 layout: default
-nav_order: 92
+nav_order: 4
+parent: "📚 Reference"
 permalink: /best-practices/
 ---
 

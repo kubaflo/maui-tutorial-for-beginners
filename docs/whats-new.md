@@ -1,7 +1,8 @@
 ---
 title: "🆕 What's New in MAUI 10"
 layout: default
-nav_order: 95
+nav_order: 5
+parent: "📚 Reference"
 permalink: /whats-new/
 ---
 

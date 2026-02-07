@@ -1,7 +1,8 @@
 ---
 title: "❓ FAQ & Glossary"
 layout: default
-nav_order: 97
+nav_order: 8
+parent: "📚 Reference"
 permalink: /faq/
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "🎯 Coding Challenges"
 layout: default
-nav_order: 96
+nav_order: 6
+parent: "📚 Reference"
 permalink: /challenges/
 ---
 

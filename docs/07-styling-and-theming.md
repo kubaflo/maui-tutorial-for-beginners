@@ -2,6 +2,7 @@
 title: "Styling & Theming"
 layout: default
 nav_order: 7
+parent: "📖 Lessons"
 permalink: /docs/07-styling-and-theming/
 ---
 
@@ -290,4 +291,4 @@ if (Enum.TryParse<AppTheme>(savedTheme, out var theme))
 
 ---
 
-**Previous:** [← 06 — Navigation](../06-Navigation/README.md) · **Next:** [08 — Platform-Specific Code →](../08-Platform-Specific-Code/README.md)
+**Previous:** [← 06 — Navigation](/docs/06-navigation/) · **Next:** [08 — Platform-Specific Code →](/docs/08-platform-specific-code/)

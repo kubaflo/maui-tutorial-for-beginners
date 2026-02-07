@@ -2,6 +2,7 @@
 title: "Dependency Injection"
 layout: default
 nav_order: 15
+parent: "📖 Lessons"
 permalink: /docs/15-dependency-injection/
 ---
 
@@ -291,4 +292,4 @@ public static MauiAppBuilder RegisterViews(this MauiAppBuilder builder)
 
 ---
 
-**Previous:** [← 14 — Community Toolkit](../14-Community-Toolkit/README.md) · **Next:** [16 — Unit Testing →](../16-Unit-Testing/README.md)
+**Previous:** [← 14 — Community Toolkit](/docs/14-community-toolkit/) · **Next:** [16 — Unit Testing →](/docs/16-unit-testing/)

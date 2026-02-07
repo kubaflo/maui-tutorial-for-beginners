@@ -2,6 +2,7 @@
 title: "Layouts & Controls"
 layout: default
 nav_order: 4
+parent: "📖 Lessons"
 permalink: /docs/04-layouts-and-controls/
 ---
 
@@ -309,4 +310,4 @@ You can now build complete user interfaces with layouts and controls. Next, we'l
 
 ---
 
-**Previous:** [← 03 — XAML Basics](../03-XAML-Basics/README.md) · **Next:** [05 — Data Binding & MVVM →](../05-Data-Binding-MVVM/README.md)
+**Previous:** [← 03 — XAML Basics](/docs/03-xaml-basics/) · **Next:** [05 — Data Binding & MVVM →](/docs/05-data-binding-mvvm/)

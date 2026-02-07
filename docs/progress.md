@@ -1,7 +1,8 @@
 ---
 title: "📊 Progress Tracker"
 layout: default
-nav_order: 99
+nav_order: 3
+parent: "🛠️ Tools"
 permalink: /progress/
 ---
 

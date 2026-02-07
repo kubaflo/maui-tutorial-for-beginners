@@ -2,6 +2,7 @@
 title: "Accessibility"
 layout: default
 nav_order: 24
+parent: "📖 Lessons"
 permalink: /docs/24-accessibility/
 ---
 

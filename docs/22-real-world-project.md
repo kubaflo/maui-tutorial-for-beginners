@@ -2,6 +2,7 @@
 title: "Real-World Project: TaskFlow"
 layout: default
 nav_order: 22
+parent: "📖 Lessons"
 permalink: /docs/22-real-world-project/
 ---
 

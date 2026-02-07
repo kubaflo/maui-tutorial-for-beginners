@@ -2,6 +2,7 @@
 title: "MAUI Blazor Hybrid"
 layout: default
 nav_order: 17
+parent: "📖 Lessons"
 permalink: /docs/17-maui-blazor-hybrid/
 ---
 
@@ -317,4 +318,4 @@ builder.Services.AddSingleton<IDataService, DataService>();
 
 ---
 
-**Previous:** [← 16 — Unit Testing](../16-Unit-Testing/README.md) · **Next:** [18 — Gestures & Touch →](../18-Gestures-And-Touch/README.md)
+**Previous:** [← 16 — Unit Testing](/docs/16-unit-testing/) · **Next:** [18 — Gestures & Touch →](/docs/18-gestures-and-touch/)

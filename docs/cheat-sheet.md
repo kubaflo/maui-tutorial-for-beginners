@@ -1,7 +1,8 @@
 ---
 title: "🔖 Cheat Sheet"
 layout: default
-nav_order: 98
+nav_order: 2
+parent: "📚 Reference"
 permalink: /cheat-sheet/
 ---
 

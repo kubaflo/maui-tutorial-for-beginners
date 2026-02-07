@@ -2,6 +2,7 @@
 title: "Gestures & Touch"
 layout: default
 nav_order: 18
+parent: "📖 Lessons"
 permalink: /docs/18-gestures-and-touch/
 ---
 
@@ -346,4 +347,4 @@ private void OnPanUpdated(object sender, PanUpdatedEventArgs e)
 
 ---
 
-**Previous:** [← 17 — MAUI Blazor Hybrid](../17-MAUI-Blazor-Hybrid/README.md) · **Next:** [19 — Media & Camera →](../19-Media-And-Camera/README.md)
+**Previous:** [← 17 — MAUI Blazor Hybrid](/docs/17-maui-blazor-hybrid/) · **Next:** [19 — Media & Camera →](/docs/19-media-and-camera/)
