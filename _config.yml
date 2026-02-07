@@ -8,12 +8,6 @@ baseurl: "/maui-tutorial-for-beginners"
 
 permalink: pretty
 
-aux_links:
-  "GitHub":
-    - "https://github.com/kubaflo/maui-tutorial-for-beginners"
-
-aux_links_new_tab: true
-
 nav_sort: order
 
 exclude:
