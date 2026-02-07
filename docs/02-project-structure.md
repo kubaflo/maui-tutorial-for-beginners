@@ -147,6 +147,106 @@ The project file contains target frameworks for all platforms. In .NET 10, MAUI 
 
 > 💡 **New in .NET 10:** MAUI ships via NuGet packages in addition to the workload, so you can pin specific versions of MAUI independently from the .NET SDK.
 
+## Deep Dive: MauiProgram.cs
+
+This is the most important configuration file. Here's a typical `MauiProgram.cs` with common registrations:
+
+```csharp
+using Microsoft.Extensions.Logging;
+
+namespace HelloMaui;
+
+public static class MauiProgram
+{
+    public static MauiApp CreateMauiApp()
+    {
+        var builder = MauiApp.CreateBuilder();
+        builder
+            .UseMauiApp<App>()
+            .ConfigureFonts(fonts =>
+            {
+                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+            });
+
+        // Register services for dependency injection
+        builder.Services.AddSingleton<IMyDataService, MyDataService>();
+        builder.Services.AddTransient<MainPage>();
+        builder.Services.AddTransient<DetailPage>();
+
+#if DEBUG
+        builder.Logging.AddDebug();
+#endif
+
+        return builder.Build();
+    }
+}
+```
+
+Key things happening here:
+- `UseMauiApp<App>()` — Sets the root `Application` class
+- `ConfigureFonts` — Registers custom fonts from `Resources/Fonts/`
+- `builder.Services` — Microsoft DI container (covered in [Chapter 15]({% link docs/15-dependency-injection.md %}))
+- `AddDebug()` — Enables debug logging in development
+
+## Deep Dive: App.xaml
+
+The `App.xaml` file defines **application-wide resources** that every page can access:
+
+```xml
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloMaui.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
+```
+
+And the code-behind `App.xaml.cs` sets the main page:
+
+```csharp
+public partial class App : Application
+{
+    public App()
+    {
+        InitializeComponent();
+    }
+
+    protected override Window CreateWindow(IActivationState? activationState)
+    {
+        return new Window(new AppShell());
+    }
+}
+```
+
+> **Note:** In .NET 10, `CreateWindow` is the recommended way to set the main page. The older `MainPage = ...` property still works but is being phased out.
+
+## Deep Dive: AppShell.xaml
+
+The Shell defines your app's navigation structure with tabs, flyout menus, and routes:
+
+```xml
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:HelloMaui"
+       x:Class="HelloMaui.AppShell">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+</Shell>
+```
+
+You'll learn more about Shell navigation in [Chapter 6]({% link docs/06-navigation.md %}) and [Chapter 13]({% link docs/13-shell-advanced.md %}).
+
 ## ✅ Checkpoint
 
 You should now understand what each file and folder does in a MAUI project. This knowledge will be essential as we start building UIs in the next chapter.

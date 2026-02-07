@@ -195,6 +195,94 @@ dotnet add package SkiaSharp.Extended.UI.Maui
                     WidthRequest="200" />
 ```
 
+## Spring Animations
+
+Create natural-feeling animations with spring physics:
+
+```csharp
+// Spring bounce effect
+await button.ScaleTo(0.9, 100, Easing.CubicIn);
+await button.ScaleTo(1.0, 300, Easing.SpringOut);
+
+// Custom spring-like easing
+var springEasing = new Easing(t =>
+{
+    double frequency = 3;
+    double decay = 6;
+    return 1 - Math.Exp(-decay * t) * Math.Cos(2 * Math.PI * frequency * t);
+});
+
+await view.TranslateTo(0, 0, 800, springEasing);
+```
+
+## Animation Best Practices
+
+| Practice | Why |
+|---|---|
+| Keep animations under 300ms for UI feedback | Users perceive delays > 300ms as sluggish |
+| Use `Easing.CubicOut` for entrances | Starts fast, ends smooth — feels natural |
+| Use `Easing.CubicIn` for exits | Starts slow, ends fast — draws attention away |
+| Cancel animations with `CancelAnimations()` | Prevents stacking when user navigates fast |
+| Use `Task.WhenAll` for parallel animations | Reduces total animation time |
+| Avoid animating during scrolling | Can cause jank on lower-end devices |
+
+```csharp
+// Always cancel existing animations before starting new ones
+protected override async void OnAppearing()
+{
+    base.OnAppearing();
+    
+    // Cancel any leftover animations from previous navigation
+    MainContent.CancelAnimations();
+    
+    MainContent.Opacity = 0;
+    await MainContent.FadeTo(1, 400);
+}
+```
+
+## Interactive Demo: Animation Easing Curves
+
+<div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0;">
+<p style="font-size:0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Click the buttons below to see how different easing functions affect a moving element:</p>
+<div id="anim-demo" style="position:relative; height: 60px; background: rgba(255,255,255,0.03); border-radius: 8px; overflow:hidden; margin-bottom: 1rem;">
+<div id="anim-ball" style="position:absolute; left: 10px; top: 14px; width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg, #a855f7, #6366f1);"></div>
+</div>
+<div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+<button onclick="animBall('linear')" style="padding:6px 14px;border-radius:20px;border:1px solid rgba(168,85,247,0.3);background:rgba(168,85,247,0.1);color:#a855f7;cursor:pointer;font-size:0.8rem;">Linear</button>
+<button onclick="animBall('ease-in')" style="padding:6px 14px;border-radius:20px;border:1px solid rgba(99,102,241,0.3);background:rgba(99,102,241,0.1);color:#6366f1;cursor:pointer;font-size:0.8rem;">Ease In</button>
+<button onclick="animBall('ease-out')" style="padding:6px 14px;border-radius:20px;border:1px solid rgba(34,211,238,0.3);background:rgba(34,211,238,0.1);color:#22d3ee;cursor:pointer;font-size:0.8rem;">Ease Out</button>
+<button onclick="animBall('ease-in-out')" style="padding:6px 14px;border-radius:20px;border:1px solid rgba(52,211,153,0.3);background:rgba(52,211,153,0.1);color:#34d399;cursor:pointer;font-size:0.8rem;">Ease In-Out</button>
+<button onclick="animBall('spring')" style="padding:6px 14px;border-radius:20px;border:1px solid rgba(244,114,182,0.3);background:rgba(244,114,182,0.1);color:#f472b6;cursor:pointer;font-size:0.8rem;">Spring</button>
+<button onclick="animBall('bounce')" style="padding:6px 14px;border-radius:20px;border:1px solid rgba(251,146,60,0.3);background:rgba(251,146,60,0.1);color:#fb923c;cursor:pointer;font-size:0.8rem;">Bounce</button>
+</div>
+</div>
+
+<script>
+var animBallEl = null;
+var animRunning = false;
+function animBall(type) {
+  if (!animBallEl) animBallEl = document.getElementById('anim-ball');
+  if (animRunning) return;
+  animRunning = true;
+  var container = document.getElementById('anim-demo');
+  var maxX = container.offsetWidth - 42;
+  var startLeft = animBallEl.offsetLeft;
+  var targetX = startLeft < 50 ? maxX : 10;
+  var easing;
+  switch(type) {
+    case 'linear': easing = 'linear'; break;
+    case 'ease-in': easing = 'cubic-bezier(0.42,0,1,1)'; break;
+    case 'ease-out': easing = 'cubic-bezier(0,0,0.58,1)'; break;
+    case 'ease-in-out': easing = 'cubic-bezier(0.42,0,0.58,1)'; break;
+    case 'spring': easing = 'cubic-bezier(0.175,0.885,0.32,1.275)'; break;
+    case 'bounce': easing = 'cubic-bezier(0.34,1.56,0.64,1)'; break;
+  }
+  animBallEl.style.transition = 'left 0.8s ' + easing;
+  animBallEl.style.left = targetX + 'px';
+  setTimeout(function() { animRunning = false; }, 850);
+}
+</script>
+
 ## ✅ Checkpoint
 
 You can now add smooth, engaging animations to your MAUI apps. Next, we'll explore advanced Shell features.
