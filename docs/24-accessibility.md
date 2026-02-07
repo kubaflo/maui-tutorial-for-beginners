@@ -10,6 +10,14 @@ permalink: /docs/24-accessibility/
 
 # Chapter 24: Building Accessible MAUI Apps
 
+## What You'll Learn
+
+- Apply SemanticProperties for screen reader support
+- Set proper heading levels and descriptions
+- Implement keyboard navigation and focus management
+- Test accessibility with platform-specific tools
+- Follow WCAG guidelines in mobile apps
+
 Make your apps usable by everyone — including users with screen readers, motor impairments, and low vision.
 
 ---

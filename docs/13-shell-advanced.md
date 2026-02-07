@@ -245,6 +245,78 @@ You now know how to use Shell for search, custom styling, navigation guards, and
   <div class="quiz-feedback"></div>
 </div>
 
+<div class="quiz-container" data-quiz-id="ch13-q2" data-correct="a" data-explanation="Shell.SearchHandler is set as an attached property on a ContentPage to add search functionality to the Shell's navigation bar.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">How do you add search to a Shell page?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch13-q2" value="a"> Set <code>Shell.SearchHandler</code> as an attached property on the page</label></li>
+    <li><label><input type="radio" name="ch13-q2" value="b"> Add a <code>SearchBar</code> control to the page layout</label></li>
+    <li><label><input type="radio" name="ch13-q2" value="c"> Override <code>OnSearchRequested</code> in the Shell class</label></li>
+    <li><label><input type="radio" name="ch13-q2" value="d"> Use <code>NavigationPage.SetSearchHandler()</code></label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+## 🏋️ Exercise: Build a Searchable Shell App
+
+<div class="exercise-container">
+  <span class="exercise-badge">Hands-On</span>
+  <h3>💻 Implement Shell Search with SearchHandler</h3>
+  <p>Add a search experience to your Shell app that filters items and navigates to a detail page.</p>
+  <ol>
+    <li>Create a custom SearchHandler that filters a list of items</li>
+    <li>Add it to your Shell page using <code>Shell.SearchHandler</code></li>
+    <li>Navigate to a detail page when a search result is tapped</li>
+  </ol>
+
+  <details class="solution">
+    <summary>💡 View Solution</summary>
+
+```csharp
+public class AnimalSearchHandler : SearchHandler
+{
+    protected override void OnQueryChanged(string oldValue, string newValue)
+    {
+        base.OnQueryChanged(oldValue, newValue);
+
+        if (string.IsNullOrWhiteSpace(newValue))
+        {
+            ItemsSource = null;
+            return;
+        }
+
+        var animals = new List<string> { "Dog", "Cat", "Dolphin", "Duck", "Deer" };
+        ItemsSource = animals
+            .Where(a => a.StartsWith(newValue, StringComparison.OrdinalIgnoreCase))
+            .ToList();
+    }
+
+    protected override async void OnItemSelected(object item)
+    {
+        base.OnItemSelected(item);
+        await Shell.Current.GoToAsync($"details?name={item}");
+    }
+}
+```
+
+```xml
+<!-- In your Shell page XAML: -->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:local="clr-namespace:MyApp">
+    <Shell.SearchHandler>
+        <local:AnimalSearchHandler Placeholder="Search animals..."
+                                   ShowsResults="true" />
+    </Shell.SearchHandler>
+    <!-- Page content -->
+</ContentPage>
+```
+
+  </details>
+</div>
+
+---
+
 ---
 
 **Previous:** [← 12 — Animations](/docs/12-animations/) · **Next:** [14 — Community Toolkit →](/docs/14-community-toolkit/)

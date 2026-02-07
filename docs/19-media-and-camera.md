@@ -291,6 +291,64 @@ You can now capture photos, pick files, play media, share content, and manage pe
   <div class="quiz-feedback"></div>
 </div>
 
+## 🏋️ Exercise: Build a Photo Gallery
+
+<div class="exercise-container">
+  <span class="exercise-badge">Hands-On</span>
+  <h3>💻 Create a Simple Photo Capture and Display App</h3>
+  <p>Use the device camera to capture photos and display them in a scrollable gallery.</p>
+  <ol>
+    <li>Use <code>MediaPicker.CapturePhotoAsync()</code> to take a photo</li>
+    <li>Display the captured photo in an Image control</li>
+    <li>Save the photo path to a list and show all captured photos in a CollectionView</li>
+  </ol>
+
+  <details class="solution">
+    <summary>💡 View Solution</summary>
+
+```csharp
+// In your ViewModel or code-behind:
+public ObservableCollection<string> PhotoPaths { get; } = new();
+
+private async Task CapturePhotoAsync()
+{
+    var photo = await MediaPicker.CapturePhotoAsync();
+    if (photo is null) return;
+
+    // Save to app data directory
+    var filePath = Path.Combine(FileSystem.AppDataDirectory, photo.FileName);
+    using var stream = await photo.OpenReadAsync();
+    using var fileStream = File.OpenWrite(filePath);
+    await stream.CopyToAsync(fileStream);
+
+    PhotoPaths.Add(filePath);
+}
+```
+
+```xml
+<!-- In your XAML page: -->
+<VerticalStackLayout Padding="20" Spacing="10">
+    <Button Text="📸 Take Photo"
+            Clicked="OnCaptureClicked" />
+
+    <CollectionView ItemsSource="{Binding PhotoPaths}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Image Source="{Binding .}"
+                       HeightRequest="200"
+                       Aspect="AspectFill"
+                       Margin="0,5" />
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</VerticalStackLayout>
+```
+
+  </details>
+</div>
+
+---
+
 ---
 
 **Previous:** [← 18 — Gestures & Touch](/docs/18-gestures-and-touch/) · **Next:** [20 — HybridWebView →](/docs/20-hybridwebview/)

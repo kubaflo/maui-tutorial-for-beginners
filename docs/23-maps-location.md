@@ -10,6 +10,14 @@ permalink: /docs/23-maps-location/
 
 # Chapter 23: Maps & Location Services
 
+## What You'll Learn
+
+- Display interactive maps with custom pins and overlays
+- Use geolocation to get the device's GPS position
+- Convert addresses to coordinates with geocoding
+- Track user location in real-time
+- Handle map permissions on each platform
+
 Build location-aware apps with maps, pins, geocoding, and GPS tracking.
 
 ---

@@ -10,6 +10,14 @@ permalink: /docs/25-notifications-background/
 
 # Chapter 25: Notifications & Background Tasks
 
+## What You'll Learn
+
+- Send and schedule local notifications
+- Handle push notifications with Firebase/APNs
+- Run background tasks and periodic work
+- Monitor network connectivity changes
+- Manage app lifecycle events
+
 Send local notifications, handle push notifications, and run background work.
 
 ---

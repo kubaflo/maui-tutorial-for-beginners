@@ -305,6 +305,75 @@ The Community Toolkit supercharges your MAUI apps with battle-tested components.
   <div class="quiz-feedback"></div>
 </div>
 
+## 🏋️ Exercise: Refactor with MVVM Toolkit
+
+<div class="exercise-container">
+  <span class="exercise-badge">Hands-On</span>
+  <h3>💻 Convert a ViewModel to Use Source Generators</h3>
+  <p>Simplify your ViewModel by replacing boilerplate code with CommunityToolkit.Mvvm attributes.</p>
+  <ol>
+    <li>Replace manual INotifyPropertyChanged with <code>[ObservableProperty]</code></li>
+    <li>Replace ICommand implementations with <code>[RelayCommand]</code></li>
+    <li>Verify the app still works with the simplified ViewModel</li>
+  </ol>
+
+  <details class="solution">
+    <summary>💡 View Solution</summary>
+
+**Before (manual boilerplate):**
+
+```csharp
+public class TaskViewModel : INotifyPropertyChanged
+{
+    private string _taskName;
+    public string TaskName
+    {
+        get => _taskName;
+        set
+        {
+            _taskName = value;
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(TaskName)));
+        }
+    }
+
+    public ICommand AddTaskCommand { get; }
+
+    public TaskViewModel()
+    {
+        AddTaskCommand = new Command(() =>
+        {
+            // Add task logic
+        });
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+}
+```
+
+**After (with CommunityToolkit.Mvvm source generators):**
+
+```csharp
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+
+public partial class TaskViewModel : ObservableObject
+{
+    [ObservableProperty]
+    private string _taskName;
+
+    [RelayCommand]
+    private void AddTask()
+    {
+        // Add task logic
+    }
+}
+```
+
+  </details>
+</div>
+
+---
+
 ---
 
 **Previous:** [← 13 — Advanced Shell](/docs/13-shell-advanced/) · **Next:** [15 — Dependency Injection →](/docs/15-dependency-injection/)

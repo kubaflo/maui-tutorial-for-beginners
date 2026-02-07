@@ -334,6 +334,55 @@ jobs:
   <div class="quiz-feedback"></div>
 </div>
 
+<div class="quiz-container" data-quiz-id="ch11-q2" data-correct="b" data-explanation="The dotnet publish command with -c Release builds an optimized release version. For Android, use -f net10.0-android to target the Android platform.">
+  <h3>Question 2</h3>
+  <p class="quiz-question">What command creates a release build for Android?</p>
+  <ul class="quiz-options">
+    <li><label><input type="radio" name="ch11-q2" value="a"> <code>dotnet build -c Debug</code></label></li>
+    <li><label><input type="radio" name="ch11-q2" value="b"> <code>dotnet publish -f net10.0-android -c Release</code></label></li>
+    <li><label><input type="radio" name="ch11-q2" value="c"> <code>dotnet run --release</code></label></li>
+    <li><label><input type="radio" name="ch11-q2" value="d"> <code>msbuild /p:Release=true</code></label></li>
+  </ul>
+  <button class="quiz-btn">Check Answer</button>
+  <div class="quiz-feedback"></div>
+</div>
+
+## 🏋️ Exercise: Prepare Your App for Release
+
+<div class="exercise-container">
+  <span class="exercise-badge">Hands-On</span>
+  <h3>💻 Create a Release Build Configuration</h3>
+  <p>Configure your .NET MAUI app for release and produce a publishable artifact.</p>
+  <ol>
+    <li>Set your app's display name and version in the .csproj file</li>
+    <li>Create a release build with <code>dotnet publish -f net10.0-android -c Release</code></li>
+    <li>Verify the APK/AAB is generated in the bin/Release folder</li>
+  </ol>
+
+  <details class="solution">
+    <summary>💡 View Solution</summary>
+
+```xml
+<!-- In your .csproj file, inside a <PropertyGroup>: -->
+<ApplicationTitle>My MAUI App</ApplicationTitle>
+<ApplicationId>com.companyname.mymauiapp</ApplicationId>
+<ApplicationVersion>1</ApplicationVersion>
+<ApplicationDisplayVersion>1.0.0</ApplicationDisplayVersion>
+```
+
+```bash
+# Build a release APK/AAB for Android
+dotnet publish -f net10.0-android -c Release
+
+# The output will be in:
+# bin/Release/net10.0-android/publish/
+```
+
+  </details>
+</div>
+
+---
+
 ---
 
 **Previous:** [← 10 — Local Storage](/docs/10-local-storage/) · **Next:** [12 — Animations →](/docs/12-animations/)
