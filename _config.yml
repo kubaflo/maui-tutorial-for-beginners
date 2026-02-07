@@ -42,10 +42,7 @@ exclude:
 
 heading_anchors: true
 
-search_enabled: true
-search.button: true
-search.rel_url: true
-search.previews: 3
+search_enabled: false
 
 back_to_top: true
 back_to_top_text: "Back to top"
