@@ -1789,3 +1789,46 @@ details.exercise summary:hover {
 .chapter-nav .nav-next {
   margin-left: auto;
 }
+
+/* --- Chapter Completion Banner --- */
+.chapter-completion {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  transition: all var(--transition-normal);
+}
+
+.chapter-completion.completed {
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.1), rgba(34, 211, 238, 0.05));
+  border-color: rgba(52, 211, 153, 0.3);
+  box-shadow: 0 0 20px rgba(52, 211, 153, 0.1);
+}
+
+.completion-check {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.completion-text {
+  flex: 1;
+}
+
+.completion-text strong {
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.completion-text span {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.chapter-completion.completed .completion-text strong {
+  color: var(--accent-green);
+}

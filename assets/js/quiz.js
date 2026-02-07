@@ -119,7 +119,11 @@
       if (chapterMap[ch].correct === chapterMap[ch].total && chapterMap[ch].total > 0) completed++;
     });
 
-    if (completedEl) completedEl.textContent = completed + '/25';
+    if (completedEl) {
+      var manualCompleted = (g.completedChapters || []).length;
+      var displayCompleted = Math.max(completed, manualCompleted);
+      completedEl.textContent = displayCompleted + '/25';
+    }
 
     // Update path card progress circles
     updatePathProgress(chapterMap);
@@ -276,6 +280,69 @@
     });
   }
 
+  // --- Chapter completion ---
+  function initChapterCompletion() {
+    // Only show on chapter pages (those with quiz containers)
+    var quizzes = document.querySelectorAll('.quiz-container');
+    if (quizzes.length === 0) return;
+
+    // Detect chapter number from first quiz ID
+    var firstQuiz = quizzes[0].dataset.quizId || '';
+    var chapterMatch = firstQuiz.match(/^ch(\d+)/);
+    if (!chapterMatch) return;
+
+    var chapterNum = parseInt(chapterMatch[1], 10);
+    var chapterId = 'ch' + String(chapterNum).padStart(2, '0');
+    var g = loadGamification();
+    var isCompleted = g.completedChapters && g.completedChapters.indexOf(chapterId) !== -1;
+
+    // Check if all quizzes are answered correctly
+    var progress = loadProgress();
+    var allCorrect = true;
+    quizzes.forEach(function (q) {
+      var qid = q.dataset.quizId;
+      if (!progress[qid] || !progress[qid].correct) allCorrect = false;
+    });
+
+    // Create completion banner
+    var banner = document.createElement('div');
+    banner.className = 'chapter-completion' + (isCompleted ? ' completed' : '');
+    banner.innerHTML = isCompleted
+      ? '<div class="completion-check">✅</div><div class="completion-text"><strong>Chapter Completed!</strong><br><span>You\'ve mastered this topic. Great job!</span></div>'
+      : '<div class="completion-check">' + (allCorrect ? '🎯' : '📖') + '</div><div class="completion-text"><strong>' + (allCorrect ? 'All quizzes passed!' : 'Keep learning!') + '</strong><br><span>' + (allCorrect ? 'Mark this chapter as complete' : 'Answer all quizzes correctly to complete this chapter') + '</span></div>' + (allCorrect ? '<button class="btn-primary complete-chapter-btn" style="margin-left:auto;padding:8px 20px;font-size:0.85rem;">Complete Chapter</button>' : '');
+
+    // Insert before the prev/next nav
+    var navLine = document.querySelector('.chapter-nav');
+    if (!navLine) {
+      // Fall back to inserting before the last <hr> + <p> with Previous/Next
+      var allPs = document.querySelectorAll('.main-content p');
+      for (var i = allPs.length - 1; i >= 0; i--) {
+        if (allPs[i].textContent.indexOf('Previous:') !== -1 || allPs[i].textContent.indexOf('Next:') !== -1) {
+          allPs[i].parentNode.insertBefore(banner, allPs[i].previousElementSibling || allPs[i]);
+          break;
+        }
+      }
+    } else {
+      navLine.parentNode.insertBefore(banner, navLine);
+    }
+
+    // Handle completion button
+    var completeBtn = banner.querySelector('.complete-chapter-btn');
+    if (completeBtn) {
+      completeBtn.addEventListener('click', function () {
+        g = loadGamification();
+        if (!g.completedChapters) g.completedChapters = [];
+        if (g.completedChapters.indexOf(chapterId) === -1) {
+          g.completedChapters.push(chapterId);
+          addXP(XP_PER_CHAPTER);
+        }
+        saveGamification(g);
+        banner.className = 'chapter-completion completed';
+        banner.innerHTML = '<div class="completion-check">✅</div><div class="completion-text"><strong>Chapter Completed!</strong><br><span>You\'ve mastered this topic. Great job!</span></div>';
+      });
+    }
+  }
+
   // --- Reset ---
   function initResetButtons() {
     document.querySelectorAll('.reset-quiz-btn').forEach(function (btn) {
@@ -295,6 +362,7 @@
     initQuizzes();
     initFillBlanks();
     initResetButtons();
+    initChapterCompletion();
     updateScoreBadges();
     updateStatsBar();
   }
