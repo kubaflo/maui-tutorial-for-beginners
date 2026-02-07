@@ -67,6 +67,18 @@ cd MyFirstMauiApp
 dotnet build
 ```
 
+## 🎮 Interactive Features
+
+This tutorial includes:
+
+- **📝 45+ Quiz Questions** — Test your knowledge with interactive quizzes saved in your browser
+- **🏋️ Hands-On Exercises** — Build real features with expandable solutions
+- **🎯 5 Coding Challenges** — From tip calculator to expense splitter
+- **📊 Progress Tracker** — Track your quiz scores across all chapters
+- **🔖 Cheat Sheet** — Quick reference for common MAUI patterns
+- **🐛 Troubleshooting Guide** — Solutions to common mistakes
+- **🆕 What's New in MAUI 10** — Latest features and migration checklist
+
 ## 📄 License
 
 This tutorial is licensed under the [MIT License](LICENSE).

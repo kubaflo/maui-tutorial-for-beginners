@@ -90,6 +90,8 @@ dotnet build
 
 - [🔖 Cheat Sheet](/cheat-sheet/) — Quick reference for common patterns
 - [🎯 Coding Challenges](/challenges/) — Practice projects to build
+- [🆕 What's New in MAUI 10](/whats-new/) — Latest features and migration guide
+- [🐛 Troubleshooting](/troubleshooting/) — Common mistakes and fixes
 - [❓ FAQ & Glossary](/faq/) — Common questions and terminology
 - [📊 Progress Tracker](/progress/) — Track your quiz scores
 
