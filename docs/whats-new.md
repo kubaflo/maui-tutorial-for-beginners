@@ -170,6 +170,86 @@ If you're upgrading from .NET 9 to .NET 10:
 - [ ] Replace deprecated animation methods if any warnings appear
 - [ ] Update JSON serialization to use `JsonSerializerContext` source generators
 - [ ] Review `MauiProgram.cs` for any deprecated API calls
+- [ ] Replace `Compatibility.Layout` usage — it's been removed in .NET 10 templates
+- [ ] Migrate `AppCompatEditText` handlers to `MauiAppCompatEditText` if using custom renderers
+
+---
+
+## 🪟 TitleBar Control (Desktop)
+
+.NET MAUI 10 adds a dedicated `TitleBar` control for desktop apps (Windows, macOS):
+
+```xml
+<Window.TitleBar>
+    <TitleBar Title="{Binding Title}"
+              Subtitle="{Binding Subtitle}"
+              BackgroundColor="#512BD4"
+              ForegroundColor="White"
+              HeightRequest="48">
+        <TitleBar.Content>
+            <SearchBar Placeholder="Search"
+                       PlaceholderColor="White"
+                       MaximumWidthRequest="300"
+                       HorizontalOptions="Fill"
+                       VerticalOptions="Center" />
+        </TitleBar.Content>
+    </TitleBar>
+</Window.TitleBar>
+```
+
+You can also create it in C#:
+
+```csharp
+Window window = new Window
+{
+    TitleBar = new TitleBar
+    {
+        Icon = "titlebar_icon.png",
+        Title = "My App",
+        Subtitle = "Demo",
+        Content = new SearchBar { Placeholder = "Search..." }
+    }
+};
+```
+
+---
+
+## ⌨️ Keyboard Accelerators
+
+Attach keyboard shortcuts to menu items for power users:
+
+```xml
+<MenuFlyoutItem Text="Cut" Clicked="OnCutClicked">
+    <MenuFlyoutItem.KeyboardAccelerators>
+        <KeyboardAccelerator Modifiers="Ctrl" Key="X" />
+    </MenuFlyoutItem.KeyboardAccelerators>
+</MenuFlyoutItem>
+```
+
+---
+
+## 📦 Resource Bundling Control
+
+Control whether original resources are bundled in library projects:
+
+```xml
+<PropertyGroup>
+    <BundleOriginalResources>false</BundleOriginalResources>
+</PropertyGroup>
+```
+
+---
+
+## ✏️ Editor/Entry Selection Events (Android)
+
+On Android, `Editor` and `Entry` views now use `MauiAppCompatEditText` (instead of `AppCompatEditText`), adding support for the `SelectionChanged` event:
+
+```csharp
+entry.SelectionChanged += (s, e) =>
+{
+    Debug.WriteLine($"Selection: {e.SelectionStart} to {e.SelectionStart + e.SelectionLength}");
+};
+```
 
 ---
 
