@@ -6,97 +6,349 @@ description: "A comprehensive, step-by-step guide to building cross-platform app
 permalink: /
 ---
 
-# .NET MAUI Tutorial for Beginners
+<!-- SVG Gradient Definition for Progress Circles -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+  </defs>
+</svg>
 
-A comprehensive, step-by-step guide to building cross-platform mobile and desktop applications with **.NET MAUI 10** (LTS).
+<div class="hero-section">
+  <span class="hero-logo">🚀</span>
+  <h1 class="hero-title">.NET MAUI Tutorial</h1>
+  <p class="hero-subtitle">Master cross-platform app development with 22 interactive lessons, hands-on exercises, and real-world projects — powered by .NET 10 LTS</p>
+  <div class="hero-buttons">
+    <a href="{% link docs/01-getting-started.md %}" class="btn-primary">▶ Start Learning</a>
+    <a href="{% link docs/quickstart.md %}" class="btn-secondary">⚡ Quick Start</a>
+    <a href="{% link docs/progress.md %}" class="btn-secondary">📊 My Progress</a>
+  </div>
+</div>
 
-{: .fs-6 .fw-300 }
+<div class="stats-bar" id="statsBar">
+  <div class="stat-item">
+    <span class="stat-icon">⚡</span>
+    <span class="stat-value" id="statXP">0</span>
+    <span class="stat-label">XP Earned</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-icon">🔥</span>
+    <span class="stat-value" id="statStreak">0</span>
+    <span class="stat-label">Day Streak</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-icon">🏆</span>
+    <span class="stat-value" id="statLevel">1</span>
+    <span class="stat-label">Level</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-icon">✅</span>
+    <span class="stat-value" id="statCompleted">0/22</span>
+    <span class="stat-label">Completed</span>
+  </div>
+</div>
 
-[Get Started]({% link docs/01-getting-started.md %}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[⚡ Quick Start]({% link docs/quickstart.md %}){: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[📊 Track Progress]({% link docs/progress.md %}){: .btn .fs-5 .mb-4 .mb-md-0 }
+<div class="section-header">
+  <span class="section-icon">🗺️</span>
+  <h2>Learning Paths</h2>
+</div>
 
----
+<div class="path-cards">
+  <a href="{% link docs/01-getting-started.md %}" class="path-card fade-in-up">
+    <div class="path-card-header">
+      <span class="path-card-icon">🟢</span>
+      <div class="path-card-progress" data-path="fundamentals">
+        <svg viewBox="0 0 36 36">
+          <circle class="progress-bg" cx="18" cy="18" r="15.5"/>
+          <circle class="progress-fill" cx="18" cy="18" r="15.5" stroke-dasharray="97.4" stroke-dashoffset="97.4"/>
+        </svg>
+        <span class="progress-text">0%</span>
+      </div>
+    </div>
+    <h3 class="path-card-title">Fundamentals</h3>
+    <p class="path-card-desc">Setup, XAML, layouts, data binding, MVVM, and navigation basics</p>
+    <div class="path-card-meta">
+      <span class="path-card-tag beginner">Beginner</span>
+      <span class="path-card-tag">6 Lessons</span>
+    </div>
+  </a>
 
-## Who Is This For?
+  <a href="{% link docs/07-styling-and-theming.md %}" class="path-card fade-in-up">
+    <div class="path-card-header">
+      <span class="path-card-icon">🟡</span>
+      <div class="path-card-progress" data-path="intermediate">
+        <svg viewBox="0 0 36 36">
+          <circle class="progress-bg" cx="18" cy="18" r="15.5"/>
+          <circle class="progress-fill" cx="18" cy="18" r="15.5" stroke-dasharray="97.4" stroke-dashoffset="97.4"/>
+        </svg>
+        <span class="progress-text">0%</span>
+      </div>
+    </div>
+    <h3 class="path-card-title">Intermediate</h3>
+    <p class="path-card-desc">Styling, REST APIs, local storage, publishing, and animations</p>
+    <div class="path-card-meta">
+      <span class="path-card-tag intermediate">Intermediate</span>
+      <span class="path-card-tag">6 Lessons</span>
+    </div>
+  </a>
 
-- Developers **new to .NET MAUI**
-- C# developers looking to build **mobile and desktop apps**
-- Xamarin.Forms developers **migrating to MAUI**
+  <a href="{% link docs/13-shell-advanced.md %}" class="path-card fade-in-up">
+    <div class="path-card-header">
+      <span class="path-card-icon">🔴</span>
+      <div class="path-card-progress" data-path="advanced">
+        <svg viewBox="0 0 36 36">
+          <circle class="progress-bg" cx="18" cy="18" r="15.5"/>
+          <circle class="progress-fill" cx="18" cy="18" r="15.5" stroke-dasharray="97.4" stroke-dashoffset="97.4"/>
+        </svg>
+        <span class="progress-text">0%</span>
+      </div>
+    </div>
+    <h3 class="path-card-title">Advanced</h3>
+    <p class="path-card-desc">Shell, Community Toolkit, DI, testing, Blazor, gestures, media</p>
+    <div class="path-card-meta">
+      <span class="path-card-tag advanced">Advanced</span>
+      <span class="path-card-tag">7 Lessons</span>
+    </div>
+  </a>
 
-## What You'll Learn
+  <a href="{% link docs/20-hybridwebview.md %}" class="path-card fade-in-up">
+    <div class="path-card-header">
+      <span class="path-card-icon">⭐</span>
+      <div class="path-card-progress" data-path="expert">
+        <svg viewBox="0 0 36 36">
+          <circle class="progress-bg" cx="18" cy="18" r="15.5"/>
+          <circle class="progress-fill" cx="18" cy="18" r="15.5" stroke-dasharray="97.4" stroke-dashoffset="97.4"/>
+        </svg>
+        <span class="progress-text">0%</span>
+      </div>
+    </div>
+    <h3 class="path-card-title">Expert</h3>
+    <p class="path-card-desc">HybridWebView, Native AOT, performance tuning, real-world project</p>
+    <div class="path-card-meta">
+      <span class="path-card-tag advanced">Expert</span>
+      <span class="path-card-tag">3 Lessons</span>
+    </div>
+  </a>
+</div>
 
-This tutorial takes you from zero to publishing across **22 lessons** — with interactive quizzes and hands-on exercises:
+<div class="section-header">
+  <span class="section-icon">📖</span>
+  <h2>All Lessons</h2>
+</div>
 
-| # | Topic | Description |
-|:--|:------|:------------|
-| 01 | [Getting Started]({% link docs/01-getting-started.md %}) | Install tools, create your first app |
-| 02 | [Project Structure]({% link docs/02-project-structure.md %}) | Anatomy of a MAUI project |
-| 03 | [XAML Basics]({% link docs/03-xaml-basics.md %}) | Syntax, markup extensions, resources |
-| 04 | [Layouts & Controls]({% link docs/04-layouts-and-controls.md %}) | Build UIs with Grid, Stack, CollectionView |
-| 05 | [Data Binding & MVVM]({% link docs/05-data-binding-mvvm.md %}) | MVVM pattern and data binding |
-| 06 | [Navigation]({% link docs/06-navigation.md %}) | Shell, tabs, flyout, passing data |
-| 07 | [Styling & Theming]({% link docs/07-styling-and-theming.md %}) | Styles, themes, custom fonts |
-| 08 | [Platform-Specific Code]({% link docs/08-platform-specific-code.md %}) | Conditional compilation, partial classes |
-| 09 | [Working with APIs]({% link docs/09-working-with-apis.md %}) | REST APIs with HttpClient |
-| 10 | [Local Storage]({% link docs/10-local-storage.md %}) | Preferences, SecureStorage, SQLite |
-| 11 | [Publishing]({% link docs/11-publishing-deployment.md %}) | App stores and CI/CD |
-| 12 | [Animations]({% link docs/12-animations.md %}) | View animations and easing |
-| 13 | [Advanced Shell]({% link docs/13-shell-advanced.md %}) | Search, flyout customization |
-| 14 | [Community Toolkit]({% link docs/14-community-toolkit.md %}) | Converters, behaviors, popups |
-| 15 | [Dependency Injection]({% link docs/15-dependency-injection.md %}) | DI and service lifetimes |
-| 16 | [Unit Testing]({% link docs/16-unit-testing.md %}) | xUnit, mocking, testing ViewModels |
-| 17 | [Blazor Hybrid]({% link docs/17-maui-blazor-hybrid.md %}) | Razor components in MAUI |
-| 18 | [Gestures & Touch]({% link docs/18-gestures-and-touch.md %}) | Tap, swipe, pan, drag-and-drop |
-| 19 | [Media & Camera]({% link docs/19-media-and-camera.md %}) | Photos, video, file picking |
-| 20 | [HybridWebView]({% link docs/20-hybridwebview.md %}) | Embed web content, JS interop |
-| 21 | [Native AOT & Performance]({% link docs/21-native-aot-performance.md %}) | AOT compilation, XAML source gen |
-| 22 | [Real-World Project]({% link docs/22-real-world-project.md %}) | Build a complete task manager app |
+<div class="lesson-list">
+  <a href="{% link docs/01-getting-started.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">01</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Getting Started</div>
+      <div class="lesson-meta">Install tools, create your first app · 2 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/02-project-structure.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">02</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Project Structure</div>
+      <div class="lesson-meta">Anatomy of a MAUI project · 2 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/03-xaml-basics.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">03</span>
+    <div class="lesson-info">
+      <div class="lesson-title">XAML Basics</div>
+      <div class="lesson-meta">Syntax, markup extensions, resources · 3 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/04-layouts-and-controls.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">04</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Layouts & Controls</div>
+      <div class="lesson-meta">Grid, StackLayout, CollectionView · 3 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/05-data-binding-mvvm.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">05</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Data Binding & MVVM</div>
+      <div class="lesson-meta">MVVM pattern and data binding · 3 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/06-navigation.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">06</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Navigation</div>
+      <div class="lesson-meta">Shell, tabs, flyout, passing data · 2 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/07-styling-and-theming.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">07</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Styling & Theming</div>
+      <div class="lesson-meta">Styles, themes, custom fonts · 2 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/08-platform-specific-code.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">08</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Platform-Specific Code</div>
+      <div class="lesson-meta">Conditional compilation, partial classes · 2 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/09-working-with-apis.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">09</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Working with APIs</div>
+      <div class="lesson-meta">REST APIs with HttpClient · 3 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/10-local-storage.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">10</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Local Storage</div>
+      <div class="lesson-meta">Preferences, SecureStorage, SQLite · 2 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/11-publishing-deployment.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">11</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Publishing & Deployment</div>
+      <div class="lesson-meta">App stores and CI/CD · 2 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/12-animations.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">12</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Animations</div>
+      <div class="lesson-meta">View animations and easing functions · 2 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/13-shell-advanced.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">13</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Advanced Shell</div>
+      <div class="lesson-meta">Search, flyout customization · 2 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/14-community-toolkit.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">14</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Community Toolkit</div>
+      <div class="lesson-meta">Converters, behaviors, popups · 3 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/15-dependency-injection.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">15</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Dependency Injection</div>
+      <div class="lesson-meta">DI and service lifetimes · 2 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/16-unit-testing.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">16</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Unit Testing</div>
+      <div class="lesson-meta">xUnit, mocking, testing ViewModels · 3 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/17-maui-blazor-hybrid.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">17</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Blazor Hybrid</div>
+      <div class="lesson-meta">Razor components in MAUI · 3 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/18-gestures-and-touch.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">18</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Gestures & Touch</div>
+      <div class="lesson-meta">Tap, swipe, pan, drag-and-drop · 2 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/19-media-and-camera.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">19</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Media & Camera</div>
+      <div class="lesson-meta">Photos, video, file picking · 2 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/20-hybridwebview.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">20</span>
+    <div class="lesson-info">
+      <div class="lesson-title">HybridWebView & JS Interop</div>
+      <div class="lesson-meta">Embed web content, JS interop · 2 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/21-native-aot-performance.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">21</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Native AOT & Performance</div>
+      <div class="lesson-meta">AOT compilation, XAML source gen · 2 quizzes</div>
+    </div>
+  </a>
+  <a href="{% link docs/22-real-world-project.md %}" class="lesson-item fade-in-up">
+    <span class="lesson-num">22</span>
+    <div class="lesson-info">
+      <div class="lesson-title">Real-World Project</div>
+      <div class="lesson-meta">Build a complete task manager app · Capstone</div>
+    </div>
+  </a>
+</div>
 
-## Prerequisites
+<div class="section-header">
+  <span class="section-icon">📚</span>
+  <h2>Resources & Reference</h2>
+</div>
 
-- Basic knowledge of **C#**
-- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) (LTS)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/) (v17.12+) with the .NET MAUI workload
+<div class="resource-grid">
+  <a href="{% link docs/quickstart.md %}" class="resource-card fade-in-up">
+    <span class="resource-card-icon">⚡</span>
+    <div class="resource-card-title">Quick Start</div>
+    <div class="resource-card-desc">5-minute setup guide</div>
+  </a>
+  <a href="{% link docs/cheat-sheet.md %}" class="resource-card fade-in-up">
+    <span class="resource-card-icon">🔖</span>
+    <div class="resource-card-title">Cheat Sheet</div>
+    <div class="resource-card-desc">Common patterns & snippets</div>
+  </a>
+  <a href="{% link docs/architecture.md %}" class="resource-card fade-in-up">
+    <span class="resource-card-icon">🏛️</span>
+    <div class="resource-card-title">Architecture</div>
+    <div class="resource-card-desc">MVVM, repository, messaging</div>
+  </a>
+  <a href="{% link docs/best-practices.md %}" class="resource-card fade-in-up">
+    <span class="resource-card-icon">✨</span>
+    <div class="resource-card-title">Best Practices</div>
+    <div class="resource-card-desc">Production coding standards</div>
+  </a>
+  <a href="{% link docs/whats-new.md %}" class="resource-card fade-in-up">
+    <span class="resource-card-icon">🆕</span>
+    <div class="resource-card-title">What's New</div>
+    <div class="resource-card-desc">MAUI 10 features</div>
+  </a>
+  <a href="{% link docs/challenges.md %}" class="resource-card fade-in-up">
+    <span class="resource-card-icon">🎯</span>
+    <div class="resource-card-title">Challenges</div>
+    <div class="resource-card-desc">Practice projects to build</div>
+  </a>
+  <a href="{% link docs/troubleshooting.md %}" class="resource-card fade-in-up">
+    <span class="resource-card-icon">🐛</span>
+    <div class="resource-card-title">Troubleshooting</div>
+    <div class="resource-card-desc">Common mistakes & fixes</div>
+  </a>
+  <a href="{% link docs/faq.md %}" class="resource-card fade-in-up">
+    <span class="resource-card-icon">❓</span>
+    <div class="resource-card-title">FAQ & Glossary</div>
+    <div class="resource-card-desc">Questions & terminology</div>
+  </a>
+  <a href="{% link docs/progress.md %}" class="resource-card fade-in-up">
+    <span class="resource-card-icon">📊</span>
+    <div class="resource-card-title">Progress Tracker</div>
+    <div class="resource-card-desc">Track your quiz scores</div>
+  </a>
+</div>
 
-## 🎮 Interactive Learning
-
-Every chapter includes:
-
-- **📝 Quizzes** — Test your knowledge with multiple-choice questions (answers saved in your browser)
-- **🏋️ Hands-on exercises** — Build real features with expandable solutions
-- **📊 Progress tracking** — [Track your progress](/progress/) across all 22 chapters
-- **💡 Tips & best practices** — Modern .NET 10 patterns and AOT-ready code
-
-## Quick Start
-
-```bash
-dotnet workload install maui
-dotnet new maui -n MyFirstMauiApp
-cd MyFirstMauiApp
-dotnet build
-```
-
-## 🗺️ Learning Path
-
-| Phase | Chapters | Focus |
-|:------|:---------|:------|
-| **🟢 Fundamentals** | 01–06 | Setup, XAML, layouts, MVVM, navigation |
-| **🟡 Intermediate** | 07–12 | Styling, APIs, storage, deployment, animations |
-| **🔴 Advanced** | 13–19 | Shell, toolkit, DI, testing, Blazor, gestures, media |
-| **⭐ Expert** | 20–22 | HybridWebView, Native AOT, real-world project |
-
-## 📚 Reference
-
-- [🏛️ Architecture Patterns](/architecture/) — MVVM, repository, messaging patterns
-- [✨ Best Practices](/best-practices/) — Production-quality coding standards
-- [🔖 Cheat Sheet](/cheat-sheet/) — Quick reference for common patterns
-- [🎯 Coding Challenges](/challenges/) — Practice projects to build
-- [🆕 What's New in MAUI 10](/whats-new/) — Latest features and migration guide
-- [🐛 Troubleshooting](/troubleshooting/) — Common mistakes and fixes
-- [❓ FAQ & Glossary](/faq/) — Common questions and terminology
-- [📊 Progress Tracker](/progress/) — Track your quiz scores
-
----
-
-Built with ❤️ by [kubaflo](https://github.com/kubaflo)
+<div style="text-align:center; margin-top:3rem; padding:1.5rem; color: var(--text-muted); font-size: 0.85rem;">
+  <p>Prerequisites: Basic C# · <a href="https://dotnet.microsoft.com/download/dotnet/10.0">.NET 10 SDK</a> · <a href="https://visualstudio.microsoft.com/">Visual Studio 2022</a> (v17.12+)</p>
+  <p style="margin-top:0.5rem;">Built with ❤️ by <a href="https://github.com/kubaflo">kubaflo</a></p>
+</div>
