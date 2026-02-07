@@ -16,6 +16,30 @@ aux_links_new_tab: true
 
 nav_sort: order
 
+exclude:
+  - 01-GettingStarted/
+  - 02-ProjectStructure/
+  - 03-XAML-Basics/
+  - 04-Layouts-And-Controls/
+  - 05-Data-Binding-MVVM/
+  - 06-Navigation/
+  - 07-Styling-And-Theming/
+  - 08-Platform-Specific-Code/
+  - 09-Working-With-APIs/
+  - 10-Local-Storage/
+  - 11-Publishing-Deployment/
+  - 12-Animations/
+  - 13-Shell-Advanced/
+  - 14-Community-Toolkit/
+  - 15-Dependency-Injection/
+  - 16-Unit-Testing/
+  - 17-MAUI-Blazor-Hybrid/
+  - 18-Gestures-And-Touch/
+  - 19-Media-And-Camera/
+  - Gemfile
+  - LICENSE
+  - README.md
+
 heading_anchors: true
 
 search_enabled: true
