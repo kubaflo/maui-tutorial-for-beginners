@@ -88,6 +88,7 @@ dotnet build
 
 ## 📚 Reference
 
+- [🏛️ Architecture Patterns](/architecture/) — MVVM, repository, messaging patterns
 - [🔖 Cheat Sheet](/cheat-sheet/) — Quick reference for common patterns
 - [🎯 Coding Challenges](/challenges/) — Practice projects to build
 - [🆕 What's New in MAUI 10](/whats-new/) — Latest features and migration guide

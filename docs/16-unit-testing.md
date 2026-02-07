@@ -272,6 +272,108 @@ You can now write unit tests for your ViewModels and services with mocking and a
   <div class="quiz-feedback"></div>
 </div>
 
+## 🏋️ Exercise: Test a ViewModel
+
+<div class="exercise-container">
+  <span class="exercise-badge">Intermediate</span>
+  <h3>💻 Write Tests for a Todo ViewModel</h3>
+  <p>Given this ViewModel, write xUnit tests for:</p>
+  <ol>
+    <li><code>AddTodoCommand</code> — adds a task when title is not empty</li>
+    <li><code>AddTodoCommand</code> — does NOT add a task when title is empty</li>
+    <li><code>DeleteTodoCommand</code> — removes the specified task</li>
+    <li><code>CompleteTodoCommand</code> — marks the task as completed</li>
+  </ol>
+
+```csharp
+// The ViewModel to test
+public partial class TodoViewModel : ObservableObject
+{
+    private readonly ITodoService _service;
+
+    [ObservableProperty] private string _newTitle = string.Empty;
+    public ObservableCollection<TodoItem> Todos { get; } = [];
+
+    public TodoViewModel(ITodoService service) => _service = service;
+
+    [RelayCommand]
+    private async Task AddTodoAsync()
+    {
+        if (string.IsNullOrWhiteSpace(NewTitle)) return;
+        var todo = new TodoItem { Title = NewTitle };
+        await _service.SaveAsync(todo);
+        Todos.Add(todo);
+        NewTitle = string.Empty;
+    }
+
+    [RelayCommand]
+    private async Task DeleteTodoAsync(TodoItem todo)
+    {
+        await _service.DeleteAsync(todo.Id);
+        Todos.Remove(todo);
+    }
+}
+```
+
+  <details class="solution">
+    <summary>💡 View Test Solution</summary>
+
+```csharp
+public class TodoViewModelTests
+{
+    private readonly ITodoService _mockService;
+    private readonly TodoViewModel _vm;
+
+    public TodoViewModelTests()
+    {
+        _mockService = Substitute.For<ITodoService>();
+        _vm = new TodoViewModel(_mockService);
+    }
+
+    [Fact]
+    public async Task AddTodo_WithTitle_AddsToCollection()
+    {
+        _vm.NewTitle = "Buy groceries";
+
+        await _vm.AddTodoCommand.ExecuteAsync(null);
+
+        Assert.Single(_vm.Todos);
+        Assert.Equal("Buy groceries", _vm.Todos[0].Title);
+        Assert.Equal(string.Empty, _vm.NewTitle);
+        await _mockService.Received(1).SaveAsync(Arg.Any<TodoItem>());
+    }
+
+    [Theory]
+    [InlineData("")]
+    [InlineData("   ")]
+    [InlineData(null)]
+    public async Task AddTodo_EmptyTitle_DoesNotAdd(string? title)
+    {
+        _vm.NewTitle = title ?? string.Empty;
+
+        await _vm.AddTodoCommand.ExecuteAsync(null);
+
+        Assert.Empty(_vm.Todos);
+        await _mockService.DidNotReceive().SaveAsync(Arg.Any<TodoItem>());
+    }
+
+    [Fact]
+    public async Task DeleteTodo_RemovesFromCollection()
+    {
+        var todo = new TodoItem { Id = 1, Title = "Test" };
+        _vm.Todos.Add(todo);
+
+        await _vm.DeleteTodoCommand.ExecuteAsync(todo);
+
+        Assert.Empty(_vm.Todos);
+        await _mockService.Received(1).DeleteAsync(1);
+    }
+}
+```
+
+  </details>
+</div>
+
 ---
 
 **Previous:** [← 15 — Dependency Injection](../15-Dependency-Injection/README.md) · **Next:** [17 — MAUI Blazor Hybrid →](../17-MAUI-Blazor-Hybrid/README.md)
