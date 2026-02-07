@@ -258,6 +258,62 @@ You've completed the entire .NET MAUI tutorial! You now know how to:
 - 📦 [Awesome .NET MAUI (GitHub)](https://github.com/jsuarezruiz/awesome-dotnet-maui)
 - 💬 [.NET MAUI Community](https://dotnet.microsoft.com/platform/community)
 
+## CI/CD with GitHub Actions
+
+Automate your builds with a GitHub Actions workflow:
+
+```yaml
+name: Build MAUI App
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Install MAUI workload
+        run: dotnet workload install maui-android
+
+      - name: Build Android
+        run: dotnet build -f net10.0-android -c Release
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-build
+          path: '**/*.apk'
+
+  build-ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Install MAUI workload
+        run: dotnet workload install maui-ios
+
+      - name: Build iOS
+        run: dotnet build -f net10.0-ios -c Release -p:RuntimeIdentifier=ios-arm64
+```
+
+{: .tip }
+> Store signing certificates and provisioning profiles as GitHub Secrets and inject them during the build step.
+
 ---
 
 ## 📝 Quiz

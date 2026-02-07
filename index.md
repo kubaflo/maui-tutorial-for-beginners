@@ -86,6 +86,13 @@ dotnet build
 | **🔴 Advanced** | 13–19 | Shell, toolkit, DI, testing, Blazor, gestures, media |
 | **⭐ Expert** | 20–22 | HybridWebView, Native AOT, real-world project |
 
+## 📚 Reference
+
+- [🔖 Cheat Sheet](/cheat-sheet/) — Quick reference for common patterns
+- [🎯 Coding Challenges](/challenges/) — Practice projects to build
+- [❓ FAQ & Glossary](/faq/) — Common questions and terminology
+- [📊 Progress Tracker](/progress/) — Track your quiz scores
+
 ---
 
 Built with ❤️ by [kubaflo](https://github.com/kubaflo)
