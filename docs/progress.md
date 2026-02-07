@@ -46,7 +46,11 @@ Track your learning journey through the .NET MAUI tutorial. Quiz answers are sav
     { id: 'ch19', name: '19 — Media & Camera', quizzes: 2 },
     { id: 'ch20', name: '20 — HybridWebView', quizzes: 2 },
     { id: 'ch21', name: '21 — Native AOT & Performance', quizzes: 3 },
-    { id: 'ch22', name: '22 — Real-World Project', quizzes: 3 }
+    { id: 'ch22', name: '22 — Real-World Project', quizzes: 3 },
+    { id: 'qs', name: '⚡ Quick Start', quizzes: 1 },
+    { id: 'wn', name: '🆕 What\'s New', quizzes: 2 },
+    { id: 'ts', name: '🐛 Troubleshooting', quizzes: 1 },
+    { id: 'arch', name: '🏛️ Architecture', quizzes: 1 }
   ];
 
   var progress = {};
