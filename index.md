@@ -409,6 +409,11 @@ permalink: /
     <div class="resource-card-title">Learning Roadmap</div>
     <div class="resource-card-desc">Visual learning path guide</div>
   </a>
+  <a href="{% link docs/controls.md %}" class="resource-card fade-in-up">
+    <img src="{{ '/assets/images/icons/cheatsheet.svg' | relative_url }}" alt="" class="resource-card-icon-img">
+    <div class="resource-card-title">Controls Gallery</div>
+    <div class="resource-card-desc">Visual reference of all controls</div>
+  </a>
 </div>
 
 <div style="text-align:center; margin-top:3rem; padding:1.5rem; color: var(--text-muted); font-size: 0.85rem;">
