@@ -270,6 +270,80 @@ You can now handle all types of user input — from simple taps to complex drag-
   <div class="quiz-feedback"></div>
 </div>
 
+## 🏋️ Exercise: Draggable Card Stack
+
+<div class="exercise-container">
+  <span class="exercise-badge">Advanced</span>
+  <h3>💻 Build a Swipe Card Interface</h3>
+  <p>Create a Tinder-style card swiping interface:</p>
+  <ol>
+    <li>A card (Frame) that can be panned left/right with <code>PanGestureRecognizer</code></li>
+    <li>The card rotates slightly as it's dragged (using <code>RotateTo</code>)</li>
+    <li>When released past a threshold, it animates off-screen and loads the next card</li>
+    <li>If not past the threshold, it springs back to center</li>
+  </ol>
+
+  <details class="solution">
+    <summary>💡 View Solution</summary>
+
+```csharp
+private double _startX;
+
+private void OnPanUpdated(object sender, PanUpdatedEventArgs e)
+{
+    var card = (View)sender;
+
+    switch (e.StatusType)
+    {
+        case GestureStatus.Started:
+            _startX = card.TranslationX;
+            break;
+
+        case GestureStatus.Running:
+            card.TranslationX = _startX + e.TotalX;
+            card.Rotation = card.TranslationX / 20; // slight tilt
+            break;
+
+        case GestureStatus.Completed:
+            var threshold = Width / 3;
+            if (Math.Abs(card.TranslationX) > threshold)
+            {
+                // Swipe away
+                var direction = card.TranslationX > 0 ? Width : -Width;
+                Task.WhenAll(
+                    card.TranslateTo(direction * 2, 0, 300),
+                    card.FadeTo(0, 300));
+                // Load next card...
+            }
+            else
+            {
+                // Spring back
+                Task.WhenAll(
+                    card.TranslateTo(0, 0, 250, Easing.SpringOut),
+                    card.RotateTo(0, 250));
+            }
+            break;
+    }
+}
+```
+
+```xml
+<Frame x:Name="SwipeCard" Padding="20" CornerRadius="16"
+       BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#2d2d44}">
+    <Frame.GestureRecognizers>
+        <PanGestureRecognizer PanUpdated="OnPanUpdated" />
+    </Frame.GestureRecognizers>
+    <VerticalStackLayout Spacing="10">
+        <Image Source="{Binding ImageUrl}" HeightRequest="200" />
+        <Label Text="{Binding Title}" FontSize="20" FontAttributes="Bold" />
+        <Label Text="{Binding Description}" />
+    </VerticalStackLayout>
+</Frame>
+```
+
+  </details>
+</div>
+
 ---
 
 **Previous:** [← 17 — MAUI Blazor Hybrid](../17-MAUI-Blazor-Hybrid/README.md) · **Next:** [19 — Media & Camera →](../19-Media-And-Camera/README.md)

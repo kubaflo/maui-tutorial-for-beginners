@@ -274,6 +274,63 @@ You now know multiple ways to write platform-specific code while keeping most of
   <div class="quiz-feedback"></div>
 </div>
 
+## 🏋️ Exercise: Device Info Page
+
+<div class="exercise-container">
+  <span class="exercise-badge">Hands-On</span>
+  <h3>💻 Build a Device Information Display</h3>
+  <p>Create a page that shows comprehensive device information:</p>
+  <ol>
+    <li>Platform name and version</li>
+    <li>Device manufacturer and model</li>
+    <li>Screen size (width × height)</li>
+    <li>Battery level and charging status</li>
+    <li>Network connectivity status</li>
+    <li>Style the display differently per platform using <code>OnPlatform</code></li>
+  </ol>
+
+  <details class="solution">
+    <summary>💡 View Solution</summary>
+
+```csharp
+public partial class DeviceInfoViewModel : ObservableObject
+{
+    [ObservableProperty]
+    private string _platform = DeviceInfo.Platform.ToString();
+
+    [ObservableProperty]
+    private string _deviceModel = $"{DeviceInfo.Manufacturer} {DeviceInfo.Model}";
+
+    [ObservableProperty]
+    private string _osVersion = DeviceInfo.VersionString;
+
+    [ObservableProperty]
+    private string _battery = "Unknown";
+
+    [ObservableProperty]
+    private string _connectivity = "Unknown";
+
+    [RelayCommand]
+    private void Refresh()
+    {
+        Battery = $"{Battery.Default.ChargeLevel * 100:F0}% ({Battery.Default.State})";
+        Connectivity = Connectivity.Current.NetworkAccess.ToString();
+    }
+}
+```
+
+```xml
+<Label Text="{OnPlatform 
+    Android='🤖 Running on Android',
+    iOS='🍎 Running on iOS',
+    WinUI='🪟 Running on Windows',
+    MacCatalyst='🍏 Running on macOS'}"
+    FontSize="20" FontAttributes="Bold" />
+```
+
+  </details>
+</div>
+
 ---
 
 **Previous:** [← 07 — Styling & Theming](../07-Styling-And-Theming/README.md) · **Next:** [09 — Working with APIs →](../09-Working-With-APIs/README.md)
