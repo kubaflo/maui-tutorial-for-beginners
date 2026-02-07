@@ -30,6 +30,14 @@ A comprehensive, step-by-step guide to building cross-platform mobile and deskto
 | 09 | [Working with APIs](09-Working-With-APIs/README.md) | Consume REST APIs with HttpClient |
 | 10 | [Local Storage](10-Local-Storage/README.md) | Persist data with Preferences and SQLite |
 | 11 | [Publishing & Deployment](11-Publishing-Deployment/README.md) | Build and publish to app stores |
+| 12 | [Animations](12-Animations/README.md) | Add smooth animations and transitions |
+| 13 | [Advanced Shell](13-Shell-Advanced/README.md) | Search, custom flyouts, and navigation guards |
+| 14 | [Community Toolkit](14-Community-Toolkit/README.md) | Converters, behaviors, popups, and snackbars |
+| 15 | [Dependency Injection](15-Dependency-Injection/README.md) | Structure your app with DI and service lifetimes |
+| 16 | [Unit Testing](16-Unit-Testing/README.md) | Test ViewModels and services with xUnit |
+| 17 | [MAUI Blazor Hybrid](17-MAUI-Blazor-Hybrid/README.md) | Build hybrid apps with Razor components |
+| 18 | [Gestures & Touch](18-Gestures-And-Touch/README.md) | Handle taps, swipes, pinch, drag-and-drop |
+| 19 | [Media & Camera](19-Media-And-Camera/README.md) | Capture photos, play video, share content |
 
 ## 🛠️ What Is .NET MAUI?
 

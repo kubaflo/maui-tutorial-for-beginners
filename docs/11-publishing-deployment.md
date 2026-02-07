@@ -1,4 +1,11 @@
-# 11 — Publishing and Deployment
+---
+title: "Publishing & Deployment"
+layout: default
+nav_order: 11
+permalink: /docs/11-publishing-deployment/
+---
+
+# Publishing & Deployment
 
 ## What You'll Learn
 

@@ -1,0 +1,37 @@
+title: .NET MAUI Tutorial
+description: A comprehensive .NET MAUI tutorial for beginners — from setup to deployment
+remote_theme: just-the-docs/just-the-docs
+color_scheme: dark
+
+url: "https://kubaflo.github.io"
+baseurl: "/maui-tutorial-for-beginners"
+
+permalink: pretty
+
+aux_links:
+  "GitHub":
+    - "https://github.com/kubaflo/maui-tutorial-for-beginners"
+
+aux_links_new_tab: true
+
+nav_sort: order
+
+heading_anchors: true
+
+search_enabled: true
+
+back_to_top: true
+back_to_top_text: "Back to top"
+
+footer_content: 'Built with ❤️ by <a href="https://github.com/kubaflo">kubaflo</a>. Licensed under <a href="https://github.com/kubaflo/maui-tutorial-for-beginners/blob/main/LICENSE">MIT</a>.'
+
+callouts:
+  note:
+    title: Note
+    color: blue
+  warning:
+    title: Warning
+    color: red
+  tip:
+    title: Tip
+    color: green
