@@ -69,9 +69,14 @@ dotnet build -t:Run -f net10.0-android
 # macOS (Mac only)
 dotnet build -t:Run -f net10.0-maccatalyst
 
-# iOS (Mac only)
+# iOS (Mac only — requires Xcode)
 dotnet build -t:Run -f net10.0-ios
 ```
+
+<div class="callout callout-warning">
+  <div class="callout-title">⚠️ iOS Builds</div>
+  Building for iOS requires <strong>macOS with Xcode</strong> installed. You cannot build iOS apps directly from Windows without a Mac build host.
+</div>
 
 You should see the default counter app! 🎉
 
@@ -89,6 +94,11 @@ Open `MainPage.xaml` and change the welcome text:
 
 Save and the app updates automatically with Hot Reload.
 
+<div class="callout callout-tip">
+  <div class="callout-title">💡 Hot Reload</div>
+  <strong>Visual Studio</strong> users get Hot Reload automatically on save. <strong>CLI</strong> users should run <code>dotnet watch</code> instead of <code>dotnet build</code> for live reloading during development.
+</div>
+
 ---
 
 ## Step 5: Add MVVM (Modern Pattern)
@@ -99,13 +109,13 @@ Install the MVVM Toolkit:
 dotnet add package CommunityToolkit.Mvvm
 ```
 
-Create `MainViewModel.cs`:
+Create `ViewModels/MainViewModel.cs`:
 
 ```csharp
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace HelloMaui;
+namespace HelloMaui.ViewModels;
 
 public partial class MainViewModel : ObservableObject
 {

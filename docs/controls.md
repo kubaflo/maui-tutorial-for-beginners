@@ -302,4 +302,82 @@ A quick visual reference of all major .NET MAUI controls with code snippets you 
 
 ---
 
+## RefreshView
+
+Wraps scrollable content and adds pull-to-refresh behavior.
+
+<div class="control-preview" style="padding: 1.5rem; text-align: center;">
+  <div style="color: var(--accent-cyan); font-size: 0.85rem; margin-bottom: 0.5rem;">↓ Pull to refresh</div>
+  <div style="background: rgba(255,255,255,0.05); border-radius: 8px; padding: 0.75rem;">
+    <div style="padding: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.08);">Item 1</div>
+    <div style="padding: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.08);">Item 2</div>
+    <div style="padding: 0.5rem;">Item 3</div>
+  </div>
+</div>
+
+```xml
+<RefreshView IsRefreshing="{Binding IsRefreshing}"
+             Command="{Binding RefreshCommand}">
+    <CollectionView ItemsSource="{Binding Items}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate x:DataType="models:Item">
+                <Label Text="{Binding Name}" Padding="10" />
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</RefreshView>
+```
+
+---
+
+## ActivityIndicator
+
+Shows a loading spinner while content is being fetched.
+
+<div class="control-preview" style="padding: 1.5rem; text-align: center;">
+  <div style="width: 36px; height: 36px; border: 3px solid rgba(168,85,247,0.3); border-top-color: var(--accent-purple); border-radius: 50%; margin: 0 auto; animation: spin 1s linear infinite;"></div>
+  <div style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.85rem;">Loading...</div>
+</div>
+
+<style>.control-preview .spin-anim { animation: spin 1s linear infinite; } @keyframes spin { to { transform: rotate(360deg); } }</style>
+
+```xml
+<ActivityIndicator IsRunning="{Binding IsBusy}"
+                   Color="{StaticResource Primary}"
+                   HorizontalOptions="Center" />
+```
+
+---
+
+## SwipeView
+
+Adds swipe-to-reveal actions to list items.
+
+<div class="control-preview" style="padding: 1rem;">
+  <div style="position: relative; overflow: hidden; border-radius: 8px;">
+    <div style="display: flex; align-items: center; background: rgba(255,255,255,0.05); padding: 0.75rem 1rem;">
+      <span style="flex: 1;">Swipe me ←</span>
+      <span style="background: var(--accent-red); color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.8rem;">Delete</span>
+    </div>
+  </div>
+</div>
+
+```xml
+<SwipeView>
+    <SwipeView.RightItems>
+        <SwipeItems>
+            <SwipeItem Text="Delete"
+                       BackgroundColor="Red"
+                       Command="{Binding DeleteCommand}"
+                       CommandParameter="{Binding .}" />
+        </SwipeItems>
+    </SwipeView.RightItems>
+    <Grid Padding="10">
+        <Label Text="{Binding Name}" />
+    </Grid>
+</SwipeView>
+```
+
+---
+
 *For the full API reference, see the [official .NET MAUI Controls docs](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/).*

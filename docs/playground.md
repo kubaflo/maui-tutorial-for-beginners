@@ -1,18 +1,19 @@
 ---
-title: "🎮 XAML Playground"
+title: "🎮 XAML Layout Previewer"
 layout: default
 nav_order: 1
 parent: "🛠️ Tools"
 permalink: /playground/
 ---
 
-# 🎮 Interactive XAML Playground
+# 🎮 XAML Layout Previewer
 
-Experiment with MAUI XAML layouts right in your browser. Edit the code and see a live preview!
+Experiment with MAUI layout patterns right in your browser. Edit the code and see how elements are positioned!
 
-> **Note:** This is a simplified HTML-based preview — it demonstrates layout concepts but won't render actual MAUI controls. Use it to learn layout patterns before building in Visual Studio.
-
-<div style="margin: 2rem 0;">
+<div class="callout callout-info">
+  <div class="callout-title">ℹ️ About This Tool</div>
+  This is an <strong>HTML-based layout simulator</strong> — it demonstrates how StackLayout, Grid, and FlexLayout position elements, but does not render actual MAUI controls or properties like colors and fonts. Use it to understand layout concepts before building in Visual Studio.
+</div>
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; min-height: 400px;" id="playground">
   <div style="display: flex; flex-direction: column;">

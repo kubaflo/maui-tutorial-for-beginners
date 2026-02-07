@@ -30,7 +30,7 @@ permalink: /progress/
   </div>
   <div class="stat-item">
     <span class="stat-icon">✅</span>
-    <span class="stat-value" id="pStatQuizzes">0/0</span>
+    <span class="stat-value" id="pStatQuizzes">0/54</span>
     <span class="stat-label">Quizzes</span>
   </div>
 </div>
@@ -69,9 +69,9 @@ permalink: /progress/
     { id: 'ch08', name: 'Platform-Specific Code', num: '08', quizzes: 2 },
     { id: 'ch09', name: 'Working with APIs', num: '09', quizzes: 2 },
     { id: 'ch10', name: 'Local Storage', num: '10', quizzes: 2 },
-    { id: 'ch11', name: 'Publishing & Deployment', num: '11', quizzes: 1 },
+    { id: 'ch11', name: 'Publishing & Deployment', num: '11', quizzes: 2 },
     { id: 'ch12', name: 'Animations', num: '12', quizzes: 2 },
-    { id: 'ch13', name: 'Advanced Shell', num: '13', quizzes: 1 },
+    { id: 'ch13', name: 'Advanced Shell', num: '13', quizzes: 2 },
     { id: 'ch14', name: 'Community Toolkit', num: '14', quizzes: 2 },
     { id: 'ch15', name: 'Dependency Injection', num: '15', quizzes: 2 },
     { id: 'ch16', name: 'Unit Testing', num: '16', quizzes: 2 },

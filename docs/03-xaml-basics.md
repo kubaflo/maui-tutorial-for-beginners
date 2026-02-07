@@ -192,6 +192,29 @@ In .NET 10, you can also enable compilation of bindings with `Source` property b
 
 > 💡 **Native AOT:** If you plan to use Native AOT deployment (supported on iOS in .NET 10), all bindings **must** be compiled.
 
+## Accessibility with SemanticProperties
+
+Always add accessibility hints to your interactive XAML controls so screen readers can describe them:
+
+```xml
+<Button Text="Submit"
+        SemanticProperties.Description="Submit the contact form"
+        SemanticProperties.Hint="Double-tap to submit" />
+
+<Image Source="logo.png"
+       SemanticProperties.Description="Company logo" />
+
+<Entry Placeholder="Enter your name"
+       SemanticProperties.Description="Name input field" />
+```
+
+<div class="callout callout-tip">
+  <div class="callout-title">💡 Tip</div>
+  Get into the habit of adding <code>SemanticProperties.Description</code> to every interactive element from the start. It's much easier than retrofitting accessibility later. See <a href="/maui-tutorial-for-beginners/docs/24-accessibility/">Chapter 24</a> for the full guide.
+</div>
+
+---
+
 ## ✅ Checkpoint
 
 You now know how to write XAML, use markup extensions, define resources, compiled bindings, and reference elements in code. Next, we'll explore layouts and controls to build real UIs.

@@ -19,7 +19,8 @@ permalink: /
 <div class="hero-section">
   <img src="{{ '/assets/images/hero-devices.svg' | relative_url }}" alt="Cross-platform app development" class="hero-illustration" style="max-width: 340px; margin: 0 auto 1.5rem; display: block;">
   <h1 class="hero-title">.NET MAUI Tutorial</h1>
-  <p class="hero-subtitle">Master cross-platform app development with 25 interactive lessons, hands-on exercises, and real-world projects — powered by .NET 10 LTS</p>
+  <p style="color: var(--text-muted); font-size: 0.95rem; margin: 0 auto 0.75rem; max-width: 520px;">.NET MAUI is Microsoft's cross-platform framework for building native mobile and desktop apps with C# and XAML — one codebase for Android, iOS, macOS, and Windows.</p>
+  <p class="hero-subtitle">Master it with 25 interactive lessons, hands-on exercises, and real-world projects — powered by .NET 10 LTS</p>
   <div class="hero-buttons">
     <a href="{{ '/docs/01-getting-started/' | relative_url }}" class="btn-primary">▶ Start Learning</a>
     <a href="{{ '/quickstart/' | relative_url }}" class="btn-secondary">⚡ Quick Start</a>
@@ -401,7 +402,7 @@ permalink: /
   </a>
   <a href="{{ '/playground/' | relative_url }}" class="resource-card fade-in-up">
     <img src="{{ '/assets/images/icons/playground.svg' | relative_url }}" alt="" class="resource-card-icon-img">
-    <div class="resource-card-title">XAML Playground</div>
+    <div class="resource-card-title">Layout Previewer</div>
     <div class="resource-card-desc">Live XAML layout editor</div>
   </a>
   <a href="{{ '/roadmap/' | relative_url }}" class="resource-card fade-in-up">
@@ -439,5 +440,10 @@ permalink: /
 
 <div style="text-align:center; margin-top:3rem; padding:1.5rem; color: var(--text-muted); font-size: 0.85rem;">
   <p>Prerequisites: Basic C# · <a href="https://dotnet.microsoft.com/download/dotnet/10.0">.NET 10 SDK</a> · <a href="https://visualstudio.microsoft.com/">Visual Studio 2022</a> (v17.12+)</p>
+  <p style="margin-top:0.5rem;">
+    <a href="https://learn.microsoft.com/en-us/dotnet/maui/" style="margin:0 0.5rem;">📖 Official Docs</a> ·
+    <a href="https://github.com/dotnet/maui" style="margin:0 0.5rem;">🐙 GitHub</a> ·
+    <a href="https://aka.ms/dotnet-discord" style="margin:0 0.5rem;">💬 Discord</a>
+  </p>
   <p style="margin-top:0.5rem;">Built with ❤️ by <a href="https://github.com/kubaflo">kubaflo</a></p>
 </div>
